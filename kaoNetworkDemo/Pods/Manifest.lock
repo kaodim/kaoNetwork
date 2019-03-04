@@ -1,0 +1,16 @@
+PODS:
+  - kaoNetwork (0.1.0)
+
+DEPENDENCIES:
+  - kaoNetwork (from `../`)
+
+EXTERNAL SOURCES:
+  kaoNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  kaoNetwork: 41552764ffa17cc4e0de7ea5a984cbdef6e3958f
+
+PODFILE CHECKSUM: 22186fb4024db91843d2ddacf7e197f18a156733
+
+COCOAPODS: 1.5.3
