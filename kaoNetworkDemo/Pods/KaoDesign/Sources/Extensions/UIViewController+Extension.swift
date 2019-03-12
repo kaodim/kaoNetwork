@@ -15,11 +15,4 @@ public extension UIViewController {
         refreshControl.addTarget(self, action: action, for: .valueChanged)
         return refreshControl
     }
-
-    func kaoIndicatorView() -> UIActivityIndicatorView {
-        let indicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        indicatorView.hidesWhenStopped = true
-        indicatorView.frame.size = CGSize(width: 30, height: 30)
-        return indicatorView
-    }
 }

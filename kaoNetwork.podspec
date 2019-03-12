@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
      ]
    }
 
-  s.dependency 'KaoDesign', '0.1.46'
+  s.dependency 'KaoDesign', '0.1.48'
   s.dependency 'Alamofire', '4.6.0'
 
   s.pod_target_xcconfig = {

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D820E1C7D5AA063E1488F78D869FE55"
+               BlueprintIdentifier = "4F1130119AC9BD4E528658A931586396"
                BuildableName = "KaoCustomPod.bundle"
                BlueprintName = "KaoDesign-KaoCustomPod"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D820E1C7D5AA063E1488F78D869FE55"
+            BlueprintIdentifier = "4F1130119AC9BD4E528658A931586396"
             BuildableName = "KaoCustomPod.bundle"
             BlueprintName = "KaoDesign-KaoCustomPod"
             ReferencedContainer = "container:Pods.xcodeproj">

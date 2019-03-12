@@ -51,4 +51,14 @@ open class KaoBaseViewController: UIViewController, KaoNetworkProtocol {
 
     // MARK: - KaoNetworkProtocol
     open func retry() { }
+
+    open func addNetworkErrorView(_ errorView: UIView) {
+        view.addSubview(errorView)
+        NSLayoutConstraint.activate([
+            errorView.topAnchor.constraint(equalTo: safeTopAnchor),
+            errorView.bottomAnchor.constraint(equalTo: safeBottomAnchor),
+            errorView.leadingAnchor.constraint(equalTo: safeLeadingAnchor),
+            errorView.trailingAnchor.constraint(equalTo: safeTrailingAnchor)
+            ])
+    }
 }

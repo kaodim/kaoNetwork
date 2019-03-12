@@ -2,7 +2,7 @@ PODS:
   - Alamofire (4.6.0)
   - DZNEmptyDataSet (1.8.1)
   - FontAwesome.swift (1.3.2)
-  - KaoDesign (0.1.46):
+  - KaoDesign (0.1.48):
     - DZNEmptyDataSet (= 1.8.1)
     - FontAwesome.swift (= 1.3.2)
     - Kingfisher (= 4.6.2)
@@ -11,7 +11,7 @@ PODS:
     - XLPagerTabStrip (= 8.0.0)
   - kaoNetwork (0.1.0):
     - Alamofire (= 4.6.0)
-    - KaoDesign (= 0.1.46)
+    - KaoDesign (= 0.1.48)
   - Kingfisher (4.6.2)
   - MarqueeLabel/Swift (3.2.0)
   - NotificationBannerSwift (1.6.3):
@@ -46,8 +46,8 @@ SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FontAwesome.swift: b4e4c8ccbbecb12f9b592bc533ff237af3706667
-  KaoDesign: dc4042754eec445513d33cf9c41b3b37f2874041
-  kaoNetwork: 6a019e46e4e86d45ab6684e96d44639c16fd83ce
+  KaoDesign: 6c8c2fab30cddf9c4de931fb2938a3cbb28876bb
+  kaoNetwork: 06001551ce7097bfe5226fb2a96f8478a22b41fe
   Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
   MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
   NotificationBannerSwift: b231e4c3244848ef300e1c53ce027b9756b9b06f

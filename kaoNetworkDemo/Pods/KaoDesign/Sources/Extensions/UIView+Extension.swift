@@ -48,6 +48,18 @@ public extension UIView {
         return headerView
     }
 
+    func dropShadow(shadowRadius radius: CGFloat? = 2.0, shadowColor: UIColor = UIColor.gray, shadowPath: CGPath? = nil, shadowOffSet: CGSize = CGSize(width: 0.0, height: 1.0), shadowOpacity: Float = 0.8) {
+        layer.cornerRadius = 4
+        layer.shadowOffset = shadowOffSet
+        layer.shadowOpacity = shadowOpacity
+
+        layer.shadowRadius = (radius ?? 2.0 - 1.0)
+        layer.masksToBounds = false
+        layer.shadowPath = shadowPath
+        layer.borderColor = shadowColor.cgColor
+        clipsToBounds = false
+    }
+
     class func nibFromDesignIos(_ fileName: String) -> UINib {
         return NibLoader.loadNib(fileName: fileName)
     }

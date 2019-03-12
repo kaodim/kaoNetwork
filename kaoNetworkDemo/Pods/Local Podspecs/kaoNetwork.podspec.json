@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "KaoDesign": [
-      "0.1.46"
+      "0.1.48"
     ],
     "Alamofire": [
       "4.6.0"

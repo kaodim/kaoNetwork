@@ -9,14 +9,6 @@
 import Foundation
 import UIKit
 
-public enum KaoFontStyle: String {
-    case regular = "Roboto-Regular"
-    case medium = "Roboto-Medium"
-    case bold = "Roboto-Bold"
-    case light = "Roboto-Light"
-    case lightItalic = "Roboto-LightItalic"
-}
-
 public enum KaoFontSize: CGFloat {
     case xsmall = 10
     case small = 12
@@ -32,41 +24,44 @@ public enum KaoFontSize: CGFloat {
 
 public extension UIFont {
 
-    class func kaoFont(style: KaoFontStyle, size: KaoFontSize) -> UIFont {
-        if let font = UIFont(name: style.rawValue, size: size.rawValue) {
-            return font
-        } else {
-            FontLoader.loadFont(style: style)
-            let font = UIFont(name: style.rawValue, size: size.rawValue)!
-            return font
-        }
+    class func kaoFont(style: UIFont.Weight, size: KaoFontSize) -> UIFont {
+        let font = UIFont.systemFont(ofSize: size.rawValue, weight: style)
+        return font
+
+//        if let font = UIFont(name: style.rawValue, size: size.rawValue) {
+//            return font
+//        } else {
+//            FontLoader.loadFont(style: style)
+//            let font = UIFont(name: style.rawValue, size: size.rawValue)!
+//            return font
+//        }
     }
 }
 
-private class FontLoader {
-    class func loadFont(style: KaoFontStyle) {
-        let bundle = Bundle(for: FontLoader.self)
-        let identifier = bundle.bundleIdentifier
-
-        var fontURL: URL
-        if identifier?.hasPrefix("org.cocoapods") == true {
-            // If this framework is added using CocoaPods, resources is placed under a subdirectory
-            fontURL = bundle.url(forResource: style.rawValue, withExtension: "ttf", subdirectory: "KaoCustomPod.bundle")!
-        } else {
-            fontURL = bundle.url(forResource: style.rawValue, withExtension: "ttf")!
-        }
-
-        guard
-            let data = try? Data(contentsOf: fontURL),
-            let provider = CGDataProvider(data: data as CFData),
-            let font = CGFont(provider)
-            else { return }
-
-        var error: Unmanaged<CFError>?
-        if !CTFontManagerRegisterGraphicsFont(font, &error) {
-            let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
-            guard let nsError = error?.takeUnretainedValue() as AnyObject as? NSError else { return }
-            NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
-        }
-    }
-}
+//private class FontLoader {
+//    class func loadFont(style: KaoFontStyle) {
+//        let bundle = Bundle(for: FontLoader.self)
+//        let identifier = bundle.bundleIdentifier
+//
+//        var fontURL: URL
+//        if identifier?.hasPrefix("org.cocoapods") == true {
+//            // If this framework is added using CocoaPods, resources is placed under a subdirectory
+//            fontURL = bundle.url(forResource: style.rawValue, withExtension: "ttf", subdirectory: "KaoCustomPod.bundle")!
+//        } else {
+//            fontURL = bundle.url(forResource: style.rawValue, withExtension: "ttf")!
+//        }
+//
+//        guard
+//            let data = try? Data(contentsOf: fontURL),
+//            let provider = CGDataProvider(data: data as CFData),
+//            let font = CGFont(provider)
+//            else { return }
+//
+//        var error: Unmanaged<CFError>?
+//        if !CTFontManagerRegisterGraphicsFont(font, &error) {
+//            let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
+//            guard let nsError = error?.takeUnretainedValue() as AnyObject as? NSError else { return }
+//            NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
+//        }
+//    }
+//}

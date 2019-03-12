@@ -77,14 +77,14 @@ extension KaoDateTimePickerHelper {
 
 extension UILabel {
 
-    func formattedString(style: KaoFontStyle = .regular, fontSize size: CGFloat) {
+    func formattedString(style: UIFont.Weight = .regular, fontSize size: CGFloat) {
         self.lineBreakMode = .byWordWrapping
         self.numberOfLines = 0
         self.textColor = UIColor(red:0.07, green:0.14, blue:0.18, alpha:1)
         self.textAlignment = .center
         let textContent = self.text
         let textString = NSMutableAttributedString(string: textContent ?? "", attributes: [
-            NSAttributedString.Key.font: UIFont(name: style.rawValue, size: size) ?? UIFont.systemFont(ofSize: size)
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: size, weight: style)
             ])
         let textRange = NSRange(location: 0, length: textString.length)
         let paragraphStyle = NSMutableParagraphStyle()

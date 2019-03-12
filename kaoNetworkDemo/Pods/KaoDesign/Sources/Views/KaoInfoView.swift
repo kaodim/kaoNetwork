@@ -56,7 +56,7 @@ public class KaoInfoView: UIView {
         title.font = .kaoFont(style: .regular, size: .small)
         title.textColor = .kaoColor(.jellyBean)
 
-        subTitle.font = .kaoFont(style: .lightItalic, size: .small)
+        subTitle.font = .kaoFont(style: .regular, size: .small)
         subTitle.textColor = .kaoColor(.jellyBean)
 
         firstButton.configure(type: .secondary, size: .small)
