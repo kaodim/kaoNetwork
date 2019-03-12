@@ -21,13 +21,15 @@ public struct NetworkRequest: KaoNetworkErrorHandler {
 
 class ViewController: KaoBaseViewController {
 
+    @IBOutlet weak var textField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     @IBAction func connectTapped() {
         // https://httpstat.us/
-        if let url = URL(string: "https://httpstat.us/500") {
+        if let url = URL(string: "https://httpstat.us/\(textField.text ?? "")") {
             NetworkRequest.requestJSON(url, method: .get, parameters: nil, headers: nil, showLoader: false) { (result) in
                 
             }
@@ -41,6 +43,11 @@ class ViewController: KaoBaseViewController {
 
     @IBAction func internalTapped() {
         let view = InternalServerErrorViewController()
+        self.present(view, animated: true, completion: nil)
+    }
+
+    @IBAction func timeOutTapped() {
+        let view = TimeOutViewController()
         self.present(view, animated: true, completion: nil)
     }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AcF-dq-rCb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,41 +39,46 @@
                                     <action selector="internalTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="SKX-03-YAy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vye-9p-Jml">
+                                <rect key="frame" x="116" y="528.5" width="143" height="30"/>
+                                <state key="normal" title="Show Time Out Error"/>
+                                <connections>
+                                    <action selector="timeOutTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKQ-ul-4Wn"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="401, 500" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5F-GS-mow">
+                                <rect key="frame" x="137.5" y="248.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="X3C-sH-Cnw"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ndg-x1-o8E" firstAttribute="top" secondItem="HMZ-nu-AZa" secondAttribute="bottom" constant="40" id="4LG-Nk-zuP"/>
                             <constraint firstItem="K9I-np-31t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4qG-He-DSV"/>
                             <constraint firstItem="HMZ-nu-AZa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5bk-cC-5DD"/>
+                            <constraint firstItem="vye-9p-Jml" firstAttribute="top" secondItem="ndg-x1-o8E" secondAttribute="bottom" constant="40" id="AqR-gO-Oe5"/>
+                            <constraint firstItem="j5F-GS-mow" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HD5-d7-vCd"/>
+                            <constraint firstItem="K9I-np-31t" firstAttribute="top" secondItem="j5F-GS-mow" secondAttribute="bottom" constant="40" id="Yxw-QZ-feR"/>
                             <constraint firstItem="HMZ-nu-AZa" firstAttribute="top" secondItem="K9I-np-31t" secondAttribute="bottom" constant="40" id="eT7-RT-o1L"/>
                             <constraint firstItem="ndg-x1-o8E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g8n-NM-8xT"/>
                             <constraint firstItem="K9I-np-31t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="psE-SP-wsP"/>
+                            <constraint firstItem="vye-9p-Jml" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rsQ-gj-VYZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Xty-0g-54k"/>
+                    <connections>
+                        <outlet property="textField" destination="j5F-GS-mow" id="kr4-Kv-WPE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1071.2" y="133.5832083958021"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Ep0-oe-gRW">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AcF-dq-rCb" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3gU-M1-nR7">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7lz-Qm-9WH"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PCY-fh-9QD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="361" y="134"/>
         </scene>
     </scenes>
 </document>
