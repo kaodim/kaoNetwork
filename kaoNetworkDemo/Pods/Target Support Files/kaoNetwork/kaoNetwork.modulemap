@@ -1,0 +1,6 @@
+framework module kaoNetwork {
+  umbrella header "kaoNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

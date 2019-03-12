@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="146" id="oLp-MM-9yz" customClass="KaoUploadAttachmentTableCell" customModule="KaoDesign">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oLp-MM-9yz" id="XSy-vL-gQa">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="145.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0F-Dy-NY1" customClass="KaoUploadAttachmentView" customModule="KaoDesign">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="145.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="145.5" id="aPT-0m-dvl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A0F-Dy-NY1" firstAttribute="top" secondItem="XSy-vL-gQa" secondAttribute="top" id="3vX-5W-ZP2"/>
+                    <constraint firstItem="A0F-Dy-NY1" firstAttribute="leading" secondItem="XSy-vL-gQa" secondAttribute="leading" id="4Cb-tz-JXX"/>
+                    <constraint firstAttribute="bottom" secondItem="A0F-Dy-NY1" secondAttribute="bottom" id="5Ln-4T-NO3"/>
+                    <constraint firstAttribute="trailing" secondItem="A0F-Dy-NY1" secondAttribute="trailing" id="5OO-Xg-wzI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="attachmentView" destination="A0F-Dy-NY1" id="8zl-Hk-M6H"/>
+                <outlet property="bottomSpace" destination="5Ln-4T-NO3" id="vki-7n-c7o"/>
+                <outlet property="leadingSpace" destination="4Cb-tz-JXX" id="3Jo-zb-bjh"/>
+                <outlet property="topSpace" destination="3vX-5W-ZP2" id="GfY-0B-WSR"/>
+                <outlet property="trailingSpace" destination="5OO-Xg-wzI" id="SR3-3A-Smn"/>
+                <outlet property="uploadHeight" destination="aPT-0m-dvl" id="ZyT-xW-5Yv"/>
+            </connections>
+            <point key="canvasLocation" x="37.600000000000001" y="61.169415292353825"/>
+        </tableViewCell>
+    </objects>
+</document>

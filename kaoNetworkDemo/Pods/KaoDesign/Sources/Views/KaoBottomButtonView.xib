@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KaoBottomButtonView" customModule="KaoDesign">
+            <connections>
+                <outlet property="button" destination="T68-aj-VlC" id="8Qz-Pg-Hwy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTe-Qp-4yN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejJ-d4-cM5" customClass="KaoLineView" customModule="KaoDesign">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="YQl-vy-K82"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T68-aj-VlC" customClass="KaoButton" customModule="KaoDesign">
+                            <rect key="frame" x="15" y="14" width="345" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="QzY-DT-0gT"/>
+                            </constraints>
+                            <connections>
+                                <action selector="buttonPressed" destination="-1" eventType="touchUpInside" id="iq9-SL-KbX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ejJ-d4-cM5" secondAttribute="trailing" id="4zg-jc-XRx"/>
+                        <constraint firstItem="T68-aj-VlC" firstAttribute="leading" secondItem="lTe-Qp-4yN" secondAttribute="leading" constant="15" id="5hZ-XI-BjP"/>
+                        <constraint firstAttribute="trailing" secondItem="T68-aj-VlC" secondAttribute="trailing" constant="15" id="7He-uQ-1t1"/>
+                        <constraint firstItem="ejJ-d4-cM5" firstAttribute="leading" secondItem="lTe-Qp-4yN" secondAttribute="leading" id="Ltt-DF-BsX"/>
+                        <constraint firstItem="ejJ-d4-cM5" firstAttribute="top" secondItem="lTe-Qp-4yN" secondAttribute="top" id="T09-QB-8Kr"/>
+                        <constraint firstAttribute="bottom" secondItem="T68-aj-VlC" secondAttribute="bottom" constant="13" id="cyL-tn-hsi"/>
+                        <constraint firstItem="T68-aj-VlC" firstAttribute="top" secondItem="ejJ-d4-cM5" secondAttribute="bottom" constant="13" id="g8k-AP-Ur7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lTe-Qp-4yN" secondAttribute="trailing" id="4Ru-J9-ZDE"/>
+                <constraint firstItem="lTe-Qp-4yN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JLo-ze-1nO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lTe-Qp-4yN" secondAttribute="bottom" id="RXx-oj-zyw"/>
+                <constraint firstItem="lTe-Qp-4yN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="qcB-Ai-aT5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="128.80000000000001" y="-370.16491754122939"/>
+        </view>
+    </objects>
+</document>

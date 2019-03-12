@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hTV-Nh-Vhe" customClass="KaoPageBarCell" customModule="KaoDesign">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="156" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCN-b5-fj5" customClass="KaoLabel" customModule="KaoDesign">
+                        <rect key="frame" x="57" y="22.5" width="42" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="r1L-5w-iH3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPD-VF-amc">
+                        <rect key="frame" x="99" y="22.5" width="7" height="7"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="PJO-vD-qJq"/>
+                            <constraint firstAttribute="width" secondItem="gPD-VF-amc" secondAttribute="height" multiplier="1:1" id="smb-MB-REa"/>
+                        </constraints>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="gPD-VF-amc" firstAttribute="top" secondItem="PCN-b5-fj5" secondAttribute="top" id="2Oc-Tm-OsI"/>
+                <constraint firstItem="gPD-VF-amc" firstAttribute="leading" secondItem="PCN-b5-fj5" secondAttribute="trailing" id="BzY-2X-efK"/>
+                <constraint firstItem="PCN-b5-fj5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IXt-u1-Dnl" secondAttribute="leading" id="VJK-Pl-xx3"/>
+                <constraint firstItem="PCN-b5-fj5" firstAttribute="centerX" secondItem="IXt-u1-Dnl" secondAttribute="centerX" id="X2r-Dl-hx7"/>
+                <constraint firstItem="PCN-b5-fj5" firstAttribute="centerY" secondItem="IXt-u1-Dnl" secondAttribute="centerY" id="bS2-z7-VMs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="IXt-u1-Dnl"/>
+            <size key="customSize" width="156" height="70"/>
+            <connections>
+                <outlet property="label" destination="PCN-b5-fj5" id="lT5-qb-GTi"/>
+                <outlet property="unreadButton" destination="gPD-VF-amc" id="Fne-ID-7zm"/>
+            </connections>
+            <point key="canvasLocation" x="86.400000000000006" y="115.14242878560721"/>
+        </collectionViewCell>
+    </objects>
+</document>

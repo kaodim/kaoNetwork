@@ -15,8 +15,20 @@
     "git": "git@github.com:kaodim/kaoNetwork.git",
     "tag": "0.1.0"
   },
-  "source_files": "Sources/**/*",
+  "source_files": "Sources/**/*.{swift}",
   "resource_bundles": {
+    "KaoCustomPod": [
+      "Sources/**/*.{xib}",
+      "Sources/Views/**/*.{xib}"
+    ]
+  },
+  "dependencies": {
+    "KaoDesign": [
+      "0.1.46"
+    ],
+    "Alamofire": [
+      "4.6.0"
+    ]
   },
   "pod_target_xcconfig": {
     "SWIFT_VERSION": "4.0"

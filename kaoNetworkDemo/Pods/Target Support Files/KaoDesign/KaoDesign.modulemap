@@ -1,0 +1,6 @@
+framework module KaoDesign {
+  umbrella header "KaoDesign-umbrella.h"
+
+  export *
+  module * { export * }
+}

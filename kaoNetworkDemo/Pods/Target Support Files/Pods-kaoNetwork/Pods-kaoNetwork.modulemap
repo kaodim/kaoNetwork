@@ -1,6 +1,0 @@
-framework module Pods_kaoNetwork {
-  umbrella header "Pods-kaoNetwork-umbrella.h"
-
-  export *
-  module * { export * }
-}

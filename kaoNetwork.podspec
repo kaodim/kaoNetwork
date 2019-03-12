@@ -12,13 +12,16 @@ Pod::Spec.new do |s|
   s.author           = { 'Kelvin' => 'tech+ios@kaodim.com' }
   s.source           = { :git => 'git@github.com:kaodim/kaoNetwork.git', :tag => s.version.to_s }
 
-  s.source_files = 'Sources/**/*'
+  s.source_files = 'Sources/**/*.{swift}'
   s.resource_bundles = {
-    # 'OtpCustomPod' => [
-    #     'Sources/**/*.xib'
-    # ]
-  }
-  # s.dependency 'KaoDesign', '0.1.42'
+     'KaoCustomPod' => [
+        'Sources/**/*.{xib}',
+        'Sources/Views/**/*.{xib}',
+     ]
+   }
+
+  s.dependency 'KaoDesign', '0.1.46'
+  s.dependency 'Alamofire', '4.6.0'
 
   s.pod_target_xcconfig = {
      "SWIFT_VERSION" => "4.0",

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KaoNotificationBannerView" customModule="KaoDesign">
+            <connections>
+                <outlet property="cardView" destination="S5W-nx-nTu" id="1tH-M9-785"/>
+                <outlet property="dismissButton" destination="6ef-zM-pk4" id="Bsc-Vd-yPd"/>
+                <outlet property="icon" destination="3eb-xi-Bsz" id="M0a-Wo-Pph"/>
+                <outlet property="iconHeight" destination="qug-SY-H3l" id="c7g-wy-q1h"/>
+                <outlet property="message" destination="iWf-jz-mNS" id="4Vt-yF-zbd"/>
+                <outlet property="title" destination="nPb-5b-6Ox" id="mZQ-ay-eWK"/>
+                <outlet property="titleLeading" destination="iaA-gJ-ooI" id="z2T-oP-cCu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5W-nx-nTu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3eb-xi-Bsz">
+                            <rect key="frame" x="15" y="18" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="qug-SY-H3l"/>
+                                <constraint firstAttribute="width" secondItem="3eb-xi-Bsz" secondAttribute="height" multiplier="1:1" id="z55-zw-aMy"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPb-5b-6Ox" customClass="KaoLabel" customModule="KaoDesign">
+                            <rect key="frame" x="50" y="18" width="285" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ef-zM-pk4">
+                            <rect key="frame" x="345" y="18" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="frX-WV-Hew"/>
+                                <constraint firstAttribute="width" secondItem="6ef-zM-pk4" secondAttribute="height" multiplier="1:1" id="lwl-GS-9Hx"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="dismissDidTap" destination="-1" eventType="touchUpInside" id="hKh-Px-5zW"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWf-jz-mNS" customClass="KaoLabel" customModule="KaoDesign">
+                            <rect key="frame" x="50" y="38.5" width="285" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3eb-xi-Bsz" firstAttribute="leading" secondItem="S5W-nx-nTu" secondAttribute="leading" constant="15" id="EFy-jt-gTY"/>
+                        <constraint firstItem="3eb-xi-Bsz" firstAttribute="top" secondItem="S5W-nx-nTu" secondAttribute="top" constant="18" id="FIY-l3-UDE"/>
+                        <constraint firstItem="iWf-jz-mNS" firstAttribute="trailing" secondItem="nPb-5b-6Ox" secondAttribute="trailing" id="Iak-5U-hGQ"/>
+                        <constraint firstItem="nPb-5b-6Ox" firstAttribute="top" secondItem="3eb-xi-Bsz" secondAttribute="top" id="KHI-bY-fs3"/>
+                        <constraint firstItem="6ef-zM-pk4" firstAttribute="leading" secondItem="nPb-5b-6Ox" secondAttribute="trailing" constant="10" id="Obz-QO-QKR"/>
+                        <constraint firstAttribute="trailing" secondItem="6ef-zM-pk4" secondAttribute="trailing" constant="15" id="RlM-j0-onu"/>
+                        <constraint firstItem="6ef-zM-pk4" firstAttribute="top" secondItem="3eb-xi-Bsz" secondAttribute="top" id="Y1T-jl-jcA"/>
+                        <constraint firstItem="iWf-jz-mNS" firstAttribute="top" secondItem="nPb-5b-6Ox" secondAttribute="bottom" id="Ywt-cV-AGv"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iWf-jz-mNS" secondAttribute="bottom" constant="15" id="i0B-oD-iXX"/>
+                        <constraint firstItem="nPb-5b-6Ox" firstAttribute="leading" secondItem="3eb-xi-Bsz" secondAttribute="trailing" constant="15" id="iaA-gJ-ooI"/>
+                        <constraint firstItem="iWf-jz-mNS" firstAttribute="leading" secondItem="nPb-5b-6Ox" secondAttribute="leading" id="kJA-ah-DCX"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3eb-xi-Bsz" secondAttribute="bottom" constant="15" id="zUG-yZ-ixR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="S5W-nx-nTu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0p3-RV-Fbe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="S5W-nx-nTu" secondAttribute="trailing" id="Bqz-kx-56n"/>
+                <constraint firstItem="S5W-nx-nTu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="tth-HG-TYb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="S5W-nx-nTu" secondAttribute="bottom" id="uuG-kf-eRv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="-106.14692653673164"/>
+        </view>
+    </objects>
+</document>
