@@ -21,7 +21,7 @@ extension KaoNetworkErrorHandler {
     ///   - response: network respose
     ///   - error: error request
     ///   - completion: error completion be called in network request
-    static func handleErrorJSON(response: DataResponse<Any>, error: Error, completion: (_ resultError: Any) -> Void) {
+    public static func handleErrorJSON(response: DataResponse<Any>, error: Error, completion: (_ resultError: Any) -> Void) {
 
             guard let statusCode = response.response?.statusCode, let statusCodeError = NetworkErrorStatusCode(rawValue: statusCode) else {
                 completion(error.localizedDescription)
@@ -73,7 +73,8 @@ extension KaoNetworkErrorHandler {
 
     static func handleInternalServerError() {
         let topView = UIApplication.topViewController()
-        let retryAction = (topView as? KaoNetworkProtocol)?.retry
+        let network = (topView as? KaoNetworkProtocol)
+        let retryAction = network?.retry
         topView?.presentInternalServerError(retryAction)
     }
 

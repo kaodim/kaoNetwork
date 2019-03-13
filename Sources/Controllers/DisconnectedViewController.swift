@@ -14,8 +14,7 @@ public class DisconnectedViewController: UIViewController {
     private lazy var noInternet: KaoEmptyStateView = {
         let view: KaoEmptyStateView = KaoEmptyStateView()
         var data = KaoEmptyState()
-        data.topSpace = 150
-        data.icon = UIImage(named: "img_nointernet")
+        data.icon = UIImage.imageFromNetworkIos("img_nointernet")
         data.title = NSAttributedString(string: "Looks like we lost you!")
         data.message = NSAttributedString(string: "Please make sure you are connected to the internet to proceed.")
         data.buttonTitle = "Rety"

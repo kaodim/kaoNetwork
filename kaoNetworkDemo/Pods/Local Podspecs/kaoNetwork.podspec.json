@@ -1,6 +1,6 @@
 {
   "name": "kaoNetwork",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "kaodim network library",
   "description": "Provides network request",
   "homepage": "https://github.com/kaodim/kaoNetwork",
@@ -13,13 +13,14 @@
   },
   "source": {
     "git": "git@github.com:kaodim/kaoNetwork.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "source_files": "Sources/**/*.{swift}",
   "resource_bundles": {
-    "KaoCustomPod": [
+    "KaoNetworkCustomPod": [
       "Sources/**/*.{xib}",
-      "Sources/Views/**/*.{xib}"
+      "Sources/Views/**/*.{xib}",
+      "Sources/Resources/icon.xcassets"
     ]
   },
   "dependencies": {
@@ -33,6 +34,7 @@
   "pod_target_xcconfig": {
     "SWIFT_VERSION": "4.0"
   },
+  "swift_version": "4.0",
   "platforms": {
     "ios": "9.0"
   },

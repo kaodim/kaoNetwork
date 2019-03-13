@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74D437C7A0ECEFFDE8A6AC6C /* Pods_kaoNetworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F850EC957BF7AD327648EBEC /* Pods_kaoNetworkDemo.framework */; };
+		2E0FF922632B913A82487136 /* Pods_kaoNetworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1A5F4FB8F28ADC0C62869B /* Pods_kaoNetworkDemo.framework */; };
 		7F9A8937222E27610070D470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A8936222E27610070D470 /* AppDelegate.swift */; };
 		7F9A8939222E27610070D470 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9A8938222E27610070D470 /* ViewController.swift */; };
 		7F9A893C222E27610070D470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F9A893A222E27610070D470 /* Main.storyboard */; };
@@ -16,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E2A4E5C829ED37AFA3D2379 /* Pods-kaoNetworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaoNetworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kaoNetworkDemo/Pods-kaoNetworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5F1A5F4FB8F28ADC0C62869B /* Pods_kaoNetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kaoNetworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9A8933222E27610070D470 /* kaoNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kaoNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9A8936222E27610070D470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F9A8938222E27610070D470 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,9 +25,7 @@
 		7F9A893D222E27620070D470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F9A8940222E27620070D470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F9A8942222E27620070D470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96C3138F47A0E4A011330EA6 /* Pods-kaoNetworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaoNetworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-kaoNetworkDemo/Pods-kaoNetworkDemo.release.xcconfig"; sourceTree = "<group>"; };
-		E704C41DEF86D547805129CE /* Pods-kaoNetworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaoNetworkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kaoNetworkDemo/Pods-kaoNetworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		F850EC957BF7AD327648EBEC /* Pods_kaoNetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kaoNetworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1A0E37E3DBFFBF61370BEE5 /* Pods-kaoNetworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kaoNetworkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-kaoNetworkDemo/Pods-kaoNetworkDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,26 +33,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D437C7A0ECEFFDE8A6AC6C /* Pods_kaoNetworkDemo.framework in Frameworks */,
+				2E0FF922632B913A82487136 /* Pods_kaoNetworkDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		320A22015A9601816A26A2A9 /* Pods */ = {
+		1B45C5657741EE49E24CCE69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E704C41DEF86D547805129CE /* Pods-kaoNetworkDemo.debug.xcconfig */,
-				96C3138F47A0E4A011330EA6 /* Pods-kaoNetworkDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		63D5A80809B388D7DFBDBF9E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F850EC957BF7AD327648EBEC /* Pods_kaoNetworkDemo.framework */,
+				5F1A5F4FB8F28ADC0C62869B /* Pods_kaoNetworkDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -62,8 +53,8 @@
 			children = (
 				7F9A8935222E27610070D470 /* kaoNetworkDemo */,
 				7F9A8934222E27610070D470 /* Products */,
-				320A22015A9601816A26A2A9 /* Pods */,
-				63D5A80809B388D7DFBDBF9E /* Frameworks */,
+				DAB7455AAF534EDA34FEC752 /* Pods */,
+				1B45C5657741EE49E24CCE69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +79,15 @@
 			path = kaoNetworkDemo;
 			sourceTree = "<group>";
 		};
+		DAB7455AAF534EDA34FEC752 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E2A4E5C829ED37AFA3D2379 /* Pods-kaoNetworkDemo.debug.xcconfig */,
+				D1A0E37E3DBFFBF61370BEE5 /* Pods-kaoNetworkDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,11 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F9A8945222E27620070D470 /* Build configuration list for PBXNativeTarget "kaoNetworkDemo" */;
 			buildPhases = (
-				187C25675AD00D698FD45A54 /* [CP] Check Pods Manifest.lock */,
+				25F2E03275465AFA079A0D1A /* [CP] Check Pods Manifest.lock */,
 				7F9A892F222E27610070D470 /* Sources */,
 				7F9A8930222E27610070D470 /* Frameworks */,
 				7F9A8931222E27610070D470 /* Resources */,
-				33D6A0218C0544DDD555447C /* [CP] Embed Pods Frameworks */,
+				3F03670122790802351DCE2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,7 +157,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		187C25675AD00D698FD45A54 /* [CP] Check Pods Manifest.lock */ = {
+		25F2E03275465AFA079A0D1A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -179,7 +179,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		33D6A0218C0544DDD555447C /* [CP] Embed Pods Frameworks */ = {
+		3F03670122790802351DCE2B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,7 +375,7 @@
 		};
 		7F9A8946222E27620070D470 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E704C41DEF86D547805129CE /* Pods-kaoNetworkDemo.debug.xcconfig */;
+			baseConfigurationReference = 3E2A4E5C829ED37AFA3D2379 /* Pods-kaoNetworkDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,7 +394,7 @@
 		};
 		7F9A8947222E27620070D470 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96C3138F47A0E4A011330EA6 /* Pods-kaoNetworkDemo.release.xcconfig */;
+			baseConfigurationReference = D1A0E37E3DBFFBF61370BEE5 /* Pods-kaoNetworkDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

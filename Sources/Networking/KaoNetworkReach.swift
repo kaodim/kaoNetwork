@@ -40,4 +40,8 @@ public class KaoNetworkReach {
         let retryAction = (topView as? KaoNetworkProtocol)?.retry
         topView?.presentDisconnectScreen(retryAction)
     }
+
+    func presentView() {
+
+    }
 }

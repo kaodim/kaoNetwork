@@ -54,4 +54,8 @@ class ViewController: KaoBaseViewController {
     override func retry() {
         print("dont know what i am doing")
     }
+
+    override func addNetworkErrorView(_ errorView: UIView) {
+        
+    }
 }

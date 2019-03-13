@@ -13,8 +13,7 @@ public class InternalServerErrorViewController: UIViewController {
     private lazy var internalServer: KaoEmptyStateView = {
         let view: KaoEmptyStateView = KaoEmptyStateView()
         var data = KaoEmptyState()
-        data.topSpace = 150
-        data.icon = UIImage(named: "img_downtime")
+        data.icon = UIImage.imageFromNetworkIos("img_downtime")
         data.title = NSAttributedString(string: "Kaodim is facing server downtime")
         data.message = NSAttributedString(string: "Please bear with us while we work to resolve this.")
         data.buttonTitle = "Close"

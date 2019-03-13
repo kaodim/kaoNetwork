@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		008796D211740000B076F189E9143E72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0BD246680290592BB5413E116883E /* Foundation.framework */; };
-		008F872FEFEB76CD9BD6C2341AF33597 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C5646A82C52CF4CE162EF6F7CDC8E38 /* FontAwesome.swift.bundle */; };
+		008F872FEFEB76CD9BD6C2341AF33597 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6519C307A46094C628F7A25CD26600A9 /* FontAwesome.swift.bundle */; };
+		00979EAD4C8CE2B61235CC91C45E03CF /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A972AA043325031CCFA953F69CE5FD4 /* DZNEmptyDataSet.framework */; };
 		00F526AD6F5C648D068C6DFF08937F94 /* Pods-kaoNetworkDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5770A7AEC764656678BEBE59D0C02413 /* Pods-kaoNetworkDemo-dummy.m */; };
+		01EA1FAFAC1463A4FBB55ADCDE3A04EB /* KaoNetworkReach.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA353CFFBD3034403A9E1E56491A19A /* KaoNetworkReach.swift */; };
 		020ED5A0D4EA38047472A5F8ED4CEF14 /* DateTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994DD973635E149123058F832A268AE /* DateTimeModel.swift */; };
 		0210F55F6D1DCE40D0EFDD834ECA6A81 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8720AED9C25ACE9349D2F4AC4990C699 /* SwipeDirection.swift */; };
+		0292837B11083917FCB7F66A64292A56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0BD246680290592BB5413E116883E /* Foundation.framework */; };
 		03AC609EABA6D5AF78733A7CF2B059E5 /* FontAwesome_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98EAF499F29D9557488EA1439F9039 /* FontAwesome_swift.framework */; };
-		045A195A1A8B19A04E372D397A3BB11E /* KaoNetworkReach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65C134D3E2C81A4C9378659A4CC4D4 /* KaoNetworkReach.swift */; };
 		053C179A42713348A0784ED44DE88CF1 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47FF9A88E69BA288A7E46EC53F3904E /* ConstraintView.swift */; };
 		071AC1666A62CBFA451DE12BFC421BB0 /* KaoBottomButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFD3D828F461EF1C3FBDD24D9D6C2F3 /* KaoBottomButtonView.xib */; };
 		078BA197155A7D9CB41EA4EAEDCE487F /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ED7752AD3DA7933D18D05819E544DF /* ConstraintInsets.swift */; };
@@ -22,12 +24,12 @@
 		0C9904E594F6446D70D3D9D4942A1BC3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D8C17A40C91298414DFCFBB730F3FA /* UIView+Extension.swift */; };
 		0D987FB9B8011665D63DE0142377427E /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12E6D488D2CC0E4875C06A4968EF97 /* UITextView+Extension.swift */; };
 		0EAC3BE334A77551F8E4407C3EBD94A6 /* KaoNotificationBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078786E316FC658F44649F79C64E58EF /* KaoNotificationBannerView.xib */; };
-		0F47C685A22897C0073E3BA05F4AEE8D /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A972AA043325031CCFA953F69CE5FD4 /* DZNEmptyDataSet.framework */; };
 		0F49819C6C39A7C6C41F9938A558EA46 /* KaoBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C46A350A2567148C67B82A568BCDC /* KaoBaseViewController.swift */; };
 		0F962BCCD84EFC47DB63D3E2D5F4571E /* KaoSpinningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCE854C053ADC9DE0F062E487DB127F /* KaoSpinningView.swift */; };
 		10784B19A3E949A30E9C4E168FE9FD26 /* KaoInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA69F5869A0DCD5153D6B2308F6246A /* KaoInfoView.xib */; };
 		1094F447FB87177026A53D4AEC9DAE81 /* DateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6E4F5313DC43089142F823FA08B4E0 /* DateTimeViewController.swift */; };
 		10A46F9039B47A4B353866CF753A0C59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0BD246680290592BB5413E116883E /* Foundation.framework */; };
+		11C07A360613D138A9CD111E92FDF401 /* KaoNetworkErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA100574D803B5C462691065BD9B45 /* KaoNetworkErrorHandler.swift */; };
 		128496E18B8FE712754345E301CCC05A /* KaoTextInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82C04BC451BC6B2F636D16434872192F /* KaoTextInputCell.xib */; };
 		12C156128AF62AE9BEACA7DB23DC4A43 /* StatusBarNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DFF2372ECE3234AFFD18C0D6A178 /* StatusBarNotificationBanner.swift */; };
 		12DDF5B1D63A1566C4CEF03FF03BD69A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B5D8D2B20EC21AF05035627E079295 /* UIViewController+Extension.swift */; };
@@ -50,33 +52,32 @@
 		1FFB57EA9DBDD83A9247B8326E8C50A6 /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A7AC0B5E800C23C90CEC79F95025F /* FontAwesomeView.swift */; };
 		200422495871891F18EB2F6F6DA609FA /* DateTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD13D8B9BBDC38172F9AFCCBBFEEFA /* DateTimeManager.swift */; };
 		2080F421D88E9D1211D168F829CC1AD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0BD246680290592BB5413E116883E /* Foundation.framework */; };
-		2099C19BA46E272317EBA8D4989717CE /* DisconnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4727142A281DB13FBF61C7570C563 /* DisconnectedViewController.swift */; };
 		20F5E12BF10D776488EAD0BDA5168BCC /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B021D43F2651A350ECB15C27A7EFB59E /* Icons.xcassets */; };
 		21E55A56D03E2DDBD5774C2B4AE391C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0BD246680290592BB5413E116883E /* Foundation.framework */; };
+		23637680C667AEE4C66E7D51482BC8A6 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADFA6EA0F9F505B29854E2CBABA30D /* XLPagerTabStrip.framework */; };
 		247A52F3A72B9A5AA0CDC9CA062A30C4 /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDFECF058CCF5B205EA54C65433BD14 /* FontAwesomeBarButtonItem.swift */; };
 		25CA129BF4B2B66A149F25FE2B45A1C5 /* KaoNoSearchFound.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BCC6902098198E5B2475900C6EAA973 /* KaoNoSearchFound.xib */; };
 		26CF78605117B744624FEDEAD199CBC5 /* EasyTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE1E11E4517A6D034B35C0E7780718E /* EasyTipView.swift */; };
-		26E4A9CC3B9F0741F2E5CDC0CDDCD8D1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05B8F801AAB1685B57F44F768625F98 /* Alamofire.framework */; };
 		2740FA300E91CE022F92982D054D2565 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82102FC1681BF82D1EBAB1ED3F463B0 /* Enum.swift */; };
 		27EEE894B0630019411C7F3B76104E09 /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 405C12917E967D8D4A6B4453F733782E /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		281DBCB01C21A259267494805109D24F /* KaoPaginationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E7D59228602718E82E470BDFA645F /* KaoPaginationViewController.swift */; };
 		291AF1158B9B47A231C0F6AB256A4ACF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E355E6B6A5DE3F62D61CD69CB55B02 /* SnapKit.framework */; };
 		29A7D7CB69F1DC4DC7D43D92BB251EDA /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDE96C0E865A78E502B23D403DD6A5 /* FontAwesomeSegmentedControl.swift */; };
 		2D1E8A98317063DBF1FFE377DEFAF56A /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F0ECCB77748B9F948D37D93126F30B /* TimeViewController.swift */; };
-		2D81B4215DD972730C24DA003ADDEDF8 /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D340CA080941E8D07EBEF4E58683BAC3 /* XLPagerTabStrip.bundle */; };
+		2D81B4215DD972730C24DA003ADDEDF8 /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A32D74A38FFC8A6053298C450723A788 /* XLPagerTabStrip.bundle */; };
 		2E78F3388A41032D300111C78ABC87D8 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AB3F26BCCDC32865BC11618AC824D /* ConstraintLayoutSupportDSL.swift */; };
 		2FA8494879A3664EF915254DEAF734B5 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C606C9030D0591ABF1AC7DD2F563377 /* ConstraintDescription.swift */; };
 		3118F21042823DD7805307501381F6F4 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684109D600E104D81BD5BA5BE4A306E /* KingfisherManager.swift */; };
 		316741E22860E62844339B4A04EEBD4B /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E0B2BF10AE998746F02E0B96F52515 /* UIStoryboard+Extension.swift */; };
 		328D7FF722996DA23FC4A75E36515BEC /* KaoNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E969044256D69846DC310097C20E130 /* KaoNotificationBanner.swift */; };
+		32B65CE705A833A63B851134A8883D97 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EE64251EACCB4128D63FEC2E36F822 /* NetworkResult.swift */; };
+		33465EB4E392C97EDCA239BDFF42561E /* KaoDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D11055DB60F82E28F13057A9A8FF52D /* KaoDesign.framework */; };
 		33637E36FA79A275405B4269350EE731 /* ButtonCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 3E24FE0A4D5A9AC56B93AA7B5E2633EF /* ButtonCell.xib */; };
 		344FB48B8266FF1EC1371E744223F4AA /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1879AC1306E66AB73CE2B158A445E7B4 /* UIView+AutoLayout.swift */; };
 		3661820AB4A5DC765A02CEDF7690B34A /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08861826358A5C5D5A713E821520873D /* MarqueeLabel.swift */; };
 		36FF8853CB34A9297AFAA8F5F7456324 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BB59EE326B30DFA6EC01110F49402C /* TaskDelegate.swift */; };
 		372613C28493FDC9F8AE594DC0CB8A70 /* UITableview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D664F16F94465F2A243FE580C014A1 /* UITableview+Extension.swift */; };
 		38F49B963AC517F53B534E172DA46C09 /* KaoUploadAttachmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D92E38E8640A33AC9DB9396F9D9114 /* KaoUploadAttachmentCell.xib */; };
-		3B924BC2ADB7C597FE6A26C2D2D0FBDC /* NotificationBannerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D20F658F64FB35B2B43DF26AAC33B6 /* NotificationBannerSwift.framework */; };
-		3C3D1A3180FB203894FE86DE8C21A4D4 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA146031938FF1C51119379FE5836B2 /* NetworkResult.swift */; };
 		3CAF89647A6FFC54B59FB8BB6649FC2A /* KaoLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8372D44C78EC999303F789796D2F7A30 /* KaoLoadingIndicator.swift */; };
 		3CBF8CB5E8E3725DE2F91102D12EDEF6 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F159F232E4BA8CC02062A15E3AFD6D /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D58561234046F5ACF142623A2FADCDE /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067EEF381A1B80F36DB99AE94C2A7997 /* ConstraintMakerPriortizable.swift */; };
@@ -84,6 +85,7 @@
 		3DAD31466DD2F3E04C1B1361C8109DCC /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B994BCD196BC768EC6D0336F4FC7C5F0 /* AnimatedImageView.swift */; };
 		3DC4E72B398BC5D5873043DBB3E84990 /* KaoTempAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FA7B49258CF313F22E4E695D1D04E /* KaoTempAttachment.swift */; };
 		3E23D15975972BB46DF77B14535FB163 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A855A719C1862C93989737F8B02C010 /* UIKit.framework */; };
+		3FBBC79F6AC0C6D3891C3C2806189413 /* Icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AD4B3E83F593E7A876870B5C020376 /* Icon.xcassets */; };
 		413499A3E68C6A9E387FBFEB11C14EB9 /* KaoEmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EE848CF99FA855386B079FDEB3B17D7 /* KaoEmptyStateView.xib */; };
 		419C5D11568976523D7D12B5A2F03DE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A855A719C1862C93989737F8B02C010 /* UIKit.framework */; };
 		429141F440F11B1C79E9523BB779C792 /* KaoUploadOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCC1732636F97632A5E89DEE9D40A71 /* KaoUploadOptionCell.xib */; };
@@ -92,15 +94,16 @@
 		44DFFFB19A0BBED07E350E262AF325F3 /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F9234BA198B88F409FB2023E1490A /* SectionHeaderCollectionReusableView.swift */; };
 		461C259F3F99E4CA274429FA0CC82653 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E52BD428102D4F2B52F79E4471E9CB3F /* Roboto-Regular.ttf */; };
 		46C5AF47426348A415FE771BA01CAE7D /* KaoLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D6B6E4F2888D4087C9B47DBE55EAF /* KaoLineView.swift */; };
-		47DA4DCA8637EC7ED576869E79936821 /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C5F4BA46BACF0233AFD84DB6376F8 /* MarqueeLabel.framework */; };
+		470B41B3206F10811B8BF05044EF99E9 /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C5F4BA46BACF0233AFD84DB6376F8 /* MarqueeLabel.framework */; };
 		4806C4545E3C882BACF5A673BA808938 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8B2DDCDAA04C1EB5ECEA4DA13F59B /* Debugging.swift */; };
 		48F772B84EF2C8E32C80E87F874C1CF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A855A719C1862C93989737F8B02C010 /* UIKit.framework */; };
 		48FF2C316E0C63A6356BAA88AC060EDA /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA81C7BF6B7F256684AAB73A7281D28 /* ImageDownloader.swift */; };
-		4AEE853B967F4A8EBDF5327DBF4A11DF /* TimeOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F4CA87F7066D179663A1BE370A2264 /* TimeOutViewController.swift */; };
 		4E1A913EFB404FB11524718FF0298EFE /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69221D1BCBCE8B9109CF14AF2409569E /* Alamofire.swift */; };
+		4E7EB5E74EF71A1EDC56C03E830DD593 /* FontAwesome_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98EAF499F29D9557488EA1439F9039 /* FontAwesome_swift.framework */; };
 		4EA8A11454BBAEA05FF8F24095CA320B /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAFFC000BE8C0414B8417E92EABA8C9 /* ConstraintLayoutGuide.swift */; };
 		500C8EDA60C07B0F127C7FC385E17D38 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F0A1E98485BA88B67287DFA79707E8 /* Notifications.swift */; };
 		50932D5AED1F2B61C2F4AE61FE3CD0D8 /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C5F4BA46BACF0233AFD84DB6376F8 /* MarqueeLabel.framework */; };
+		50C7C3DB89C0DC2167CF13E9E87BBE4A /* DisconnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA53249AEC863AF304373EF7DBFE6FE /* DisconnectedViewController.swift */; };
 		514A1D13E3138D7ACBCC5F6A389D6585 /* MarqueeLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 405C113A93DE507BFC326236265855EA /* MarqueeLabel-dummy.m */; };
 		520C973E703096A8D71F84E3279D77D3 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71E5BC63D93BAF8A60F85F4F61D40A /* ConstraintItem.swift */; };
 		52237C35642089F77DD4D723CEB25737 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACB2FEBF3079F389298ABEA155BEBBB /* Response.swift */; };
@@ -113,7 +116,6 @@
 		57E698B181870349557609E2347C473E /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2BA19B62C69491DD441496D98AFB4D /* UIScrollView+EmptyDataSet.m */; };
 		585A87B537E9DAC2F9ED2E449095CB34 /* UIApplication+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EB6395B46E952337F383B895A31E8E /* UIApplication+extension.swift */; };
 		58A9719584AFA2D108D9E5C585A79329 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F1FCC9791204EC37297376105B353 /* Validation.swift */; };
-		592AA901F72A4FCBB211268AF950D827 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718BA83204E63A1FCFB9019F3F23D756 /* NoInternetView.swift */; };
 		5B2D5A86A4F243C8876E61D2FA59AE0C /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 297650B6D1455DC274CC60F27C6FA4D8 /* FontAwesome.otf */; };
 		5C97A5B30CB063A70C24C6DD4577EE65 /* BannerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453197B2F8B28F5ED3CF05C80AA2C36 /* BannerColors.swift */; };
 		5CB76F76DD5C8618140D6A8D6B664966 /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59543167AFF23B677A51C3EEE0DC98A /* ButtonBarPagerTabStripViewController.swift */; };
@@ -121,7 +123,6 @@
 		5D764132018EFC7C063AACF51B4317F3 /* BannerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55427DC963766F3C6238BCFDA4FBFD49 /* BannerStyle.swift */; };
 		5E093EF260FEE531CDDF70DA305C4DD8 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F99480B9D51DC1563EFC1D45DF0647 /* Encodable+Extension.swift */; };
 		5EE5FED83B90A606A763CF1114D1D6FB /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428E23338F2460D3C672E59A898B9FB /* ResponseSerialization.swift */; };
-		5F7A60D06C4C42B9D0A82E844D3EDC38 /* FontAwesome_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98EAF499F29D9557488EA1439F9039 /* FontAwesome_swift.framework */; };
 		5FEB0E3DB6FF115F70570270B17015EB /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B0C0A976825FDF60F7F3327651A217 /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		612F7DBCA5D1BBE6FA19C9DC8A318120 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADFA6EA0F9F505B29854E2CBABA30D /* XLPagerTabStrip.framework */; };
 		629881FEA26A9716DF27804D859F3B3D /* KaoDesign-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B233E6D6701B9233A1CD83B5AEA697F7 /* KaoDesign-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -157,52 +158,54 @@
 		771C07887199D4CD6820031083DD1FC8 /* KaoUploadOptionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC2B2825AF9D9B4161C7BABE57200B /* KaoUploadOptionTableCell.swift */; };
 		78499F1C0358A5D26784E2DFB3256F97 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAF87AA0D47892CBCBE7D9BC816C61 /* BarView.swift */; };
 		796177DE2762F24DAC16A709FD954838 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C283A28C8FE27A352EE7FBB37FBAC3A /* ParameterEncoding.swift */; };
-		7972EE316E304E290A472165D0D83247 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F57C9A9EF4D19BDAFA89F7AA0FAA22 /* Kingfisher.framework */; };
 		79E13A419591EC0E84A47E07243C150B /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D84CAB2604DB519BA3844A5A6244ED /* ConstraintMakerEditable.swift */; };
-		7B49E81FA87754AFEB851C6C428C4C41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0BD246680290592BB5413E116883E /* Foundation.framework */; };
+		7ABE6279B54DE64E94A21B8E3E710AB8 /* kaoNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B270EAB1723E71CA3F1FDD0B01B29340 /* kaoNetwork-dummy.m */; };
 		7D699A632D5430AE1AD5AE015DFF4769 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F51E70756A845627F2E48CFDD4EE6 /* UIFont+Extension.swift */; };
 		7F78132D694575F02F38ABC3FA48C052 /* CollectionHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD99B715213F9B562A675E61613F4BA5 /* CollectionHeaderReusableView.xib */; };
 		80676B8D0B571757B7AEEF7EF5E8A4D0 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65848B98D07683224FD5F4FD37E19321 /* SVProgressAnimatedView.m */; };
-		813F62FA8EA04AC19C2513F2D1E0659C /* KaoCustomPod.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8985D80CD920A2C18213E6E954540EB6 /* KaoCustomPod.bundle */; };
+		813F62FA8EA04AC19C2513F2D1E0659C /* KaoCustomPod.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E68BC0EF247B0FA839D6042297F4B686 /* KaoCustomPod.bundle */; };
 		818672D9DB20BA1713EAE9FC9411C2A4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E355E6B6A5DE3F62D61CD69CB55B02 /* SnapKit.framework */; };
 		81FDB2D5FE66B5D7C70D9165928A94E8 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FBA6C849BDA23C79C258780A1F27E1 /* ConstraintMakerFinalizable.swift */; };
 		83F03D618820EAC5F0F9EADEE2E0732A /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A82102639A8A719173592A8E4472EE /* UIButton+Kingfisher.swift */; };
-		86B5E45B53C5E943F4806328A944A100 /* InternalServerErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCF52E165F68B3FE1358D7DEE0EFBA /* InternalServerErrorViewController.swift */; };
 		87395ECC38A23D9BADF13732AD561A65 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91677702ED3E0E96EB691AA80540184 /* ImageTransition.swift */; };
 		87A185EEBE5F91E6C6E799919129F99B /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94DDC3D8345F4AC3F1EE1967ECAAA4A /* LayoutConstraint.swift */; };
-		87BEF67675106CBE69FACB3D977F139F /* kaoNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7837873A0FD793F1138CF2FCD8F839D /* kaoNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88AE34F0F0D6C38F1FDA19B72B3D6431 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB51697BEEDEA5897DE9D2F217D66D /* UIImageView+Extension.swift */; };
 		897EFDC0979E9288F1E58AAC84EF5CC4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3826C6C92DB393ACFC13609978B98C0C /* Image.swift */; };
+		89CC4A9855E6DC64E4FCD2C398C7ACD8 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BECCD6C1675A4AE6640D1249413821 /* UIImage+Extensions.swift */; };
 		89E77337ABC87D68833B5C35C9442A2F /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05520CF945F434DE0F95B255A5DD4CD9 /* PagerTabStripViewController.swift */; };
 		8AB73465C83FE9638FC186E02E31C329 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F1D703CCF397B6B1EAF06E6E0F1964 /* SVProgressHUD.m */; };
 		8AF4F84D55CE3DA2C263DA1A1D4DA89D /* KaoModalDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677A4A5346EBC217B875D0C488186B /* KaoModalDialogView.swift */; };
 		8D58CA9A35DA49CCB06860421291489F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F84CA0FB2093701ECA5243B7411C70 /* CFNetwork.framework */; };
 		8E715E50250F1200406D5557A563DB24 /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE044F33D6F3123F83BFC54343C335 /* BarPagerTabStripViewController.swift */; };
+		8EBF913F7A53B22A9A800FF9DC5EE513 /* NetworkErrorStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC096ADB61A6AC19C3FD096B5C4DCB2 /* NetworkErrorStatusCode.swift */; };
 		8FE5C89D2A4419C4C0E82CF15ED61273 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AC99B05313BD5A2844C3B61C8ECB9AC /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90407865755804EAB8D2CC164C04DE62 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9236D305F0661B0D41C80449043DAA2C /* Roboto-Light.ttf */; };
 		905D9A04FE6B67BA11B24EF3033EC1B2 /* KaoRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7846E183158D690D6BCD942E9C15570A /* KaoRatingView.swift */; };
 		95F55F14BD2F7856F654975EFCE4F37C /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FC491D05681FB2323C53B9A3809FC6 /* Kingfisher.swift */; };
 		965DACF3DC02857ECBE66C5CBA3DA5D4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D5706C57BFF8B7C3DA71285F45866B /* Request.swift */; };
+		970682B8DA9ABA9B3FE7D1C66647E81A /* kaoNetwork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F046754EA35E84C88EBBF9F1D1A4C74B /* kaoNetwork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985DFE6DF2C0F032655DA6E5E3ADFA31 /* UIViewController+Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159D689B06C80EDDEF5141F0D065468E /* UIViewController+Permission.swift */; };
 		9AE29AD38B753A966F231B4C7E10334F /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B85AE16BCE011F4BEE629DCB4EE95A5 /* ButtonBarView.swift */; };
 		9AE2E73F620CDBC6DE14F09176AAD0FE /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5171227E71C36BE79532BCBF4A87A7 /* Date+Extension.swift */; };
 		9C24CD6DAAD3880D1B1B89B906067693 /* Pods-kaoNetworkDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35907804EECAEF1E1455B6E8932D55A7 /* Pods-kaoNetworkDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C8A40F899C31BFB432AF6CD06778BBA /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B41E700A274D24BD9D4B907EB24BA73 /* FontAwesomeStateRequirement.swift */; };
+		9C9CB338A4C854ED4488C414C27A9A3D /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F57C9A9EF4D19BDAFA89F7AA0FAA22 /* Kingfisher.framework */; };
 		9D0C533C01A40031ECEA21589FCA4A0C /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439DDC9206AE96FB75FBC101AEDB3C6 /* IndicatorInfo.swift */; };
 		9D182F4564277AE2283C667CBF842419 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4649C602CEB64D15277913457EC926CD /* Kingfisher-dummy.m */; };
 		9D4C7DFEEE2A7BA109E58EA1A2B32C3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A855A719C1862C93989737F8B02C010 /* UIKit.framework */; };
 		9E2E86701A07788790074F3EAA6FC4D5 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931613EBA3523D99D24CD259734A641A /* ConstraintView+Extensions.swift */; };
 		9E4092253683CAF9172F3354882F649F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC791CE5D0E6F5DDAF89B76BB6499A10 /* SVProgressHUD.bundle */; };
+		9E892BBD619D3F2B00E69874BD632CE3 /* KaoNetworkCustomPod.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 961C692E6EC49397334E9A24F6D201E8 /* KaoNetworkCustomPod.bundle */; };
 		9E9C9C3D5BF07A9D21B911A78822FC25 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AA5970CB2B9F832AFBF8202310FC4 /* ConstraintLayoutGuideDSL.swift */; };
 		9F2D02289A848ECF37DE630B525FD874 /* KaoModalDialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCBCF2A404A62A22BAF7EF9BF8EB5E /* KaoModalDialogView.xib */; };
 		A08E83BE04895A004E3BFB2BA3EEE397 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A16BA7D62B8683DC9FF18223E4501E /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1AB61CE71C614271A58A7E2EE158951 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0BD246680290592BB5413E116883E /* Foundation.framework */; };
-		A3A0A02B4DE05B9CC932F3DB81261CE9 /* KaoNetworkErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E73F7395330FB55E9FB2ED7689C055 /* KaoNetworkErrorHandler.swift */; };
 		A416141D58D39C6EC7321E7A3A4E3B22 /* KaoSettingPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BAED8DB34D0EC2D6F8932941FCB4A6 /* KaoSettingPermissionViewController.swift */; };
 		A58D54AE090DD54025F004254935F564 /* KaoEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54ACD2B4F7EA1AF7E8545B1B640FB11 /* KaoEmptyStateView.swift */; };
 		A5ABB96B60DF16EC7F0E5236CB833D30 /* KaoBottomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08570694592021EE73397C92C6D680D6 /* KaoBottomButtonView.swift */; };
 		A5D9349B851C9914337292B498713379 /* NotificationBannerUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C921E4A69531D143CB9C3330B49D1A50 /* NotificationBannerUtilities.swift */; };
 		A7BC0693337553A23F0DC3AE8F46CD15 /* KaoPaginationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F7840D748E6BDA2724D2439FC3A73C /* KaoPaginationProtocol.swift */; };
+		A7CFDCFF27D6032A3A59ADDDBC63837C /* InternalServerErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF0C365BDE22443C857552B5B3E743 /* InternalServerErrorViewController.swift */; };
 		A8E2D3581536BC1142D1401C57275146 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C654C3BF62BBA0C36D5E54AE71B566A /* ThreadHelper.swift */; };
 		A8FFF88335274A421396B84119625AD2 /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F421C7052787FE91A009AD3A4ED001 /* TwitterPagerTabStripViewController.swift */; };
 		AA5BD613D2C6B7D335A2D56BC506B76B /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C249FB28021E89DC730E8C38B08D66D0 /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -210,13 +213,14 @@
 		AAFCFF09852D724BAB23F581D552E2EF /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D242397B3B8D4C598D26FBAF1A7FA /* ConstraintMultiplierTarget.swift */; };
 		AB13012D63C4DE44EC90C4327A5E33C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A0BD246680290592BB5413E116883E /* Foundation.framework */; };
 		B0C499D127AA39A010BEDD1521C74AE0 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FB731D8CDF0AE8DB6CB5DBFB4A3012B3 /* SVRadialGradientLayer.m */; };
-		B1B01E0DC3B5885CF5D6C64371A12BBD /* NetworkErrorStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F93C01EAFB73D54CD2C6D9B4E243B6 /* NetworkErrorStatusCode.swift */; };
 		B221AC8191FC14B9D24A2926BB8A0695 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80C4A52CB03579197286999D50DA84 /* Typealiases.swift */; };
 		B2D19A6E4D1526973CF9C037F8FBB1C2 /* BaseNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E85BBB94FDD4CEC07625C2644A505E /* BaseNotificationBanner.swift */; };
 		B424F524BBBE34E685129945993809A8 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EC3F3CDB958255977749F0A42A63D /* Timeline.swift */; };
 		B5889ACBBC96EF4422670726E8295D2F /* KaoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFA6021DE80A9250B1DFCE8630632B3 /* KaoNavigationController.swift */; };
 		B5BF4CCAAF184C10473B05F7D66A38D8 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B8F9ECD53C592F3971E37F3E2856D /* ConstraintDSL.swift */; };
+		B66261D5CA6E201E503B18E7F0F5417A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B97794FB91359C1861B09B25EDB534 /* SVProgressHUD.framework */; };
 		B69F9A445054016DDDB5DAFCFDA924A2 /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96464CD2D6D83C75E1D414FAA38E578 /* PagerTabStripError.swift */; };
+		B6B2D3E584DE5CA991E049F36E3C3550 /* TimeOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB09082C4BF0422BB2856454B8E8BD5 /* TimeOutViewController.swift */; };
 		B6C45688777538C6ACAC91DA734654BB /* KaoUploadOptionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8608B0B2BD9300BD0D0E6AF960BC455D /* KaoUploadOptionTableCell.xib */; };
 		B6FF2A9D5E31E75D4579414B842A53BE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9D41B814CF48D223F057F07488F3A9 /* SVIndefiniteAnimatedView.m */; };
 		B77705737566AE83ED7E448923D7FA60 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172855CD8799B62C0497814BFA65D29B /* NetworkReachabilityManager.swift */; };
@@ -226,19 +230,18 @@
 		BE4BA1EDE444A770F834605F4B65348E /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CE3795A860ED86C4D105A3D1D22AFB /* AFError.swift */; };
 		BE6EAAF03D15093EBC8DB2DA58442664 /* KaoDesign-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9657C4B2CFD77225854C0FFB553841 /* KaoDesign-dummy.m */; };
 		C03D3B32C357F4D8DC78431EA472EDEC /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D4809E60CD443FA6AFD1F8AF7ECB3 /* ConstraintAttributes.swift */; };
+		C0C924109155C3FC6F39D046805FFF77 /* NotificationBannerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D20F658F64FB35B2B43DF26AAC33B6 /* NotificationBannerSwift.framework */; };
 		C0D5D8DE679A96A3A3F48314326454EA /* KaoPageBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CAAC55D3A60F4B0748F350C32664A3 /* KaoPageBarCell.swift */; };
 		C28B9A861434C67BAEF226C7321A95D5 /* KaoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8633D28BD7DEF297479015ADAF8485 /* KaoLabel.swift */; };
 		C2AF588676ED72B4A5802BFA976E2839 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A972AA043325031CCFA953F69CE5FD4 /* DZNEmptyDataSet.framework */; };
 		C32B0F324D8AFA6E00D61A0DA5B75F2E /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B87BBBFF3754B758334D679AF1E8BCCD /* Roboto-Medium.ttf */; };
-		C3BC563E85CB0A7E64A08292EBCF7400 /* KaoDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D11055DB60F82E28F13057A9A8FF52D /* KaoDesign.framework */; };
+		C3C82249B908E846CC495E72FAD1DC9D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E355E6B6A5DE3F62D61CD69CB55B02 /* SnapKit.framework */; };
 		C3F9CBB01B8C1803043127E065A0DB4D /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF74E792ECB5891FC13D629AE33279E /* ImagePrefetcher.swift */; };
-		C432CC93463A638EB2B4E5E464626EFB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC6C6154B943C780147EFD1E7B1E758 /* UIView+Extension.swift */; };
 		C4F8CBA0EFF7544F1DE583E5F1A1AEB4 /* NotificationBannerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67177E84CC951D508B074D64288F1013 /* NotificationBannerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5CD92CA85543E29924A46F4241A4CA4 /* KaoPresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C221D02E184C57AB3AADBCFD23E2298 /* KaoPresenterViewController.swift */; };
 		C67E02DF21B097ACDF86987822E71BCF /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221DBBCBA67F2AE7D85B8B80620AB9D /* Placeholder.swift */; };
 		C6966A127D035948EEA37C90F3FF8BA6 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A863600B41506413F748194F78E78F3 /* ConstraintRelation.swift */; };
 		C6EFD4C03370E6F2493510E380451C6E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBBA8C709303FDE56ED9AEBD3BAC93 /* UIColor+Extension.swift */; };
-		C9E021E2F252763E6134B49FD180666B /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93ADFA6EA0F9F505B29854E2CBABA30D /* XLPagerTabStrip.framework */; };
 		CA1B8F1BB02631B39B7E2A539F7C366E /* CollectionViewHorizontalLayout+DateTimeVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E960966E0C2523C67F72130892EC4F4 /* CollectionViewHorizontalLayout+DateTimeVCExtension.swift */; };
 		CA237D8B0D70C0468A5D694412B7AAB2 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FAD4170D3082044B57D32FF8C8C3BB /* Filter.swift */; };
 		CA82D41DE83AE95F467D6184CA7B987A /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CFEE3697789AE568020B69BF29D97A /* UIImage+Extension.swift */; };
@@ -249,8 +252,8 @@
 		CEB746BDB3241C1CF35D0F2AEEE74C2A /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750DB58C01383FAB456F492511797681 /* ConstraintMakerExtendable.swift */; };
 		CFAAA00EBA92DC205521047B531B8381 /* KaoNotificationBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF19B250F392732EA2847AB3340525B5 /* KaoNotificationBannerView.swift */; };
 		D111E2C33C44345D8DC880F6036E103F /* KaoImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3427530D5EC6AD95261C5E3AFD483 /* KaoImagePreviewViewController.swift */; };
+		D14758001DCB0040652A9F58BC6BF503 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05B8F801AAB1685B57F44F768625F98 /* Alamofire.framework */; };
 		D160D8DAA13C948B9FAD7123D207484C /* KaoBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A26307EDA9789CD619D9AFFF073F6 /* KaoBarPagerTabStripViewController.swift */; };
-		D256FF6C272042CCBE801D8FB9405725 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B97794FB91359C1861B09B25EDB534 /* SVProgressHUD.framework */; };
 		D33140A5C706B0E2D0781E9D092F9089 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1885C0C9D9E6C5B1B2F47D07DFE57B8 /* ConstraintViewDSL.swift */; };
 		D3C15212E6762965AC8543BB0016C8D7 /* KaoInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BDAD608A08469CA96616FBB753C952 /* KaoInfoView.swift */; };
 		D4C3899574E9D5DF5E5DA52310560BCC /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D75D85B5BE2699B1BDE169A2C8F8F59 /* Alamofire-dummy.m */; };
@@ -263,7 +266,6 @@
 		DBE6E2E4D205545E7988CFA5057C31D6 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FB8C5890D55B48D30CBEB2FEB5DDD /* DispatchQueue+Alamofire.swift */; };
 		DEF41F2BB8C9FEE0D51A01669D959347 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60C33F0157B2E1046BA8E99B47A3D75 /* ImageView+Kingfisher.swift */; };
 		E1E8E598FBD850FD298D1D95313979E5 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEE6FC77BF971A4BE5301C0758E323 /* RequestModifier.swift */; };
-		E200B26AD77DF35392FADA74546F2EAA /* kaoNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 333BFD86A936D6025FB9DC95D4BF11B3 /* kaoNetwork-dummy.m */; };
 		E3F7987623BEE7A579EAB6BDF52DA7C1 /* NotificationBannerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 696B088DD1F40FFEE34893CB12989ABC /* NotificationBannerSwift-dummy.m */; };
 		E45E48FEF6C8EA9CFDBEB0576C4A91E7 /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58C5F4BA46BACF0233AFD84DB6376F8 /* MarqueeLabel.framework */; };
 		E47EEADFC513BBD3A7E3F75ECA754CCF /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C581D4A6FF421289CC04AB4D4EF39A /* FormatIndicatedCacheSerializer.swift */; };
@@ -278,7 +280,6 @@
 		ECC5F7D1E8716819BBF27E05460BD4A9 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E06B0C1F36936AB3B4753C71D621FC /* ConstraintMaker.swift */; };
 		EF1461221681BCA12A4147900A704727 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 963B7AB63F970E003A8D56B5B939E76B /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF84B4FC662B2B41B9CF45C3EC199216 /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95938B3519E36E6DFC68E8DC4A69D9AA /* FontAwesomeTextRepresentable.swift */; };
-		EFCE740500B649671606F48F8E759F3E /* NoInternetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD53BB080A592A9D813585DC1FAE8723 /* NoInternetView.xib */; };
 		F2A81B881700FC9EFC356EB322101700 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4AAC83B28E17E1CF5D8F78A672BC27 /* ConstraintInsetTarget.swift */; };
 		F2AFD2DE6DD6EC39C2027C43DCBECE07 /* KaoDateTimePickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A96BA8DF7E99CAAFF46571EABFB15 /* KaoDateTimePickerHelper.swift */; };
 		F3B0572885F018BEFD0664C035DB0F6E /* KaoPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CE89523BBB37FDD0347C5236E9ABE5 /* KaoPopupView.xib */; };
@@ -290,8 +291,7 @@
 		FA2E1DDADDE5C40A46C1FD36CAEB862B /* KaoUploadAttachmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECFB0A99D1E6B91DC2479E062633F96 /* KaoUploadAttachmentCell.swift */; };
 		FA5247E921276BCB483382A6CCBDD0E8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C70443E549FB3E463E5FA70034EB573 /* QuartzCore.framework */; };
 		FB7AD31A023410031A5B69DF567AC985 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F57C9A9EF4D19BDAFA89F7AA0FAA22 /* Kingfisher.framework */; };
-		FCB8BCAAF55311791C61DD3BE717B0ED /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E355E6B6A5DE3F62D61CD69CB55B02 /* SnapKit.framework */; };
-		FD620614A8AF85A857D44F8601D7C5C2 /* KaoCustomPod.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 999E7EB97174DBCD5D8A30FB3AB750FB /* KaoCustomPod.bundle */; };
+		FD3B2B7AA5263FB2BEEBECBCFF0E4CAE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00055E816DA944F087C960FB69DEDD0 /* UIView+Extension.swift */; };
 		FD929085F4EF2D5A8E0EB7A24EB4D97F /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6C9B1622A5A80075004AE5CA403E09 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEB3F1F4DD09B583A7A7F3919CDF9155 /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B5C79180635A0C38A73CDB43BF998D2 /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FEF3E44E4F143E1EE0DFFD63176D3CDF /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 07368883C1E7A7B7709824DF69BD96B6 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -337,6 +337,13 @@
 			remoteGlobalIDString = 9A1EF8B2D071B6E09A058AC936790CC6;
 			remoteInfo = FontAwesome.swift;
 		};
+		310D868921E5C8DBE336988F1B08FA28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A1EF8B2D071B6E09A058AC936790CC6;
+			remoteInfo = FontAwesome.swift;
+		};
 		34F4B2060AD3E1E7F56274702CE174B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -344,21 +351,7 @@
 			remoteGlobalIDString = CFCF6F398FE23EEF7D1EF50114D414A5;
 			remoteInfo = MarqueeLabel;
 		};
-		3F9CF52CBB2490DD1EB046FE9F04EFC8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 407445CE1EEC811B03953C999E0A8DE0;
-			remoteInfo = NotificationBannerSwift;
-		};
 		4935D4525FE695D3EE8A6E76372C762A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A96EA1F139B698B830BCCB9411006B02;
-			remoteInfo = XLPagerTabStrip;
-		};
-		4B6A1C95EDA7DD3EFB629B42622EE557 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -379,12 +372,12 @@
 			remoteGlobalIDString = 407445CE1EEC811B03953C999E0A8DE0;
 			remoteInfo = NotificationBannerSwift;
 		};
-		64B132373996F72F902DB9292CFB9C09 /* PBXContainerItemProxy */ = {
+		63AE68482A5F055F199B55E7AF75F249 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 060FC9EE5184FD6290FEBBA9BD5FEF98;
-			remoteInfo = KaoDesign;
+			remoteGlobalIDString = CFCF6F398FE23EEF7D1EF50114D414A5;
+			remoteInfo = MarqueeLabel;
 		};
 		65128ABBD4F7E0615B6CEA8B35C70B4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -393,19 +386,12 @@
 			remoteGlobalIDString = 4F1130119AC9BD4E528658A931586396;
 			remoteInfo = "KaoDesign-KaoCustomPod";
 		};
-		66BCF5A698FFC138BB47F676244133EF /* PBXContainerItemProxy */ = {
+		7FE1EAB72F2660F344BF6F4A59D95D19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A86815131848C4BEF8F92BAE6A9439D8;
-			remoteInfo = SVProgressHUD;
-		};
-		676272D3E3CF4AD9082A1D23D87574AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E76458C58C9140B6A16D60547E68E80C;
-			remoteInfo = Alamofire;
+			remoteGlobalIDString = 060FC9EE5184FD6290FEBBA9BD5FEF98;
+			remoteInfo = KaoDesign;
 		};
 		82B5C64799F130F4D56CBFC3F3FE104F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -421,19 +407,26 @@
 			remoteGlobalIDString = 9A1EF8B2D071B6E09A058AC936790CC6;
 			remoteInfo = FontAwesome.swift;
 		};
-		8DF93102504C44C7137D2AF62CE17B7D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D7AAA74EF359F676919B29D3B471C5EE;
-			remoteInfo = Kingfisher;
-		};
 		8ED67DC6C33F9679979A44A860CAD6B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A86815131848C4BEF8F92BAE6A9439D8;
 			remoteInfo = SVProgressHUD;
+		};
+		94E66782C49FA889FE313B2123AEB614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE1FDE26AA32195CB425D0C4E4EF56A4;
+			remoteInfo = "kaoNetwork-KaoNetworkCustomPod";
+		};
+		9A4530E7BFA797176D78D1340D0E2287 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A96EA1F139B698B830BCCB9411006B02;
+			remoteInfo = XLPagerTabStrip;
 		};
 		9D027114A3B54C31C065B7F0B9B08223 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -456,13 +449,6 @@
 			remoteGlobalIDString = 767E48AC9D3B5E9265BECB6AA89AA70D;
 			remoteInfo = "FontAwesome.swift-FontAwesome.swift";
 		};
-		A5FFFBEAD3E04E82C1EE212A90924104 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 284992A50F0B3E64703FA6E94A694797;
-			remoteInfo = DZNEmptyDataSet;
-		};
 		ABA55D8552CDD7B335AEFC5DB8E8B8B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -470,12 +456,12 @@
 			remoteGlobalIDString = 407445CE1EEC811B03953C999E0A8DE0;
 			remoteInfo = NotificationBannerSwift;
 		};
-		B53EDE43451E8FBF51767C43F563FF8A /* PBXContainerItemProxy */ = {
+		B2FA3565E5C63758D2459436C48810DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9A1EF8B2D071B6E09A058AC936790CC6;
-			remoteInfo = FontAwesome.swift;
+			remoteGlobalIDString = 105A3ECD649CB93A2B45BC2AC422C49C;
+			remoteInfo = SnapKit;
 		};
 		BBA64ACED795AC51B873186867622813 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -484,20 +470,6 @@
 			remoteGlobalIDString = 060FC9EE5184FD6290FEBBA9BD5FEF98;
 			remoteInfo = KaoDesign;
 		};
-		C412438D064BD85DD7A444940B1246B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 105A3ECD649CB93A2B45BC2AC422C49C;
-			remoteInfo = SnapKit;
-		};
-		C43BB653B8660F5E179C8F9412D8580E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CFCF6F398FE23EEF7D1EF50114D414A5;
-			remoteInfo = MarqueeLabel;
-		};
 		D489526855B8D1D0A2D20B7DC95B7AD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -505,12 +477,19 @@
 			remoteGlobalIDString = 105A3ECD649CB93A2B45BC2AC422C49C;
 			remoteInfo = SnapKit;
 		};
-		D4EE36E6828A8933A07EF6E414C50BFE /* PBXContainerItemProxy */ = {
+		D6053E720232BC413A0F1DE8BC246546 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FA43BE994233B5EEEAB23D1E19813D5E;
-			remoteInfo = "kaoNetwork-KaoCustomPod";
+			remoteGlobalIDString = 284992A50F0B3E64703FA6E94A694797;
+			remoteInfo = DZNEmptyDataSet;
+		};
+		D6F7A32E51390B43C22FD94B46511E0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7AAA74EF359F676919B29D3B471C5EE;
+			remoteInfo = Kingfisher;
 		};
 		D8D452DD7A71380D71981155EBAD00D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -526,6 +505,13 @@
 			remoteGlobalIDString = CFCF6F398FE23EEF7D1EF50114D414A5;
 			remoteInfo = MarqueeLabel;
 		};
+		E01616C25DCA1C3988205CAECBD1D0B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A86815131848C4BEF8F92BAE6A9439D8;
+			remoteInfo = SVProgressHUD;
+		};
 		E7B56C4B3DCF36D010BD2EAE080D09A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -537,8 +523,15 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 91584344302264DEC01970B22B5EFC5D;
+			remoteGlobalIDString = D2183B91E980CF1E543BBC1283E4E2B5;
 			remoteInfo = kaoNetwork;
+		};
+		F536EF73F0A3C9BA8069A6F6F0B5CA34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E76458C58C9140B6A16D60547E68E80C;
+			remoteInfo = Alamofire;
 		};
 		F8A059092D0F8F2330F31A0519AED5B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -546,6 +539,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6A858A2DF34FF2186BFCCF4BD0F0768C;
 			remoteInfo = "XLPagerTabStrip-XLPagerTabStrip";
+		};
+		FD9DDCCAB8E7E8584CE327B47C16E7D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 407445CE1EEC811B03953C999E0A8DE0;
+			remoteInfo = NotificationBannerSwift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -563,16 +563,15 @@
 		078786E316FC658F44649F79C64E58EF /* KaoNotificationBannerView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoNotificationBannerView.xib; path = Sources/Views/KaoNotificationBannerView.xib; sourceTree = "<group>"; };
 		08570694592021EE73397C92C6D680D6 /* KaoBottomButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoBottomButtonView.swift; path = Sources/Views/KaoBottomButtonView.swift; sourceTree = "<group>"; };
 		08861826358A5C5D5A713E821520873D /* MarqueeLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarqueeLabel.swift; path = Sources/Swift/MarqueeLabel.swift; sourceTree = "<group>"; };
-		08F93C01EAFB73D54CD2C6D9B4E243B6 /* NetworkErrorStatusCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkErrorStatusCode.swift; sourceTree = "<group>"; };
 		094AA5970CB2B9F832AFBF8202310FC4 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		0A80C4A52CB03579197286999D50DA84 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
 		0BE8D3115239F81708D921E15C2DE820 /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
 		0C0CBE7ED1D46315435B05F158BEA07F /* UINavigation+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigation+Extension.swift"; path = "Sources/Extensions/UINavigation+Extension.swift"; sourceTree = "<group>"; };
 		0C221D02E184C57AB3AADBCFD23E2298 /* KaoPresenterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoPresenterViewController.swift; path = Sources/Controller/KaoPresenterViewController.swift; sourceTree = "<group>"; };
 		0C606C9030D0591ABF1AC7DD2F563377 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
-		0C65C134D3E2C81A4C9378659A4CC4D4 /* KaoNetworkReach.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KaoNetworkReach.swift; sourceTree = "<group>"; };
 		0C69881B0724904428BE7C4B4B291C0D /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
 		0FBCBCF2A404A62A22BAF7EF9BF8EB5E /* KaoModalDialogView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoModalDialogView.xib; path = Sources/Views/KaoModalDialogView.xib; sourceTree = "<group>"; };
+		10CC07692594534CB1BF5ECC3109D628 /* Pods_kaoNetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kaoNetworkDemo.framework; path = "Pods-kaoNetworkDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		125BB9923CE95C7E1CA9433311E20C24 /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
 		12DF10311761DAE64EAF692C36E2A995 /* KaoTextInputCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoTextInputCell.swift; path = Sources/Views/KaoTextInputCell.swift; sourceTree = "<group>"; };
 		139B846135DA9553E6C79C9E257A81D9 /* NotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationBanner.swift; path = NotificationBanner/Classes/NotificationBanner.swift; sourceTree = "<group>"; };
@@ -581,6 +580,7 @@
 		16FBA6C849BDA23C79C258780A1F27E1 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		172855CD8799B62C0497814BFA65D29B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		1879AC1306E66AB73CE2B158A445E7B4 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Extensions/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		18EF0C365BDE22443C857552B5B3E743 /* InternalServerErrorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InternalServerErrorViewController.swift; sourceTree = "<group>"; };
 		1925E2CD92A6E07255DBBFF597E5E514 /* KaoDesign-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KaoDesign-prefix.pch"; sourceTree = "<group>"; };
 		19B4F612A737EED271CA624CD52AA2A2 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
 		1A1E3237965C5E3C7997BC42156981E7 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
@@ -588,7 +588,7 @@
 		1AF845391F4783C23F1FB0682A412A76 /* DateTimeCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTimeCollectionViewCell.swift; path = Sources/KaoDateTimePicker/cells/DateTimeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1BDD48A500BE51691B74E4EFBF54EFCD /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "Sources/Extensions/UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		1D742E4EAECF2376E6C9A26B89918E67 /* KaoUploadOptionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoUploadOptionCell.swift; path = Sources/KaoAttachment/Views/KaoUploadOptionCell.swift; sourceTree = "<group>"; };
-		1D9A9ADC1C3D6E7B6734B14562890A48 /* kaoNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = kaoNetwork.modulemap; sourceTree = "<group>"; };
+		1DA53249AEC863AF304373EF7DBFE6FE /* DisconnectedViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisconnectedViewController.swift; sourceTree = "<group>"; };
 		1DFD3D828F461EF1C3FBDD24D9D6C2F3 /* KaoBottomButtonView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoBottomButtonView.xib; path = Sources/Views/KaoBottomButtonView.xib; sourceTree = "<group>"; };
 		1EAFFC000BE8C0414B8417E92EABA8C9 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		1F12E6D488D2CC0E4875C06A4968EF97 /* UITextView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Extension.swift"; path = "Sources/Extensions/UITextView+Extension.swift"; sourceTree = "<group>"; };
@@ -602,6 +602,7 @@
 		287C8A8C1C130EC7CDAE15A97CE923F8 /* NotificationBannerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NotificationBannerSwift.modulemap; sourceTree = "<group>"; };
 		296A265EA1721A37A0EE979709CF370C /* MarqueeLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MarqueeLabel.modulemap; sourceTree = "<group>"; };
 		297650B6D1455DC274CC60F27C6FA4D8 /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.otf; path = FontAwesome/FontAwesome.otf; sourceTree = "<group>"; };
+		29AA100574D803B5C462691065BD9B45 /* KaoNetworkErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KaoNetworkErrorHandler.swift; sourceTree = "<group>"; };
 		2A855A719C1862C93989737F8B02C010 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		2B85AE16BCE011F4BEE629DCB4EE95A5 /* ButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarView.swift; path = Sources/ButtonBarView.swift; sourceTree = "<group>"; };
 		2BCC6902098198E5B2475900C6EAA973 /* KaoNoSearchFound.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoNoSearchFound.xib; path = Sources/Views/KaoNoSearchFound.xib; sourceTree = "<group>"; };
@@ -613,7 +614,6 @@
 		31B8FAC89953937A9C1BD2146064037E /* KaoUploadAttachmentTableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoUploadAttachmentTableCell.swift; path = Sources/KaoAttachment/Views/KaoUploadAttachmentTableCell.swift; sourceTree = "<group>"; };
 		31EB339F9EC25298E7B299FEB55DE813 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
 		3221DBBCBA67F2AE7D85B8B80620AB9D /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = Sources/Placeholder.swift; sourceTree = "<group>"; };
-		333BFD86A936D6025FB9DC95D4BF11B3 /* kaoNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "kaoNetwork-dummy.m"; sourceTree = "<group>"; };
 		33CA72A7E4D20E7828DBAAEE5AEC8146 /* Pods-kaoNetworkDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kaoNetworkDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		33CAAC55D3A60F4B0748F350C32664A3 /* KaoPageBarCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoPageBarCell.swift; path = Sources/KaoBasePager/Views/KaoPageBarCell.swift; sourceTree = "<group>"; };
 		34491476A6F1704FE70A6A1FD0387C12 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
@@ -623,6 +623,7 @@
 		3895513D13DB592B51DAD39DABA41440 /* BannerHapticGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BannerHapticGenerator.swift; path = NotificationBanner/Classes/BannerHapticGenerator.swift; sourceTree = "<group>"; };
 		38E2BF37A2F027EC1D99D92E1B666BEE /* ImageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageModifier.swift; path = Sources/ImageModifier.swift; sourceTree = "<group>"; };
 		3994DD973635E149123058F832A268AE /* DateTimeModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTimeModel.swift; path = Sources/KaoDateTimePicker/Model/DateTimeModel.swift; sourceTree = "<group>"; };
+		39E48CEDDD5074C101955EF050F47271 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DZNEmptyDataSet.framework; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B41E700A274D24BD9D4B907EB24BA73 /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeStateRequirement.swift; path = FontAwesome/FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
 		3BBD13D8B9BBDC38172F9AFCCBBFEEFA /* DateTimeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTimeManager.swift; path = Sources/KaoDateTimePicker/Manager/DateTimeManager.swift; sourceTree = "<group>"; };
 		3C283A28C8FE27A352EE7FBB37FBAC3A /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -633,6 +634,7 @@
 		40089A7E97A2D9C797763B0098CBA0D8 /* Decodable+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Decodable+Extension.swift"; path = "Sources/Extensions/Decodable+Extension.swift"; sourceTree = "<group>"; };
 		405C113A93DE507BFC326236265855EA /* MarqueeLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MarqueeLabel-dummy.m"; sourceTree = "<group>"; };
 		405C12917E967D8D4A6B4453F733782E /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
+		42EE64251EACCB4128D63FEC2E36F822 /* NetworkResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		45F0A1E98485BA88B67287DFA79707E8 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		45F159F232E4BA8CC02062A15E3AFD6D /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		4649C602CEB64D15277913457EC926CD /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
@@ -640,6 +642,7 @@
 		481FB8C5890D55B48D30CBEB2FEB5DDD /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		4885264A2A97E2D117FA3D159B69ACCF /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		48CE3795A860ED86C4D105A3D1D22AFB /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		48E7AE35EDCBA44F51D7B98855F223F9 /* NotificationBannerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NotificationBannerSwift.framework; path = NotificationBannerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A863600B41506413F748194F78E78F3 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
 		4AC99B05313BD5A2844C3B61C8ECB9AC /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		4ACB2FEBF3079F389298ABEA155BEBBB /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
@@ -649,26 +652,29 @@
 		4FCE854C053ADC9DE0F062E487DB127F /* KaoSpinningView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoSpinningView.swift; path = Sources/IBDesignable/KaoSpinningView.swift; sourceTree = "<group>"; };
 		4FE0662B5D173683C8FB2ABC0CF89CA5 /* CollectionHeaderReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionHeaderReusableView.swift; path = Sources/KaoDateTimePicker/Views/MonthSlider/CollectionHeaderReusableView.swift; sourceTree = "<group>"; };
 		4FEF3C026376B449B00FC294CEF17000 /* ResourceBundle-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
-		5223967935DA2D14810BEBC78AB9A31D /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FCD43AF5F64ED5A245D95707A3858B /* ResourceBundle-KaoNetworkCustomPod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-KaoNetworkCustomPod-Info.plist"; sourceTree = "<group>"; };
 		52D515F57C32642640D0AF7CDF400A89 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		530E04E82C0DE3177137E8DD623F881E /* kaoNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = kaoNetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		536B56618B684C2B55B08D3AC801B706 /* NotificationBannerQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationBannerQueue.swift; path = NotificationBanner/Classes/NotificationBannerQueue.swift; sourceTree = "<group>"; };
-		53D0D99399542144BBD49AC324BC3F0E /* ResourceBundle-KaoCustomPod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-KaoCustomPod-Info.plist"; sourceTree = "<group>"; };
 		5428E23338F2460D3C672E59A898B9FB /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		542933FE07E693000C033FA2672BA1E9 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesome_swift.framework; path = FontAwesome.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55427DC963766F3C6238BCFDA4FBFD49 /* BannerStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BannerStyle.swift; path = NotificationBanner/Classes/BannerStyle.swift; sourceTree = "<group>"; };
 		554BC4704C21F8A3ACA0F7DF018E1218 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kingfisher.modulemap; sourceTree = "<group>"; };
 		556975D6B355B0AA130BD0BD4C0A1889 /* DZNEmptyDataSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.xcconfig; sourceTree = "<group>"; };
 		55C581D4A6FF421289CC04AB4D4EF39A /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
 		5770A7AEC764656678BEBE59D0C02413 /* Pods-kaoNetworkDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kaoNetworkDemo-dummy.m"; sourceTree = "<group>"; };
+		57BECCD6C1675A4AE6640D1249413821 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		59D20F658F64FB35B2B43DF26AAC33B6 /* NotificationBannerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotificationBannerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AA146031938FF1C51119379FE5836B2 /* NetworkResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		5AA9F302DEC3CE2E50F56C4D102B1EE7 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		5B7C46A350A2567148C67B82A568BCDC /* KaoBaseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoBaseViewController.swift; path = Sources/Controller/KaoBaseViewController.swift; sourceTree = "<group>"; };
 		5CC1927CFD0EFD6CDEEB68B3D6FF6156 /* Pods-kaoNetworkDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kaoNetworkDemo-frameworks.sh"; sourceTree = "<group>"; };
-		5CC6C6154B943C780147EFD1E7B1E758 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		5E438256ABDBE8AC647186FD7FDCAF02 /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
 		5F71E5BC63D93BAF8A60F85F4F61D40A /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		5FC4DE52165218C7C57AFC200D946F1E /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		604EA3526A95D36DEFDDE534AE0EFE3C /* kaoNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kaoNetwork-prefix.pch"; sourceTree = "<group>"; };
+		633B0D0DE903E9250F2AF5441A3BE2E5 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CFEE3697789AE568020B69BF29D97A /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "Sources/Extensions/UIImage+Extension.swift"; sourceTree = "<group>"; };
+		6519C307A46094C628F7A25CD26600A9 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.swift.bundle; path = "FontAwesome.swift-FontAwesome.swift.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65848B98D07683224FD5F4FD37E19321 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
 		67177E84CC951D508B074D64288F1013 /* NotificationBannerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotificationBannerSwift-umbrella.h"; sourceTree = "<group>"; };
 		67D5706C57BFF8B7C3DA71285F45866B /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
@@ -685,33 +691,32 @@
 		6E960966E0C2523C67F72130892EC4F4 /* CollectionViewHorizontalLayout+DateTimeVCExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CollectionViewHorizontalLayout+DateTimeVCExtension.swift"; path = "Sources/KaoDateTimePicker/Controller/Date/CollectionViewHorizontalLayout+DateTimeVCExtension.swift"; sourceTree = "<group>"; };
 		6ECFB0A99D1E6B91DC2479E062633F96 /* KaoUploadAttachmentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoUploadAttachmentCell.swift; path = Sources/KaoAttachment/Views/KaoUploadAttachmentCell.swift; sourceTree = "<group>"; };
 		70B97794FB91359C1861B09B25EDB534 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		718BA83204E63A1FCFB9019F3F23D756 /* NoInternetView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NoInternetView.swift; sourceTree = "<group>"; };
 		71B1DC42B0C38EA54B4775E5A34658BD /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
 		71D664F16F94465F2A243FE580C014A1 /* UITableview+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableview+Extension.swift"; path = "Sources/Extensions/UITableview+Extension.swift"; sourceTree = "<group>"; };
 		71FF1AFCDDEFE21A88A23417BA4E1357 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		72089B29A153AB77D267A6238532A812 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Alert.swift"; path = "Sources/Extensions/UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		7229773E1314AC05BDE59ACB13D318A7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		724D6B6E4F2888D4087C9B47DBE55EAF /* KaoLineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoLineView.swift; path = Sources/IBDesignable/KaoLineView.swift; sourceTree = "<group>"; };
-		72FE48DFF72AF2CE1D58C3CAA8C3BF50 /* kaoNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = kaoNetwork.framework; path = kaoNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7480208508CC0C4DEBD48770CE899917 /* kaoNetwork.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = kaoNetwork.xcconfig; sourceTree = "<group>"; };
+		7497A6C7D11033F655B211D250432B6F /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C3427530D5EC6AD95261C5E3AFD483 /* KaoImagePreviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoImagePreviewViewController.swift; path = Sources/Controller/KaoImagePreviewViewController.swift; sourceTree = "<group>"; };
 		750DB58C01383FAB456F492511797681 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
 		7846E183158D690D6BCD942E9C15570A /* KaoRatingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoRatingView.swift; path = Sources/IBDesignable/KaoRatingView.swift; sourceTree = "<group>"; };
 		786BABA233E1F25F198CCF670CE56BE0 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
-		7C5646A82C52CF4CE162EF6F7CDC8E38 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.swift.bundle; path = "FontAwesome.swift-FontAwesome.swift.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D11055DB60F82E28F13057A9A8FF52D /* KaoDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KaoDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D55FEFC3EF569D43DFE3419FC082F37 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-LightItalic.ttf"; path = "Sources/Resources/Fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		7D7B4141BB723E82B67FE97709C28FA3 /* BannerPositionFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BannerPositionFrame.swift; path = NotificationBanner/Classes/BannerPositionFrame.swift; sourceTree = "<group>"; };
 		7D8FA7B49258CF313F22E4E695D1D04E /* KaoTempAttachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoTempAttachment.swift; path = Sources/KaoAttachment/Models/KaoTempAttachment.swift; sourceTree = "<group>"; };
 		7F639F400716B0C65418B4E67E9498D9 /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageRepresentable.swift; path = FontAwesome/FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
-		7F8422659175EC50783531C6AE0FB366 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DZNEmptyDataSet.framework; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F98EAF499F29D9557488EA1439F9039 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB03BFF9AC3803537A3B398D202732E /* KaoDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KaoDesign.framework; path = KaoDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FC491D05681FB2323C53B9A3809FC6 /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
+		810303FCC4684A9CBEF975987C7F732E /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MarqueeLabel.framework; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		822BE1C00E7C612146D8D37B2275A28D /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/Extensions/String+Extension.swift"; sourceTree = "<group>"; };
 		82C04BC451BC6B2F636D16434872192F /* KaoTextInputCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoTextInputCell.xib; path = Sources/Views/KaoTextInputCell.xib; sourceTree = "<group>"; };
 		82D8C17A40C91298414DFCFBB730F3FA /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "Sources/Extensions/UIView+Extension.swift"; sourceTree = "<group>"; };
 		82E355E6B6A5DE3F62D61CD69CB55B02 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8372D44C78EC999303F789796D2F7A30 /* KaoLoadingIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoLoadingIndicator.swift; path = Sources/KaoLoading/KaoLoadingIndicator.swift; sourceTree = "<group>"; };
-		83CCF52E165F68B3FE1358D7DEE0EFBA /* InternalServerErrorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InternalServerErrorViewController.swift; sourceTree = "<group>"; };
 		8439DDC9206AE96FB75FBC101AEDB3C6 /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
 		84FAD4170D3082044B57D32FF8C8C3BB /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
 		8608B0B2BD9300BD0D0E6AF960BC455D /* KaoUploadOptionTableCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoUploadOptionTableCell.xib; path = Sources/KaoAttachment/Views/KaoUploadOptionTableCell.xib; sourceTree = "<group>"; };
@@ -721,11 +726,8 @@
 		86F84CA0FB2093701ECA5243B7411C70 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		8720AED9C25ACE9349D2F4AC4990C699 /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwipeDirection.swift; sourceTree = "<group>"; };
 		876800C77BF47005F2C6709A9A2DA8AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		882931AAAFF801CEE17F2BFB4F29110F /* KaoDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KaoDesign.framework; path = KaoDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8985D80CD920A2C18213E6E954540EB6 /* KaoCustomPod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KaoCustomPod.bundle; path = "KaoDesign-KaoCustomPod.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A972AA043325031CCFA953F69CE5FD4 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6B4C5581511FB09885BAF8FA1C189C /* UIViewController+Presenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Presenter.swift"; path = "Sources/Extensions/UIViewController+Presenter.swift"; sourceTree = "<group>"; };
-		8B808173F0B04D135A72711C9F6DAF0F /* NotificationBannerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NotificationBannerSwift.framework; path = NotificationBannerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE1E11E4517A6D034B35C0E7780718E /* EasyTipView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTipView.swift; path = Sources/Views/EasyTipView.swift; sourceTree = "<group>"; };
 		8D75D85B5BE2699B1BDE169A2C8F8F59 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		8E3E508678475B1D0EC0BD77EC6E58F3 /* XLPagerTabStrip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.xcconfig; sourceTree = "<group>"; };
@@ -737,13 +739,12 @@
 		93ADFA6EA0F9F505B29854E2CBABA30D /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FAF87AA0D47892CBCBE7D9BC816C61 /* BarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarView.swift; path = Sources/BarView.swift; sourceTree = "<group>"; };
 		95938B3519E36E6DFC68E8DC4A69D9AA /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTextRepresentable.swift; path = FontAwesome/FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
+		961C692E6EC49397334E9A24F6D201E8 /* KaoNetworkCustomPod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KaoNetworkCustomPod.bundle; path = "kaoNetwork-KaoNetworkCustomPod.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		963B7AB63F970E003A8D56B5B939E76B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		9776C982D1AFCC73069661F2F0A1AFB6 /* Pods-kaoNetworkDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-kaoNetworkDemo.modulemap"; sourceTree = "<group>"; };
 		97AEEE5925816420547F09420B85841F /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
 		97BDAD608A08469CA96616FBB753C952 /* KaoInfoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoInfoView.swift; path = Sources/Views/KaoInfoView.swift; sourceTree = "<group>"; };
 		9882153014EF57BDD9CE03B841E3DF5A /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		98AC5FE69D3A97F07276D82F0613D2D3 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		999E7EB97174DBCD5D8A30FB3AB750FB /* KaoCustomPod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KaoCustomPod.bundle; path = "kaoNetwork-KaoCustomPod.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3A26307EDA9789CD619D9AFFF073F6 /* KaoBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoBarPagerTabStripViewController.swift; path = Sources/KaoBasePager/Controllers/KaoBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		9B5C79180635A0C38A73CDB43BF998D2 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
 		9C654C3BF62BBA0C36D5E54AE71B566A /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
@@ -754,6 +755,7 @@
 		A1885C0C9D9E6C5B1B2F47D07DFE57B8 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		A1F7840D748E6BDA2724D2439FC3A73C /* KaoPaginationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoPaginationProtocol.swift; path = Sources/KaoPagination/KaoPaginationProtocol.swift; sourceTree = "<group>"; };
 		A2EB6395B46E952337F383B895A31E8E /* UIApplication+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+extension.swift"; path = "Sources/Extensions/UIApplication+extension.swift"; sourceTree = "<group>"; };
+		A32D74A38FFC8A6053298C450723A788 /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XLPagerTabStrip.bundle; path = "XLPagerTabStrip-XLPagerTabStrip.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37CE5A644B0E457F4B66B26E50987FA /* Pods-kaoNetworkDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kaoNetworkDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A3E06B0C1F36936AB3B4753C71D621FC /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		A47B8F9ECD53C592F3971E37F3E2856D /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
@@ -761,7 +763,6 @@
 		A47FF9A88E69BA288A7E46EC53F3904E /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		A5446CB7A590E8001BCA2EC037679091 /* KaoNetworkProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoNetworkProtocol.swift; path = Sources/KaoNetworkProtocol/KaoNetworkProtocol.swift; sourceTree = "<group>"; };
 		A76FC0255A5AFD9BF7646304114EAD4F /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
-		A782DD6B73F1986FD658146558EF9702 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80198A8436CFAED1B7B2AA0C5753B10 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		A8C7CD6C4D0F7AA4D237B2960EED2EE7 /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
 		A96AC9D81194207F94F7F276BE1054DB /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
@@ -776,31 +777,31 @@
 		ACFA6021DE80A9250B1DFCE8630632B3 /* KaoNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoNavigationController.swift; path = Sources/Controller/KaoNavigationController.swift; sourceTree = "<group>"; };
 		AD99B715213F9B562A675E61613F4BA5 /* CollectionHeaderReusableView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CollectionHeaderReusableView.xib; path = Sources/KaoDateTimePicker/Views/MonthSlider/CollectionHeaderReusableView.xib; sourceTree = "<group>"; };
 		AF769D3D9F240A25EE5CC7F61ED87956 /* MarqueeLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MarqueeLabel-umbrella.h"; sourceTree = "<group>"; };
+		AF7760B8622E7323D155E593CDB037B0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBB3A53A5000F9A0CCE8F119B589187 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		B00055E816DA944F087C960FB69DEDD0 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B021D43F2651A350ECB15C27A7EFB59E /* Icons.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Icons.xcassets; path = Sources/Resources/Icons.xcassets; sourceTree = "<group>"; };
 		B0D92E38E8640A33AC9DB9396F9D9114 /* KaoUploadAttachmentCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoUploadAttachmentCell.xib; path = Sources/KaoAttachment/Views/KaoUploadAttachmentCell.xib; sourceTree = "<group>"; };
 		B0FB4B17C853C1CBF3320C4EAF40BB97 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		B145586E6E7DC91643CC3BC3CCD5D1EE /* KaoPopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoPopupView.swift; path = Sources/KaoPopup/KaoPopupView.swift; sourceTree = "<group>"; };
 		B233E6D6701B9233A1CD83B5AEA697F7 /* KaoDesign-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KaoDesign-umbrella.h"; sourceTree = "<group>"; };
+		B270EAB1723E71CA3F1FDD0B01B29340 /* kaoNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "kaoNetwork-dummy.m"; sourceTree = "<group>"; };
 		B3B4712DBE4B232F0B80C5E55BCAB258 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		B40B6C702FC5B83F95881BC188A59053 /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchBar+Extension.swift"; path = "Sources/Extensions/UISearchBar+Extension.swift"; sourceTree = "<group>"; };
 		B4A143CC8A982157663FF84E939E4A46 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58C5F4BA46BACF0233AFD84DB6376F8 /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60C33F0157B2E1046BA8E99B47A3D75 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
-		B646F57AD652BDAE6159BE9C79B1B8F6 /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MarqueeLabel.framework; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B684109D600E104D81BD5BA5BE4A306E /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
 		B6BB59EE326B30DFA6EC01110F49402C /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		B6D9831F96573AAFB012458156D94130 /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripBehaviour.swift; path = Sources/PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
 		B7617DC51BB4001BF50795EB1C6A6D09 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Bold.ttf"; path = "Sources/Resources/Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		B77D956D60666CD7E075AFA4765B111D /* KaoUploadAttachmentTableCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoUploadAttachmentTableCell.xib; path = Sources/KaoAttachment/Views/KaoUploadAttachmentTableCell.xib; sourceTree = "<group>"; };
-		B7C4727142A281DB13FBF61C7570C563 /* DisconnectedViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisconnectedViewController.swift; sourceTree = "<group>"; };
 		B7FAAC517C7EBCB3A1384F43283A1828 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		B8283FF00B44E7041C3743821C9C10EF /* KaoUploadAttachmentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoUploadAttachmentView.swift; path = Sources/KaoAttachment/Views/KaoUploadAttachmentView.swift; sourceTree = "<group>"; };
 		B87BBBFF3754B758334D679AF1E8BCCD /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Medium.ttf"; path = "Sources/Resources/Fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		B994BCD196BC768EC6D0336F4FC7C5F0 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
 		BB4F2A25A7095EF3378747ED0BBF8382 /* NotificationBannerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NotificationBannerSwift.xcconfig; sourceTree = "<group>"; };
 		BB693013EEC2AACFEE92695F8DC5A22D /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		BBE3139C099F6EDCA9568E8DED41ECDA /* kaoNetwork.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = kaoNetwork.xcconfig; sourceTree = "<group>"; };
 		BD139E68E873BB18E0EEF276E16529DE /* KaoUploadOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoUploadOption.swift; path = Sources/KaoAttachment/Models/KaoUploadOption.swift; sourceTree = "<group>"; };
 		BD35EE07D25F18A46991C2E472CDA159 /* XLPagerTabStrip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-umbrella.h"; sourceTree = "<group>"; };
 		C0348C8C5F602F814402DA43DEED7073 /* Pods-kaoNetworkDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kaoNetworkDemo-resources.sh"; sourceTree = "<group>"; };
@@ -808,20 +809,20 @@
 		C072CE5FE26C55E2224A301723EC0AC7 /* ResourceBundle-XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
 		C1AD3CCEA17E92DBB535FE8A9E483BAF /* XLPagerTabStrip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLPagerTabStrip-dummy.m"; sourceTree = "<group>"; };
 		C1AE50FB0EE9FF26CBFAD36416BE939D /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		C1E73F7395330FB55E9FB2ED7689C055 /* KaoNetworkErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KaoNetworkErrorHandler.swift; sourceTree = "<group>"; };
 		C249FB28021E89DC730E8C38B08D66D0 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
 		C4925605D55C546D8E7347727BB8D4F0 /* KaoLinkButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoLinkButton.swift; path = Sources/IBDesignable/KaoLinkButton.swift; sourceTree = "<group>"; };
 		C4A82102639A8A719173592A8E4472EE /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		C4AD4B3E83F593E7A876870B5C020376 /* Icon.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Icon.xcassets; path = Sources/Resources/Icon.xcassets; sourceTree = "<group>"; };
 		C54ACD2B4F7EA1AF7E8545B1B640FB11 /* KaoEmptyStateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoEmptyStateView.swift; path = Sources/KaoEmptyStateScreen/Views/KaoEmptyStateView.swift; sourceTree = "<group>"; };
 		C69EE72A6B5A1150B3CDF38298C0952A /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageView.swift; path = FontAwesome/FontAwesomeImageView.swift; sourceTree = "<group>"; };
 		C6AD06F8F44C9244ED7D53A6A98AAECC /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		C921E4A69531D143CB9C3330B49D1A50 /* NotificationBannerUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationBannerUtilities.swift; path = NotificationBanner/Classes/NotificationBannerUtilities.swift; sourceTree = "<group>"; };
 		C93E18D9A36454422AC5D836643C3D51 /* KaoUploadOptionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoUploadOptionView.swift; path = Sources/KaoAttachment/Views/KaoUploadOptionView.swift; sourceTree = "<group>"; };
 		C96464CD2D6D83C75E1D414FAA38E578 /* PagerTabStripError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripError.swift; path = Sources/PagerTabStripError.swift; sourceTree = "<group>"; };
-		CA6FBF52BBCC1461AF1FB9AF8D9EA78F /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesome_swift.framework; path = FontAwesome.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8F9234BA198B88F409FB2023E1490A /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionHeaderCollectionReusableView.swift; path = Sources/KaoDateTimePicker/Views/MonthSlider/SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		CC6599B52F2FBEA0462BA61A846B90C5 /* Pods-kaoNetworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kaoNetworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CD9657C4B2CFD77225854C0FFB553841 /* KaoDesign-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KaoDesign-dummy.m"; sourceTree = "<group>"; };
+		CE4E2597856AAB354E43B8736F275023 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLPagerTabStrip.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6431CE1CA5A350B955EB5FFAB00052 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		CED61C38BBAD36732A9ECE9667565A58 /* KaoPageBarCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoPageBarCell.xib; path = Sources/KaoBasePager/Views/KaoPageBarCell.xib; sourceTree = "<group>"; };
 		CEFB51697BEEDEA5897DE9D2F217D66D /* UIImageView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extension.swift"; path = "Sources/Extensions/UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -831,14 +832,12 @@
 		D1852560A0619328B73A79C4F55C1A36 /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
 		D2BE77186CC6AD0682EE9D5715719082 /* ResourceBundle-KaoCustomPod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-KaoCustomPod-Info.plist"; sourceTree = "<group>"; };
 		D2C9BAACBE51E84D5D7B7C0D812A3382 /* XLPagerTabStrip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-prefix.pch"; sourceTree = "<group>"; };
-		D340CA080941E8D07EBEF4E58683BAC3 /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XLPagerTabStrip.bundle; path = "XLPagerTabStrip-XLPagerTabStrip.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39D8F57F110563F6A1077AEDB3E4B3A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D501D93601A74DA7D1557B02989C5665 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D59543167AFF23B677A51C3EEE0DC98A /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarPagerTabStripViewController.swift; path = Sources/ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		D59EEB894D8C017C9EFCB27AFB831186 /* Pods-kaoNetworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kaoNetworkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D5E0B2BF10AE998746F02E0B96F52515 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+Extension.swift"; path = "Sources/Extensions/UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		D7BAED8DB34D0EC2D6F8932941FCB4A6 /* KaoSettingPermissionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoSettingPermissionViewController.swift; path = Sources/Controller/KaoSettingPermissionViewController.swift; sourceTree = "<group>"; };
-		D7F4CA87F7066D179663A1BE370A2264 /* TimeOutViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimeOutViewController.swift; sourceTree = "<group>"; };
 		D8A9401C135DBD9BF1D4A1A18981E0AD /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		D8E85BBB94FDD4CEC07625C2644A505E /* BaseNotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseNotificationBanner.swift; path = NotificationBanner/Classes/BaseNotificationBanner.swift; sourceTree = "<group>"; };
 		D8EDE96C0E865A78E502B23D403DD6A5 /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeSegmentedControl.swift; path = FontAwesome/FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
@@ -846,49 +845,57 @@
 		D9F99480B9D51DC1563EFC1D45DF0647 /* Encodable+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Encodable+Extension.swift"; path = "Sources/Extensions/Encodable+Extension.swift"; sourceTree = "<group>"; };
 		DB6C9B1622A5A80075004AE5CA403E09 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		DB941CA253246356EC46840A70ED0037 /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
+		DC09C87B25E9AF7F62D655CBBD956D97 /* kaoNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = kaoNetwork.framework; path = kaoNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB09082C4BF0422BB2856454B8E8BD5 /* TimeOutViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimeOutViewController.swift; sourceTree = "<group>"; };
 		DD5F1FCC9791204EC37297376105B353 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		DE87EF0B6F0CF3BD3096B818668C8B5D /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		DF19B250F392732EA2847AB3340525B5 /* KaoNotificationBannerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoNotificationBannerView.swift; path = Sources/Views/KaoNotificationBannerView.swift; sourceTree = "<group>"; };
-		DF8C21F99F03BC999AE21D4886B05E47 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLPagerTabStrip.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16FDDD508A618A59D282CDDE3CF098D /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2104BAA6743355879A1E1060E8A2D39 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3EE044F33D6F3123F83BFC54343C335 /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPagerTabStripViewController.swift; path = Sources/BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
-		E52A3346AECE0821B56219ADF6B7E735 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E52BD428102D4F2B52F79E4471E9CB3F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Regular.ttf"; path = "Sources/Resources/Fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		E616E25718DEF518C0F3B48595081AF4 /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		E68BC0EF247B0FA839D6042297F4B686 /* KaoCustomPod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KaoCustomPod.bundle; path = "KaoDesign-KaoCustomPod.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72EC49FE1B85D159D94B221BF7639B6 /* KaoHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoHelper.swift; path = Sources/HelperFunction/KaoHelper.swift; sourceTree = "<group>"; };
 		E7B0C0A976825FDF60F7F3327651A217 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
 		E82102FC1681BF82D1EBAB1ED3F463B0 /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
-		E86E351AFF2084D4B00C1A282BBE8F70 /* kaoNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kaoNetwork-prefix.pch"; sourceTree = "<group>"; };
 		E88BB2D25685A94022199FF5AEADF434 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		E89AB3F26BCCDC32865BC11618AC824D /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		E8AB78388C65092BED88B31213C37346 /* NotificationBannerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotificationBannerSwift-prefix.pch"; sourceTree = "<group>"; };
 		E91677702ED3E0E96EB691AA80540184 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
 		E990E27002F68F3764FA596DD28C611B /* KaoNoSearchFound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoNoSearchFound.swift; path = Sources/Views/KaoNoSearchFound.swift; sourceTree = "<group>"; };
+		EBC096ADB61A6AC19C3FD096B5C4DCB2 /* NetworkErrorStatusCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkErrorStatusCode.swift; sourceTree = "<group>"; };
 		EC70BB84C3C84A01342674F18D0580FF /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		ECA353CFFBD3034403A9E1E56491A19A /* KaoNetworkReach.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KaoNetworkReach.swift; sourceTree = "<group>"; };
 		EE784157E6695B24379764F7E0BFABEB /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
 		EF6E4F5313DC43089142F823FA08B4E0 /* DateTimeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTimeViewController.swift; path = Sources/KaoDateTimePicker/Controller/Date/DateTimeViewController.swift; sourceTree = "<group>"; };
 		F02415962E7403262D7C3B82B6328216 /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
+		F046754EA35E84C88EBBF9F1D1A4C74B /* kaoNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kaoNetwork-umbrella.h"; sourceTree = "<group>"; };
 		F09833740277EEB434AC4848E651B4A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1812328ED9C5026B71A176634067F83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F202179DEB7EF0E329C04D9B0F8CD4CF /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
 		F29B3F3CA3FAD504D2868561679C11B3 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		F2CE89523BBB37FDD0347C5236E9ABE5 /* KaoPopupView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoPopupView.xib; path = Sources/KaoPopup/KaoPopupView.xib; sourceTree = "<group>"; };
 		F36F51E70756A845627F2E48CFDD4EE6 /* UIFont+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+Extension.swift"; path = "Sources/Extensions/UIFont+Extension.swift"; sourceTree = "<group>"; };
 		F48A7AC0B5E800C23C90CEC79F95025F /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
-		F6185C8EE2F07FE0392524B951142397 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7837873A0FD793F1138CF2FCD8F839D /* kaoNetwork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kaoNetwork-umbrella.h"; sourceTree = "<group>"; };
-		FA1C59004B8ECB8DC6841F81DFD1C077 /* kaoNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = kaoNetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA1D4809E60CD443FA6AFD1F8AF7ECB3 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		FAF51E69E5C6C3719891D00E1AFEA655 /* kaoNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = kaoNetwork.modulemap; sourceTree = "<group>"; };
 		FB6A96BA8DF7E99CAAFF46571EABFB15 /* KaoDateTimePickerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoDateTimePickerHelper.swift; path = Sources/KaoDateTimePicker/Protocol/KaoDateTimePickerHelper.swift; sourceTree = "<group>"; };
 		FB731D8CDF0AE8DB6CB5DBFB4A3012B3 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		FB7EB60550C02F601CA2DA2318937D22 /* DateTime.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DateTime.storyboard; path = Sources/KaoDateTimePicker/Storyboards/DateTime.storyboard; sourceTree = "<group>"; };
 		FC196C729E109E4349F1CADD01F5935B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC6B60A7FE7C36F7FA55D1AA304EB7AC /* Pods_kaoNetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kaoNetworkDemo.framework; path = "Pods-kaoNetworkDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD53BB080A592A9D813585DC1FAE8723 /* NoInternetView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = NoInternetView.xib; path = Sources/Views/NoInternetView.xib; sourceTree = "<group>"; };
 		FD7B00CBFB484B3D16A72FACD7356736 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		FF5171227E71C36BE79532BCBF4A87A7 /* Date+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "Sources/Extensions/Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		08A25D8872EB8B7A835F2C8E896FEBC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		239D68ED963A9365BF27146CB5E045F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -938,24 +945,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A6EF05813EC69F9D5A99AA7D36157D3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				26E4A9CC3B9F0741F2E5CDC0CDDCD8D1 /* Alamofire.framework in Frameworks */,
-				0F47C685A22897C0073E3BA05F4AEE8D /* DZNEmptyDataSet.framework in Frameworks */,
-				5F7A60D06C4C42B9D0A82E844D3EDC38 /* FontAwesome_swift.framework in Frameworks */,
-				7B49E81FA87754AFEB851C6C428C4C41 /* Foundation.framework in Frameworks */,
-				C3BC563E85CB0A7E64A08292EBCF7400 /* KaoDesign.framework in Frameworks */,
-				7972EE316E304E290A472165D0D83247 /* Kingfisher.framework in Frameworks */,
-				47DA4DCA8637EC7ED576869E79936821 /* MarqueeLabel.framework in Frameworks */,
-				3B924BC2ADB7C597FE6A26C2D2D0FBDC /* NotificationBannerSwift.framework in Frameworks */,
-				FCB8BCAAF55311791C61DD3BE717B0ED /* SnapKit.framework in Frameworks */,
-				D256FF6C272042CCBE801D8FB9405725 /* SVProgressHUD.framework in Frameworks */,
-				C9E021E2F252763E6134B49FD180666B /* XLPagerTabStrip.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		94356B4BAB74D1171D94DC87F4A4FBD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -972,13 +961,6 @@
 				549DC5A3193C7ACD4A365DA93CF2C0D0 /* Foundation.framework in Frameworks */,
 				FA5247E921276BCB483382A6CCBDD0E8 /* QuartzCore.framework in Frameworks */,
 				48F772B84EF2C8E32C80E87F874C1CF9 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B14B9769DC9763BEB80E05853385CCA9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1003,6 +985,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				6904E07078FDF8F695C8F5DDECBEE468 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEFE2C04DD2E4E544FCA0702AEFA7F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14758001DCB0040652A9F58BC6BF503 /* Alamofire.framework in Frameworks */,
+				00979EAD4C8CE2B61235CC91C45E03CF /* DZNEmptyDataSet.framework in Frameworks */,
+				4E7EB5E74EF71A1EDC56C03E830DD593 /* FontAwesome_swift.framework in Frameworks */,
+				0292837B11083917FCB7F66A64292A56 /* Foundation.framework in Frameworks */,
+				33465EB4E392C97EDCA239BDFF42561E /* KaoDesign.framework in Frameworks */,
+				9C9CB338A4C854ED4488C414C27A9A3D /* Kingfisher.framework in Frameworks */,
+				470B41B3206F10811B8BF05044EF99E9 /* MarqueeLabel.framework in Frameworks */,
+				C0C924109155C3FC6F39D046805FFF77 /* NotificationBannerSwift.framework in Frameworks */,
+				C3C82249B908E846CC495E72FAD1DC9D /* SnapKit.framework in Frameworks */,
+				B66261D5CA6E201E503B18E7F0F5417A /* SVProgressHUD.framework in Frameworks */,
+				23637680C667AEE4C66E7D51482BC8A6 /* XLPagerTabStrip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1044,27 +1044,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B00B70E4ACDF9539B2CF4804DDBDE9A /* Development Pods */ = {
+		05F6BEAC5C7E3B0619D0965F7E246716 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				38F3647347D8BBC13047A2271052D548 /* kaoNetwork */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		1957B19588BF149603FC13AEFA5A792A /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5CC6C6154B943C780147EFD1E7B1E758 /* UIView+Extension.swift */,
-			);
-			name = Extensions;
-			path = Sources/Extensions;
-			sourceTree = "<group>";
-		};
-		264413C50C4AEAF5794987643034034E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				FA1C59004B8ECB8DC6841F81DFD1C077 /* kaoNetwork.podspec */,
+				530E04E82C0DE3177137E8DD623F881E /* kaoNetwork.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -1107,6 +1090,21 @@
 			);
 			name = SVProgressHUD;
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		2CE8B2E205C4B42497DF80D50464997A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1812328ED9C5026B71A176634067F83 /* Info.plist */,
+				FAF51E69E5C6C3719891D00E1AFEA655 /* kaoNetwork.modulemap */,
+				7480208508CC0C4DEBD48770CE899917 /* kaoNetwork.xcconfig */,
+				B270EAB1723E71CA3F1FDD0B01B29340 /* kaoNetwork-dummy.m */,
+				604EA3526A95D36DEFDDE534AE0EFE3C /* kaoNetwork-prefix.pch */,
+				F046754EA35E84C88EBBF9F1D1A4C74B /* kaoNetwork-umbrella.h */,
+				50FCD43AF5F64ED5A245D95707A3858B /* ResourceBundle-KaoNetworkCustomPod-Info.plist */,
+			);
+			name = "Support Files";
+			path = "kaoNetworkDemo/Pods/Target Support Files/kaoNetwork";
 			sourceTree = "<group>";
 		};
 		3072FC6086332871C817717D3660B075 /* Support Files */ = {
@@ -1166,19 +1164,23 @@
 			path = NotificationBannerSwift;
 			sourceTree = "<group>";
 		};
-		38F3647347D8BBC13047A2271052D548 /* kaoNetwork */ = {
+		40C1FC7DD6016CD321A4BAD8F561832D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DC89188D77CDDA2493142BE407414A7A /* Controllers */,
-				1957B19588BF149603FC13AEFA5A792A /* Extensions */,
-				BA709655431C55FCA8443D4E56F63D82 /* Networking */,
-				264413C50C4AEAF5794987643034034E /* Pod */,
-				9DC1057A14AC6B0AF7DB405E9E583C3A /* Resources */,
-				F86D50B0FD68AA4E38AE84D4064F7321 /* Support Files */,
-				715C973F29850994DBCC7871DF73894B /* Views */,
+				1DA53249AEC863AF304373EF7DBFE6FE /* DisconnectedViewController.swift */,
+				18EF0C365BDE22443C857552B5B3E743 /* InternalServerErrorViewController.swift */,
+				DCB09082C4BF0422BB2856454B8E8BD5 /* TimeOutViewController.swift */,
 			);
-			name = kaoNetwork;
-			path = ../..;
+			name = Controllers;
+			path = Sources/Controllers;
+			sourceTree = "<group>";
+		};
+		4CD725728E287D46E81BD5AA731139F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD4B3E83F593E7A876870B5C020376 /* Icon.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		56B8DFB9D02BC8217E1B288072ABEFAA /* Resources */ = {
@@ -1319,15 +1321,6 @@
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
-		715C973F29850994DBCC7871DF73894B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				718BA83204E63A1FCFB9019F3F23D756 /* NoInternetView.swift */,
-			);
-			name = Views;
-			path = Sources/Views;
-			sourceTree = "<group>";
-		};
 		773CD820C11001AE521E3BBBDE5D8FC7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1346,10 +1339,10 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0B00B70E4ACDF9539B2CF4804DDBDE9A /* Development Pods */,
+				8AE47C51C18DD902C9CB06CEC9366979 /* Development Pods */,
 				DBE591FDEC92B72332BFF8074CDC7DA5 /* Frameworks */,
 				345519C2741FDDBCF2FF917BB1A98F36 /* Pods */,
-				EE9C3758E44DBD0575E8C132218322A9 /* Products */,
+				8B075E3E1F357E5829C4957919FE9D87 /* Products */,
 				34A541D7A46B2E396189C9FC8D8BE450 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -1366,6 +1359,51 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DZNEmptyDataSet";
+			sourceTree = "<group>";
+		};
+		85BE12AE476F4D65CBFFDEDC7A2CBB03 /* kaoNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				40C1FC7DD6016CD321A4BAD8F561832D /* Controllers */,
+				9B519435AD756850A29AB6DC3AA41956 /* Extensions */,
+				AA023EACD5EDD535CFB1257643E0D9D0 /* Networking */,
+				05F6BEAC5C7E3B0619D0965F7E246716 /* Pod */,
+				4CD725728E287D46E81BD5AA731139F5 /* Resources */,
+				2CE8B2E205C4B42497DF80D50464997A /* Support Files */,
+			);
+			name = kaoNetwork;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		8AE47C51C18DD902C9CB06CEC9366979 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85BE12AE476F4D65CBFFDEDC7A2CBB03 /* kaoNetwork */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8B075E3E1F357E5829C4957919FE9D87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF7760B8622E7323D155E593CDB037B0 /* Alamofire.framework */,
+				39E48CEDDD5074C101955EF050F47271 /* DZNEmptyDataSet.framework */,
+				6519C307A46094C628F7A25CD26600A9 /* FontAwesome.swift.bundle */,
+				542933FE07E693000C033FA2672BA1E9 /* FontAwesome_swift.framework */,
+				E68BC0EF247B0FA839D6042297F4B686 /* KaoCustomPod.bundle */,
+				7FB03BFF9AC3803537A3B398D202732E /* KaoDesign.framework */,
+				DC09C87B25E9AF7F62D655CBBD956D97 /* kaoNetwork.framework */,
+				961C692E6EC49397334E9A24F6D201E8 /* KaoNetworkCustomPod.bundle */,
+				E16FDDD508A618A59D282CDDE3CF098D /* Kingfisher.framework */,
+				810303FCC4684A9CBEF975987C7F732E /* MarqueeLabel.framework */,
+				48E7AE35EDCBA44F51D7B98855F223F9 /* NotificationBannerSwift.framework */,
+				10CC07692594534CB1BF5ECC3109D628 /* Pods_kaoNetworkDemo.framework */,
+				7497A6C7D11033F655B211D250432B6F /* SnapKit.framework */,
+				633B0D0DE903E9250F2AF5441A3BE2E5 /* SVProgressHUD.framework */,
+				A32D74A38FFC8A6053298C450723A788 /* XLPagerTabStrip.bundle */,
+				CE4E2597856AAB354E43B8736F275023 /* XLPagerTabStrip.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		8FAF17A35FACAC7CA067C22A22AD22C9 /* Resources */ = {
@@ -1391,12 +1429,26 @@
 			path = "../Target Support Files/KaoDesign";
 			sourceTree = "<group>";
 		};
-		9DC1057A14AC6B0AF7DB405E9E583C3A /* Resources */ = {
+		9B519435AD756850A29AB6DC3AA41956 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FD53BB080A592A9D813585DC1FAE8723 /* NoInternetView.xib */,
+				57BECCD6C1675A4AE6640D1249413821 /* UIImage+Extensions.swift */,
+				B00055E816DA944F087C960FB69DEDD0 /* UIView+Extension.swift */,
 			);
-			name = Resources;
+			name = Extensions;
+			path = Sources/Extensions;
+			sourceTree = "<group>";
+		};
+		AA023EACD5EDD535CFB1257643E0D9D0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				29AA100574D803B5C462691065BD9B45 /* KaoNetworkErrorHandler.swift */,
+				ECA353CFFBD3034403A9E1E56491A19A /* KaoNetworkReach.swift */,
+				EBC096ADB61A6AC19C3FD096B5C4DCB2 /* NetworkErrorStatusCode.swift */,
+				42EE64251EACCB4128D63FEC2E36F822 /* NetworkResult.swift */,
+			);
+			name = Networking;
+			path = Sources/Networking;
 			sourceTree = "<group>";
 		};
 		B1D5D130B06D4606250FC0B6D352892D /* Support Files */ = {
@@ -1472,18 +1524,6 @@
 			);
 			name = Kingfisher;
 			path = Kingfisher;
-			sourceTree = "<group>";
-		};
-		BA709655431C55FCA8443D4E56F63D82 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				C1E73F7395330FB55E9FB2ED7689C055 /* KaoNetworkErrorHandler.swift */,
-				0C65C134D3E2C81A4C9378659A4CC4D4 /* KaoNetworkReach.swift */,
-				08F93C01EAFB73D54CD2C6D9B4E243B6 /* NetworkErrorStatusCode.swift */,
-				5AA146031938FF1C51119379FE5836B2 /* NetworkResult.swift */,
-			);
-			name = Networking;
-			path = Sources/Networking;
 			sourceTree = "<group>";
 		};
 		BBB66F54585AE10170C7AE46910861C0 /* MarqueeLabel */ = {
@@ -1563,17 +1603,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DC89188D77CDDA2493142BE407414A7A /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				B7C4727142A281DB13FBF61C7570C563 /* DisconnectedViewController.swift */,
-				83CCF52E165F68B3FE1358D7DEE0EFBA /* InternalServerErrorViewController.swift */,
-				D7F4CA87F7066D179663A1BE370A2264 /* TimeOutViewController.swift */,
-			);
-			name = Controllers;
-			path = Sources/Controllers;
-			sourceTree = "<group>";
-		};
 		DFED4373E12354E01DC8E71F05D5615A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1646,29 +1675,6 @@
 			path = "../Target Support Files/MarqueeLabel";
 			sourceTree = "<group>";
 		};
-		EE9C3758E44DBD0575E8C132218322A9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F6185C8EE2F07FE0392524B951142397 /* Alamofire.framework */,
-				7F8422659175EC50783531C6AE0FB366 /* DZNEmptyDataSet.framework */,
-				7C5646A82C52CF4CE162EF6F7CDC8E38 /* FontAwesome.swift.bundle */,
-				CA6FBF52BBCC1461AF1FB9AF8D9EA78F /* FontAwesome_swift.framework */,
-				999E7EB97174DBCD5D8A30FB3AB750FB /* KaoCustomPod.bundle */,
-				8985D80CD920A2C18213E6E954540EB6 /* KaoCustomPod.bundle */,
-				882931AAAFF801CEE17F2BFB4F29110F /* KaoDesign.framework */,
-				72FE48DFF72AF2CE1D58C3CAA8C3BF50 /* kaoNetwork.framework */,
-				A782DD6B73F1986FD658146558EF9702 /* Kingfisher.framework */,
-				B646F57AD652BDAE6159BE9C79B1B8F6 /* MarqueeLabel.framework */,
-				8B808173F0B04D135A72711C9F6DAF0F /* NotificationBannerSwift.framework */,
-				FC6B60A7FE7C36F7FA55D1AA304EB7AC /* Pods_kaoNetworkDemo.framework */,
-				5223967935DA2D14810BEBC78AB9A31D /* SnapKit.framework */,
-				98AC5FE69D3A97F07276D82F0613D2D3 /* SVProgressHUD.framework */,
-				D340CA080941E8D07EBEF4E58683BAC3 /* XLPagerTabStrip.bundle */,
-				DF8C21F99F03BC999AE21D4886B05E47 /* XLPagerTabStrip.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F005319C76FF0E150CE08889CD71196D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1682,21 +1688,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/XLPagerTabStrip";
-			sourceTree = "<group>";
-		};
-		F86D50B0FD68AA4E38AE84D4064F7321 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E52A3346AECE0821B56219ADF6B7E735 /* Info.plist */,
-				1D9A9ADC1C3D6E7B6734B14562890A48 /* kaoNetwork.modulemap */,
-				BBE3139C099F6EDCA9568E8DED41ECDA /* kaoNetwork.xcconfig */,
-				333BFD86A936D6025FB9DC95D4BF11B3 /* kaoNetwork-dummy.m */,
-				E86E351AFF2084D4B00C1A282BBE8F70 /* kaoNetwork-prefix.pch */,
-				F7837873A0FD793F1138CF2FCD8F839D /* kaoNetwork-umbrella.h */,
-				53D0D99399542144BBD49AC324BC3F0E /* ResourceBundle-KaoCustomPod-Info.plist */,
-			);
-			name = "Support Files";
-			path = "kaoNetworkDemo/Pods/Target Support Files/kaoNetwork";
 			sourceTree = "<group>";
 		};
 		F8EDADC9527B6AEE68A0500B131F4F5D /* FontAwesome.swift */ = {
@@ -1823,19 +1814,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF3093A4FFCD83AD66F6EF3AE3D6BEF3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970682B8DA9ABA9B3FE7D1C66647E81A /* kaoNetwork-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F23D4FB36488DD5A301F642D9B53A10B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				629881FEA26A9716DF27804D859F3B3D /* KaoDesign-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4ABF10799DBC325A4A4425C196E5103 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87BEF67675106CBE69FACB3D977F139F /* kaoNetwork-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1866,7 +1857,7 @@
 			);
 			name = KaoDesign;
 			productName = KaoDesign;
-			productReference = 882931AAAFF801CEE17F2BFB4F29110F /* KaoDesign.framework */;
+			productReference = 7FB03BFF9AC3803537A3B398D202732E /* KaoDesign.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		105A3ECD649CB93A2B45BC2AC422C49C /* SnapKit */ = {
@@ -1884,7 +1875,7 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
-			productReference = 5223967935DA2D14810BEBC78AB9A31D /* SnapKit.framework */;
+			productReference = 7497A6C7D11033F655B211D250432B6F /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		284992A50F0B3E64703FA6E94A694797 /* DZNEmptyDataSet */ = {
@@ -1902,7 +1893,7 @@
 			);
 			name = DZNEmptyDataSet;
 			productName = DZNEmptyDataSet;
-			productReference = 7F8422659175EC50783531C6AE0FB366 /* DZNEmptyDataSet.framework */;
+			productReference = 39E48CEDDD5074C101955EF050F47271 /* DZNEmptyDataSet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		407445CE1EEC811B03953C999E0A8DE0 /* NotificationBannerSwift */ = {
@@ -1922,7 +1913,7 @@
 			);
 			name = NotificationBannerSwift;
 			productName = NotificationBannerSwift;
-			productReference = 8B808173F0B04D135A72711C9F6DAF0F /* NotificationBannerSwift.framework */;
+			productReference = 48E7AE35EDCBA44F51D7B98855F223F9 /* NotificationBannerSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4F1130119AC9BD4E528658A931586396 /* KaoDesign-KaoCustomPod */ = {
@@ -1939,7 +1930,7 @@
 			);
 			name = "KaoDesign-KaoCustomPod";
 			productName = "KaoDesign-KaoCustomPod";
-			productReference = 8985D80CD920A2C18213E6E954540EB6 /* KaoCustomPod.bundle */;
+			productReference = E68BC0EF247B0FA839D6042297F4B686 /* KaoCustomPod.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		6232048321ADA2F32A0FDE49955039AB /* Pods-kaoNetworkDemo */ = {
@@ -1968,7 +1959,7 @@
 			);
 			name = "Pods-kaoNetworkDemo";
 			productName = "Pods-kaoNetworkDemo";
-			productReference = FC6B60A7FE7C36F7FA55D1AA304EB7AC /* Pods_kaoNetworkDemo.framework */;
+			productReference = 10CC07692594534CB1BF5ECC3109D628 /* Pods_kaoNetworkDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6A858A2DF34FF2186BFCCF4BD0F0768C /* XLPagerTabStrip-XLPagerTabStrip */ = {
@@ -1985,7 +1976,7 @@
 			);
 			name = "XLPagerTabStrip-XLPagerTabStrip";
 			productName = "XLPagerTabStrip-XLPagerTabStrip";
-			productReference = D340CA080941E8D07EBEF4E58683BAC3 /* XLPagerTabStrip.bundle */;
+			productReference = A32D74A38FFC8A6053298C450723A788 /* XLPagerTabStrip.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		767E48AC9D3B5E9265BECB6AA89AA70D /* FontAwesome.swift-FontAwesome.swift */ = {
@@ -2002,37 +1993,8 @@
 			);
 			name = "FontAwesome.swift-FontAwesome.swift";
 			productName = "FontAwesome.swift-FontAwesome.swift";
-			productReference = 7C5646A82C52CF4CE162EF6F7CDC8E38 /* FontAwesome.swift.bundle */;
+			productReference = 6519C307A46094C628F7A25CD26600A9 /* FontAwesome.swift.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		91584344302264DEC01970B22B5EFC5D /* kaoNetwork */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B15C47C536459362AFBEA554EFF31D05 /* Build configuration list for PBXNativeTarget "kaoNetwork" */;
-			buildPhases = (
-				F4ABF10799DBC325A4A4425C196E5103 /* Headers */,
-				1F845DCD8EF7F3C4E220496B2A9F80C9 /* Sources */,
-				8A6EF05813EC69F9D5A99AA7D36157D3 /* Frameworks */,
-				CE4F9B6A82D95B62307D75FB0F1E410D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				402AB802D6FE3F65840EF818103399E8 /* PBXTargetDependency */,
-				66561DF5C57C16A6ED1A8F968DA25B2C /* PBXTargetDependency */,
-				337D0C53ECD6685D9EBE2442D2A19132 /* PBXTargetDependency */,
-				65D29C727C80BBB9F768EE5A6971FDB9 /* PBXTargetDependency */,
-				1004D1DE30D280F2109AFB0B5C1DB3F6 /* PBXTargetDependency */,
-				8F443BC181628511DBC3B4D6C4482320 /* PBXTargetDependency */,
-				F7CF3EF1B66B6855EFB92A9E193D5EFD /* PBXTargetDependency */,
-				A918175789C76D82654A2F1CA1554B6D /* PBXTargetDependency */,
-				AC4F2BBBD7DF7107009A72753B91D139 /* PBXTargetDependency */,
-				0BEB0EA7F792BD01108503F8D3FEEEAC /* PBXTargetDependency */,
-				86E8E1C270F5D8947A40DC9E858ABCF9 /* PBXTargetDependency */,
-			);
-			name = kaoNetwork;
-			productName = kaoNetwork;
-			productReference = 72FE48DFF72AF2CE1D58C3CAA8C3BF50 /* kaoNetwork.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		9A1EF8B2D071B6E09A058AC936790CC6 /* FontAwesome.swift */ = {
 			isa = PBXNativeTarget;
@@ -2050,7 +2012,7 @@
 			);
 			name = FontAwesome.swift;
 			productName = FontAwesome.swift;
-			productReference = CA6FBF52BBCC1461AF1FB9AF8D9EA78F /* FontAwesome_swift.framework */;
+			productReference = 542933FE07E693000C033FA2672BA1E9 /* FontAwesome_swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A86815131848C4BEF8F92BAE6A9439D8 /* SVProgressHUD */ = {
@@ -2068,7 +2030,7 @@
 			);
 			name = SVProgressHUD;
 			productName = SVProgressHUD;
-			productReference = 98AC5FE69D3A97F07276D82F0613D2D3 /* SVProgressHUD.framework */;
+			productReference = 633B0D0DE903E9250F2AF5441A3BE2E5 /* SVProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A96EA1F139B698B830BCCB9411006B02 /* XLPagerTabStrip */ = {
@@ -2087,8 +2049,25 @@
 			);
 			name = XLPagerTabStrip;
 			productName = XLPagerTabStrip;
-			productReference = DF8C21F99F03BC999AE21D4886B05E47 /* XLPagerTabStrip.framework */;
+			productReference = CE4E2597856AAB354E43B8736F275023 /* XLPagerTabStrip.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		AE1FDE26AA32195CB425D0C4E4EF56A4 /* kaoNetwork-KaoNetworkCustomPod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F170E940C8AEAD9211317B09300AA0D /* Build configuration list for PBXNativeTarget "kaoNetwork-KaoNetworkCustomPod" */;
+			buildPhases = (
+				EE8B22999ACFCC16DA00B3EE03A4F1CB /* Sources */,
+				08A25D8872EB8B7A835F2C8E896FEBC2 /* Frameworks */,
+				DEEC67CBD4E2527AFE1DD6650BBEB88B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kaoNetwork-KaoNetworkCustomPod";
+			productName = "kaoNetwork-KaoNetworkCustomPod";
+			productReference = 961C692E6EC49397334E9A24F6D201E8 /* KaoNetworkCustomPod.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		CFCF6F398FE23EEF7D1EF50114D414A5 /* MarqueeLabel */ = {
 			isa = PBXNativeTarget;
@@ -2105,7 +2084,36 @@
 			);
 			name = MarqueeLabel;
 			productName = MarqueeLabel;
-			productReference = B646F57AD652BDAE6159BE9C79B1B8F6 /* MarqueeLabel.framework */;
+			productReference = 810303FCC4684A9CBEF975987C7F732E /* MarqueeLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2183B91E980CF1E543BBC1283E4E2B5 /* kaoNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53C5BA20F3A3BDB9F22D03CF72E7CA84 /* Build configuration list for PBXNativeTarget "kaoNetwork" */;
+			buildPhases = (
+				BF3093A4FFCD83AD66F6EF3AE3D6BEF3 /* Headers */,
+				D78E61D5D8857BCB5660B265722A5291 /* Sources */,
+				CFEFE2C04DD2E4E544FCA0702AEFA7F7 /* Frameworks */,
+				F4B40063D3BAE0F486789AB9988BBC63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32D4DEDE664AD12EE27F6CD4CBF60A68 /* PBXTargetDependency */,
+				55FFC6FB73D45CBC8BE655AADB79252B /* PBXTargetDependency */,
+				568638AD4C7351435723DE035C385921 /* PBXTargetDependency */,
+				0457C3B3D04AFBC999FA0B818272B3AB /* PBXTargetDependency */,
+				17337555A1C975415BDD51E17F580972 /* PBXTargetDependency */,
+				3C4CC53438DD7549A09B6A4365090178 /* PBXTargetDependency */,
+				10CC5A893B142800FE9084B43911383B /* PBXTargetDependency */,
+				9A0A5F0FAAEE8D9C81E2761126080DC4 /* PBXTargetDependency */,
+				36E00EFAB71E52A2F486488A06D60210 /* PBXTargetDependency */,
+				E5C8C265ECE82C50ED850111132503A6 /* PBXTargetDependency */,
+				C5B00EA8BE2C3BAE8873FB07E072379C /* PBXTargetDependency */,
+			);
+			name = kaoNetwork;
+			productName = kaoNetwork;
+			productReference = DC09C87B25E9AF7F62D655CBBD956D97 /* kaoNetwork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D7AAA74EF359F676919B29D3B471C5EE /* Kingfisher */ = {
@@ -2123,7 +2131,7 @@
 			);
 			name = Kingfisher;
 			productName = Kingfisher;
-			productReference = A782DD6B73F1986FD658146558EF9702 /* Kingfisher.framework */;
+			productReference = E16FDDD508A618A59D282CDDE3CF098D /* Kingfisher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E76458C58C9140B6A16D60547E68E80C /* Alamofire */ = {
@@ -2141,25 +2149,8 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = F6185C8EE2F07FE0392524B951142397 /* Alamofire.framework */;
+			productReference = AF7760B8622E7323D155E593CDB037B0 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		FA43BE994233B5EEEAB23D1E19813D5E /* kaoNetwork-KaoCustomPod */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8CEF1EF38225ED13166D52A52BD237F1 /* Build configuration list for PBXNativeTarget "kaoNetwork-KaoCustomPod" */;
-			buildPhases = (
-				10FB6A982AD904DA79B035339F75695B /* Sources */,
-				B14B9769DC9763BEB80E05853385CCA9 /* Frameworks */,
-				40443EFB2A7C920FE72DDB920EAEBA6A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "kaoNetwork-KaoCustomPod";
-			productName = "kaoNetwork-KaoCustomPod";
-			productReference = 999E7EB97174DBCD5D8A30FB3AB750FB /* KaoCustomPod.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -2178,7 +2169,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EE9C3758E44DBD0575E8C132218322A9 /* Products */;
+			productRefGroup = 8B075E3E1F357E5829C4957919FE9D87 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -2188,8 +2179,8 @@
 				767E48AC9D3B5E9265BECB6AA89AA70D /* FontAwesome.swift-FontAwesome.swift */,
 				060FC9EE5184FD6290FEBBA9BD5FEF98 /* KaoDesign */,
 				4F1130119AC9BD4E528658A931586396 /* KaoDesign-KaoCustomPod */,
-				91584344302264DEC01970B22B5EFC5D /* kaoNetwork */,
-				FA43BE994233B5EEEAB23D1E19813D5E /* kaoNetwork-KaoCustomPod */,
+				D2183B91E980CF1E543BBC1283E4E2B5 /* kaoNetwork */,
+				AE1FDE26AA32195CB425D0C4E4EF56A4 /* kaoNetwork-KaoNetworkCustomPod */,
 				D7AAA74EF359F676919B29D3B471C5EE /* Kingfisher */,
 				CFCF6F398FE23EEF7D1EF50114D414A5 /* MarqueeLabel */,
 				407445CE1EEC811B03953C999E0A8DE0 /* NotificationBannerSwift */,
@@ -2230,14 +2221,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		40443EFB2A7C920FE72DDB920EAEBA6A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EFCE740500B649671606F48F8E759F3E /* NoInternetView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2329,11 +2312,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE4F9B6A82D95B62307D75FB0F1E410D /* Resources */ = {
+		DEEC67CBD4E2527AFE1DD6650BBEB88B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD620614A8AF85A857D44F8601D7C5C2 /* KaoCustomPod.bundle in Resources */,
+				3FBBC79F6AC0C6D3891C3C2806189413 /* Icon.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2344,16 +2327,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		10FB6A982AD904DA79B035339F75695B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		F4B40063D3BAE0F486789AB9988BBC63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E892BBD619D3F2B00E69874BD632CE3 /* KaoNetworkCustomPod.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		14D8142E8AE16A1A40A2C62EB92D7942 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2393,23 +2377,6 @@
 				1DBDF04CE1D2F01A6E0832D93AF9A2AD /* SnapKit-dummy.m in Sources */,
 				B221AC8191FC14B9D24A2926BB8A0695 /* Typealiases.swift in Sources */,
 				73C109DF439BDA2EAF187C362710403C /* UILayoutSupport+Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1F845DCD8EF7F3C4E220496B2A9F80C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2099C19BA46E272317EBA8D4989717CE /* DisconnectedViewController.swift in Sources */,
-				86B5E45B53C5E943F4806328A944A100 /* InternalServerErrorViewController.swift in Sources */,
-				E200B26AD77DF35392FADA74546F2EAA /* kaoNetwork-dummy.m in Sources */,
-				A3A0A02B4DE05B9CC932F3DB81261CE9 /* KaoNetworkErrorHandler.swift in Sources */,
-				045A195A1A8B19A04E372D397A3BB11E /* KaoNetworkReach.swift in Sources */,
-				B1B01E0DC3B5885CF5D6C64371A12BBD /* NetworkErrorStatusCode.swift in Sources */,
-				3C3D1A3180FB203894FE86DE8C21A4D4 /* NetworkResult.swift in Sources */,
-				592AA901F72A4FCBB211268AF950D827 /* NoInternetView.swift in Sources */,
-				4AEE853B967F4A8EBDF5327DBF4A11DF /* TimeOutViewController.swift in Sources */,
-				C432CC93463A638EB2B4E5E464626EFB /* UIView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2571,6 +2538,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D78E61D5D8857BCB5660B265722A5291 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C7C3DB89C0DC2167CF13E9E87BBE4A /* DisconnectedViewController.swift in Sources */,
+				A7CFDCFF27D6032A3A59ADDDBC63837C /* InternalServerErrorViewController.swift in Sources */,
+				7ABE6279B54DE64E94A21B8E3E710AB8 /* kaoNetwork-dummy.m in Sources */,
+				11C07A360613D138A9CD111E92FDF401 /* KaoNetworkErrorHandler.swift in Sources */,
+				01EA1FAFAC1463A4FBB55ADCDE3A04EB /* KaoNetworkReach.swift in Sources */,
+				8EBF913F7A53B22A9A800FF9DC5EE513 /* NetworkErrorStatusCode.swift in Sources */,
+				32B65CE705A833A63B851134A8883D97 /* NetworkResult.swift in Sources */,
+				B6B2D3E584DE5CA991E049F36E3C3550 /* TimeOutViewController.swift in Sources */,
+				89CC4A9855E6DC64E4FCD2C398C7ACD8 /* UIImage+Extensions.swift in Sources */,
+				FD3B2B7AA5263FB2BEEBECBCFF0E4CAE /* UIView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1B714EC57A2407086A301A6490AC1ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2656,6 +2640,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE8B22999ACFCC16DA00B3EE03A4F1CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0720572582CDC64675B3240E68CCC5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2672,6 +2663,12 @@
 			target = 9A1EF8B2D071B6E09A058AC936790CC6 /* FontAwesome.swift */;
 			targetProxy = 8DC6A5C463457A6D40E39E3AF0D6C63F /* PBXContainerItemProxy */;
 		};
+		0457C3B3D04AFBC999FA0B818272B3AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KaoDesign;
+			target = 060FC9EE5184FD6290FEBBA9BD5FEF98 /* KaoDesign */;
+			targetProxy = 7FE1EAB72F2660F344BF6F4A59D95D19 /* PBXContainerItemProxy */;
+		};
 		0663BC9F48A2E8ABF010848A2217B577 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Kingfisher;
@@ -2684,23 +2681,17 @@
 			target = 4F1130119AC9BD4E528658A931586396 /* KaoDesign-KaoCustomPod */;
 			targetProxy = 65128ABBD4F7E0615B6CEA8B35C70B4E /* PBXContainerItemProxy */;
 		};
-		0BEB0EA7F792BD01108503F8D3FEEEAC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = XLPagerTabStrip;
-			target = A96EA1F139B698B830BCCB9411006B02 /* XLPagerTabStrip */;
-			targetProxy = 4B6A1C95EDA7DD3EFB629B42622EE557 /* PBXContainerItemProxy */;
-		};
 		0F4751F0E25AEA765D751AAFF79A9CB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = 105A3ECD649CB93A2B45BC2AC422C49C /* SnapKit */;
 			targetProxy = 0D23074F93A8C2C1250D7922A633CDC5 /* PBXContainerItemProxy */;
 		};
-		1004D1DE30D280F2109AFB0B5C1DB3F6 /* PBXTargetDependency */ = {
+		10CC5A893B142800FE9084B43911383B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Kingfisher;
-			target = D7AAA74EF359F676919B29D3B471C5EE /* Kingfisher */;
-			targetProxy = 8DF93102504C44C7137D2AF62CE17B7D /* PBXContainerItemProxy */;
+			name = NotificationBannerSwift;
+			target = 407445CE1EEC811B03953C999E0A8DE0 /* NotificationBannerSwift */;
+			targetProxy = FD9DDCCAB8E7E8584CE327B47C16E7D4 /* PBXContainerItemProxy */;
 		};
 		11BC4ED79AC3703CF4176B9B8CD29333 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2713,6 +2704,12 @@
 			name = "XLPagerTabStrip-XLPagerTabStrip";
 			target = 6A858A2DF34FF2186BFCCF4BD0F0768C /* XLPagerTabStrip-XLPagerTabStrip */;
 			targetProxy = F8A059092D0F8F2330F31A0519AED5B2 /* PBXContainerItemProxy */;
+		};
+		17337555A1C975415BDD51E17F580972 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kingfisher;
+			target = D7AAA74EF359F676919B29D3B471C5EE /* Kingfisher */;
+			targetProxy = D6F7A32E51390B43C22FD94B46511E0E /* PBXContainerItemProxy */;
 		};
 		1C1A5D1F86E79487CDE69244C1A46CB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2732,11 +2729,11 @@
 			target = CFCF6F398FE23EEF7D1EF50114D414A5 /* MarqueeLabel */;
 			targetProxy = 34F4B2060AD3E1E7F56274702CE174B2 /* PBXContainerItemProxy */;
 		};
-		337D0C53ECD6685D9EBE2442D2A19132 /* PBXTargetDependency */ = {
+		32D4DEDE664AD12EE27F6CD4CBF60A68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FontAwesome.swift;
-			target = 9A1EF8B2D071B6E09A058AC936790CC6 /* FontAwesome.swift */;
-			targetProxy = B53EDE43451E8FBF51767C43F563FF8A /* PBXContainerItemProxy */;
+			name = Alamofire;
+			target = E76458C58C9140B6A16D60547E68E80C /* Alamofire */;
+			targetProxy = F536EF73F0A3C9BA8069A6F6F0B5CA34 /* PBXContainerItemProxy */;
 		};
 		33CE7C0866D5C0DA847C829A31123302 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2750,11 +2747,17 @@
 			target = E76458C58C9140B6A16D60547E68E80C /* Alamofire */;
 			targetProxy = A10EB1D3122E8C26FBC315C1B9E8665A /* PBXContainerItemProxy */;
 		};
-		402AB802D6FE3F65840EF818103399E8 /* PBXTargetDependency */ = {
+		36E00EFAB71E52A2F486488A06D60210 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = E76458C58C9140B6A16D60547E68E80C /* Alamofire */;
-			targetProxy = 676272D3E3CF4AD9082A1D23D87574AA /* PBXContainerItemProxy */;
+			name = SnapKit;
+			target = 105A3ECD649CB93A2B45BC2AC422C49C /* SnapKit */;
+			targetProxy = B2FA3565E5C63758D2459436C48810DC /* PBXContainerItemProxy */;
+		};
+		3C4CC53438DD7549A09B6A4365090178 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MarqueeLabel;
+			target = CFCF6F398FE23EEF7D1EF50114D414A5 /* MarqueeLabel */;
+			targetProxy = 63AE68482A5F055F199B55E7AF75F249 /* PBXContainerItemProxy */;
 		};
 		492F8BF675207C3D60C3EF1BAEEC48E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2762,29 +2765,23 @@
 			target = 407445CE1EEC811B03953C999E0A8DE0 /* NotificationBannerSwift */;
 			targetProxy = ABA55D8552CDD7B335AEFC5DB8E8B8B8 /* PBXContainerItemProxy */;
 		};
-		65D29C727C80BBB9F768EE5A6971FDB9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KaoDesign;
-			target = 060FC9EE5184FD6290FEBBA9BD5FEF98 /* KaoDesign */;
-			targetProxy = 64B132373996F72F902DB9292CFB9C09 /* PBXContainerItemProxy */;
-		};
-		66561DF5C57C16A6ED1A8F968DA25B2C /* PBXTargetDependency */ = {
+		55FFC6FB73D45CBC8BE655AADB79252B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DZNEmptyDataSet;
 			target = 284992A50F0B3E64703FA6E94A694797 /* DZNEmptyDataSet */;
-			targetProxy = A5FFFBEAD3E04E82C1EE212A90924104 /* PBXContainerItemProxy */;
+			targetProxy = D6053E720232BC413A0F1DE8BC246546 /* PBXContainerItemProxy */;
+		};
+		568638AD4C7351435723DE035C385921 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FontAwesome.swift;
+			target = 9A1EF8B2D071B6E09A058AC936790CC6 /* FontAwesome.swift */;
+			targetProxy = 310D868921E5C8DBE336988F1B08FA28 /* PBXContainerItemProxy */;
 		};
 		6C7460D8FDA3F22570CAAF235D9F9761 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
 			target = A86815131848C4BEF8F92BAE6A9439D8 /* SVProgressHUD */;
 			targetProxy = 8ED67DC6C33F9679979A44A860CAD6B5 /* PBXContainerItemProxy */;
-		};
-		86E8E1C270F5D8947A40DC9E858ABCF9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "kaoNetwork-KaoCustomPod";
-			target = FA43BE994233B5EEEAB23D1E19813D5E /* kaoNetwork-KaoCustomPod */;
-			targetProxy = D4EE36E6828A8933A07EF6E414C50BFE /* PBXContainerItemProxy */;
 		};
 		89215580EF097D83EB275338FD3B6AFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2798,11 +2795,11 @@
 			target = A86815131848C4BEF8F92BAE6A9439D8 /* SVProgressHUD */;
 			targetProxy = 82B5C64799F130F4D56CBFC3F3FE104F /* PBXContainerItemProxy */;
 		};
-		8F443BC181628511DBC3B4D6C4482320 /* PBXTargetDependency */ = {
+		9A0A5F0FAAEE8D9C81E2761126080DC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MarqueeLabel;
-			target = CFCF6F398FE23EEF7D1EF50114D414A5 /* MarqueeLabel */;
-			targetProxy = C43BB653B8660F5E179C8F9412D8580E /* PBXContainerItemProxy */;
+			name = SVProgressHUD;
+			target = A86815131848C4BEF8F92BAE6A9439D8 /* SVProgressHUD */;
+			targetProxy = E01616C25DCA1C3988205CAECBD1D0B3 /* PBXContainerItemProxy */;
 		};
 		9CDE868A129079E67DDD309064F35D3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2825,20 +2822,8 @@
 		A619C8F03A7CDF55CDB1CE2087ED4ABB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = kaoNetwork;
-			target = 91584344302264DEC01970B22B5EFC5D /* kaoNetwork */;
+			target = D2183B91E980CF1E543BBC1283E4E2B5 /* kaoNetwork */;
 			targetProxy = F4EFCEC10914979A179D11C552C0AF11 /* PBXContainerItemProxy */;
-		};
-		A918175789C76D82654A2F1CA1554B6D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = A86815131848C4BEF8F92BAE6A9439D8 /* SVProgressHUD */;
-			targetProxy = 66BCF5A698FFC138BB47F676244133EF /* PBXContainerItemProxy */;
-		};
-		AC4F2BBBD7DF7107009A72753B91D139 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnapKit;
-			target = 105A3ECD649CB93A2B45BC2AC422C49C /* SnapKit */;
-			targetProxy = C412438D064BD85DD7A444940B1246B9 /* PBXContainerItemProxy */;
 		};
 		B48D56DD94E350646465CA0884435827 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2852,17 +2837,23 @@
 			target = 767E48AC9D3B5E9265BECB6AA89AA70D /* FontAwesome.swift-FontAwesome.swift */;
 			targetProxy = A4F1E132235010CE93F0F148565BBAF6 /* PBXContainerItemProxy */;
 		};
+		C5B00EA8BE2C3BAE8873FB07E072379C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "kaoNetwork-KaoNetworkCustomPod";
+			target = AE1FDE26AA32195CB425D0C4E4EF56A4 /* kaoNetwork-KaoNetworkCustomPod */;
+			targetProxy = 94E66782C49FA889FE313B2123AEB614 /* PBXContainerItemProxy */;
+		};
+		E5C8C265ECE82C50ED850111132503A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XLPagerTabStrip;
+			target = A96EA1F139B698B830BCCB9411006B02 /* XLPagerTabStrip */;
+			targetProxy = 9A4530E7BFA797176D78D1340D0E2287 /* PBXContainerItemProxy */;
+		};
 		EB9230C0971B0F0F098D1519F53CB2F8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NotificationBannerSwift;
 			target = 407445CE1EEC811B03953C999E0A8DE0 /* NotificationBannerSwift */;
 			targetProxy = 5FCC6811C6143F26341C3A5E177E28B4 /* PBXContainerItemProxy */;
-		};
-		F7CF3EF1B66B6855EFB92A9E193D5EFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NotificationBannerSwift;
-			target = 407445CE1EEC811B03953C999E0A8DE0 /* NotificationBannerSwift */;
-			targetProxy = 3F9CF52CBB2490DD1EB046FE9F04EFC8 /* PBXContainerItemProxy */;
 		};
 		FDC793FCC6D7A7741E49CE4F684249A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2955,6 +2946,22 @@
 			};
 			name = Release;
 		};
+		10854538197E26DA328C98AB86454FC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7480208508CC0C4DEBD48770CE899917 /* kaoNetwork.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/kaoNetwork";
+				INFOPLIST_FILE = "Target Support Files/kaoNetwork/ResourceBundle-KaoNetworkCustomPod-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = KaoNetworkCustomPod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		11501F35A84F5D7DD09552223A70AEB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3B4712DBE4B232F0B80C5E55BCAB258 /* Alamofire.xcconfig */;
@@ -3043,6 +3050,42 @@
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
+		};
+		1594492BFFAC02B4D1DD44001D26DE79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7480208508CC0C4DEBD48770CE899917 /* kaoNetwork.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/kaoNetwork/kaoNetwork-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/kaoNetwork/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/kaoNetwork/kaoNetwork.modulemap";
+				PRODUCT_MODULE_NAME = kaoNetwork;
+				PRODUCT_NAME = kaoNetwork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		1C14A147B5DBC3435471D823CD96B208 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3162,58 +3205,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		330FA4A5DD2D493B170E3EF7F0F827EA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBE3139C099F6EDCA9568E8DED41ECDA /* kaoNetwork.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/kaoNetwork";
-				INFOPLIST_FILE = "Target Support Files/kaoNetwork/ResourceBundle-KaoCustomPod-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = KaoCustomPod;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		3C2E2D61C7F7B3D6F1ACF1FBFD95D6C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBE3139C099F6EDCA9568E8DED41ECDA /* kaoNetwork.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/kaoNetwork/kaoNetwork-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/kaoNetwork/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/kaoNetwork/kaoNetwork.modulemap";
-				PRODUCT_MODULE_NAME = kaoNetwork;
-				PRODUCT_NAME = kaoNetwork;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3393,41 +3384,19 @@
 			};
 			name = Debug;
 		};
-		73BB377DA778CB5C43A069634F01AC68 /* Release */ = {
+		69B29959346BBDF45109A9EBF1908AD8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBE3139C099F6EDCA9568E8DED41ECDA /* kaoNetwork.xcconfig */;
+			baseConfigurationReference = 7480208508CC0C4DEBD48770CE899917 /* kaoNetwork.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/kaoNetwork/kaoNetwork-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/kaoNetwork/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/kaoNetwork";
+				INFOPLIST_FILE = "Target Support Files/kaoNetwork/ResourceBundle-KaoNetworkCustomPod-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/kaoNetwork/kaoNetwork.modulemap";
-				PRODUCT_MODULE_NAME = kaoNetwork;
-				PRODUCT_NAME = kaoNetwork;
+				PRODUCT_NAME = KaoNetworkCustomPod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -3605,6 +3574,44 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F19EADC146CBC7AA4F658718CB2F5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7480208508CC0C4DEBD48770CE899917 /* kaoNetwork.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/kaoNetwork/kaoNetwork-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/kaoNetwork/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/kaoNetwork/kaoNetwork.modulemap";
+				PRODUCT_MODULE_NAME = kaoNetwork;
+				PRODUCT_NAME = kaoNetwork;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -3875,22 +3882,6 @@
 			};
 			name = Release;
 		};
-		D2DA3938B90A077DF50AB8ECA1E3ED48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBE3139C099F6EDCA9568E8DED41ECDA /* kaoNetwork.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/kaoNetwork";
-				INFOPLIST_FILE = "Target Support Files/kaoNetwork/ResourceBundle-KaoCustomPod-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = KaoCustomPod;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		E41BC2FFC48353F467A5329D5F8C751F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0482C2074A1B1029087E5DAF594251F1 /* KaoDesign.xcconfig */;
@@ -4020,6 +4011,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F170E940C8AEAD9211317B09300AA0D /* Build configuration list for PBXNativeTarget "kaoNetwork-KaoNetworkCustomPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10854538197E26DA328C98AB86454FC8 /* Debug */,
+				69B29959346BBDF45109A9EBF1908AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -4074,6 +4074,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		53C5BA20F3A3BDB9F22D03CF72E7CA84 /* Build configuration list for PBXNativeTarget "kaoNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1594492BFFAC02B4D1DD44001D26DE79 /* Debug */,
+				9F19EADC146CBC7AA4F658718CB2F5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		57FAB0BD9E5E73CB807B5866AC4DFE41 /* Build configuration list for PBXNativeTarget "MarqueeLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -4124,24 +4133,6 @@
 			buildConfigurations = (
 				F9078DF3FEEA0CCB7A023EF1A7AFD7AD /* Debug */,
 				000419548A13647E8099FB2E9E3C8D65 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8CEF1EF38225ED13166D52A52BD237F1 /* Build configuration list for PBXNativeTarget "kaoNetwork-KaoCustomPod" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2DA3938B90A077DF50AB8ECA1E3ED48 /* Debug */,
-				330FA4A5DD2D493B170E3EF7F0F827EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B15C47C536459362AFBEA554EFF31D05 /* Build configuration list for PBXNativeTarget "kaoNetwork" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3C2E2D61C7F7B3D6F1ACF1FBFD95D6C9 /* Debug */,
-				73BB377DA778CB5C43A069634F01AC68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

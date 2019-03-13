@@ -13,8 +13,7 @@ public class TimeOutViewController: UIViewController {
     private lazy var timeOut: KaoEmptyStateView = {
         let view: KaoEmptyStateView = KaoEmptyStateView()
         var data = KaoEmptyState()
-        data.topSpace = 150
-        data.icon = UIImage(named: "img_waiting")
+        data.icon = UIImage.imageFromNetworkIos("img_waiting")
         data.title = NSAttributedString(string: "You were inactive for a while")
         data.message = NSAttributedString(string: "Your session ended due to inactivity. \n Please start over.")
         data.buttonTitle = "Start Over"
