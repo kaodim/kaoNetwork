@@ -18,56 +18,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9I-np-31t">
-                                <rect key="frame" x="151.5" y="318.5" width="72" height="30"/>
-                                <state key="normal" title="CONNECT"/>
-                                <connections>
-                                    <action selector="connectTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="7cz-cP-aEV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMZ-nu-AZa">
-                                <rect key="frame" x="128" y="388.5" width="119" height="30"/>
+                                <rect key="frame" x="128" y="318.5" width="119" height="30"/>
                                 <state key="normal" title="Show No Internet"/>
                                 <connections>
                                     <action selector="noInternetTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5j-bT-La5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-x1-o8E">
-                                <rect key="frame" x="97.5" y="458.5" width="180" height="30"/>
+                                <rect key="frame" x="97.5" y="388.5" width="180" height="30"/>
                                 <state key="normal" title="Show Internal Server Error"/>
                                 <connections>
                                     <action selector="internalTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="SKX-03-YAy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vye-9p-Jml">
-                                <rect key="frame" x="116" y="528.5" width="143" height="30"/>
+                                <rect key="frame" x="116" y="458.5" width="143" height="30"/>
                                 <state key="normal" title="Show Time Out Error"/>
                                 <connections>
                                     <action selector="timeOutTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKQ-ul-4Wn"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="401, 500" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5F-GS-mow">
-                                <rect key="frame" x="137.5" y="248.5" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="X3C-sH-Cnw"/>
-                                </constraints>
+                                <rect key="frame" x="148.5" y="40" width="78.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTX-C8-ytQ">
+                                <rect key="frame" x="183" y="100" width="162" height="30"/>
+                                <state key="normal" title="Connect via JSON"/>
+                                <connections>
+                                    <action selector="jsonConnectTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="eOZ-fM-RUD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8v7-dr-ond">
+                                <rect key="frame" x="140" y="188.5" width="95" height="30"/>
+                                <state key="normal" title="Upload Image"/>
+                                <connections>
+                                    <action selector="uploadTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yz6-VB-h4I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9I-np-31t">
+                                <rect key="frame" x="30" y="100" width="123" height="30"/>
+                                <state key="normal" title="Connect via DATA"/>
+                                <connections>
+                                    <action selector="dataConnectTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="mx4-7l-F0M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ndg-x1-o8E" firstAttribute="top" secondItem="HMZ-nu-AZa" secondAttribute="bottom" constant="40" id="4LG-Nk-zuP"/>
-                            <constraint firstItem="K9I-np-31t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4qG-He-DSV"/>
+                            <constraint firstItem="8v7-dr-ond" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="56h-pa-Oqr"/>
                             <constraint firstItem="HMZ-nu-AZa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5bk-cC-5DD"/>
+                            <constraint firstItem="HMZ-nu-AZa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7fd-XO-6lT"/>
                             <constraint firstItem="vye-9p-Jml" firstAttribute="top" secondItem="ndg-x1-o8E" secondAttribute="bottom" constant="40" id="AqR-gO-Oe5"/>
+                            <constraint firstItem="K9I-np-31t" firstAttribute="top" secondItem="j5F-GS-mow" secondAttribute="bottom" constant="30" id="Bab-n6-vwh"/>
+                            <constraint firstItem="K9I-np-31t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="CS0-W0-VyJ"/>
                             <constraint firstItem="j5F-GS-mow" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HD5-d7-vCd"/>
-                            <constraint firstItem="K9I-np-31t" firstAttribute="top" secondItem="j5F-GS-mow" secondAttribute="bottom" constant="40" id="Yxw-QZ-feR"/>
-                            <constraint firstItem="HMZ-nu-AZa" firstAttribute="top" secondItem="K9I-np-31t" secondAttribute="bottom" constant="40" id="eT7-RT-o1L"/>
+                            <constraint firstItem="tTX-C8-ytQ" firstAttribute="top" secondItem="K9I-np-31t" secondAttribute="top" id="aOz-bo-HJa"/>
+                            <constraint firstItem="j5F-GS-mow" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ffJ-Uv-qq1"/>
                             <constraint firstItem="ndg-x1-o8E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g8n-NM-8xT"/>
-                            <constraint firstItem="K9I-np-31t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="psE-SP-wsP"/>
+                            <constraint firstItem="tTX-C8-ytQ" firstAttribute="leading" secondItem="K9I-np-31t" secondAttribute="trailing" constant="30" id="ng9-sp-9QR"/>
                             <constraint firstItem="vye-9p-Jml" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rsQ-gj-VYZ"/>
+                            <constraint firstItem="HMZ-nu-AZa" firstAttribute="top" secondItem="8v7-dr-ond" secondAttribute="bottom" constant="100" id="uBa-8f-ESg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tTX-C8-ytQ" secondAttribute="trailing" constant="30" id="uzS-nI-ybz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
