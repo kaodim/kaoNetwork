@@ -17,7 +17,7 @@ public class DisconnectedViewController: UIViewController {
         data.icon = UIImage.imageFromNetworkIos("img_nointernet")
         data.title = NSAttributedString(string: "Looks like we lost you!")
         data.message = NSAttributedString(string: "Please make sure you are connected to the internet to proceed.")
-        data.buttonTitle = "Retry"f
+        data.buttonTitle = "Retry"
         data.buttonDidTapped = retryButtonTapped
         view.configure(data)
         view.translatesAutoresizingMaskIntoConstraints = false
