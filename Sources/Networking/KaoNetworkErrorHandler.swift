@@ -129,7 +129,12 @@ extension KaoNetworkErrorHandler {
         let topView = UIApplication.topViewController()
         let network = (topView as? KaoNetworkProtocol)
         let retryAction = network?.retry
-        topView?.presentInternalServerError(retryAction)
+
+        if topView?.isKind(of: InternalServerErrorViewController.self) ?? false {
+
+        } else {
+            topView?.presentInternalServerError(retryAction)
+        }
     }
 
     static func handleUnauthorized() {

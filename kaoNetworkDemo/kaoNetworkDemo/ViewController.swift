@@ -17,7 +17,12 @@ public struct NetworkRequest: KaoNetworkErrorHandler {
     public static func handleUnauthorized() {
         let topView = UIApplication.topViewController()
         let retryAction = (topView as? KaoNetworkProtocol)?.retry
-        topView?.presentTimeOutError(retryAction)
+        
+        if topView?.isKind(of: TimeOutViewController.self) ?? false {
+
+        } else {
+            topView?.presentTimeOutError(retryAction)
+        }
     }
 
     public static func multipartDataHandler(formData: MultipartFormData, data: Data, fileName: String) {
@@ -42,6 +47,9 @@ class ViewController: KaoBaseViewController {
     }
     @IBAction func dataConnectTapped() {
         if let url = URL(string: "https://httpstat.us/\(textField.text ?? "")") {
+            NetworkRequest.requestData(url, method: .get) { (data) in
+
+            }
             NetworkRequest.requestData(url, method: .get) { (data) in
 
             }
