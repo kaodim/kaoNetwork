@@ -36,7 +36,7 @@ extension KaoNetworkErrorHandler {
     public static func handleErrorResponse<T>(response: DataResponse<T>, error: Error, completion: (_ resultError: Any) -> Void) {
 
         guard let statusCode = response.response?.statusCode, let statusCodeError = NetworkErrorStatusCode(rawValue: statusCode) else {
-            completion(error.localizedDescription)
+//            completion(error.localizedDescription)
             return
         }
 
@@ -55,12 +55,12 @@ extension KaoNetworkErrorHandler {
 
         switch statusCodeError {
         case .unauthorized:
-            handleUnauthorizedError()
+            handleUnauthorized()
         case .internalServerError:
             handleInternalServerError()
         }
 
-        completion(statusCodeError.statusCodeDescription)
+//        completion(statusCodeError.statusCodeDescription)
     }
 
     /// Request Response JSON
@@ -132,7 +132,7 @@ extension KaoNetworkErrorHandler {
         topView?.presentInternalServerError(retryAction)
     }
 
-    static func handleUnauthorizedError() {
+    static func handleUnauthorized() {
         let topView = UIApplication.topViewController()
         let retryAction = (topView as? KaoNetworkProtocol)?.retry
         topView?.presentTimeOutError(retryAction)

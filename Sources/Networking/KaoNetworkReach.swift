@@ -16,6 +16,7 @@ public class KaoNetworkReach {
     let manager = NetworkReachabilityManager(host: "www.apple.com")
 
     public func startObserve() {
+
         manager?.listener = { status in
             switch status {
             case .notReachable:
@@ -28,6 +29,7 @@ public class KaoNetworkReach {
                 print("The network is reachable over the WWAN connection")
             }
         }
+
         self.manager?.startListening()
     }
 
@@ -39,9 +41,5 @@ public class KaoNetworkReach {
         let topView = UIApplication.topViewController()
         let retryAction = (topView as? KaoNetworkProtocol)?.retry
         topView?.presentDisconnectScreen(retryAction)
-    }
-
-    func presentView() {
-
     }
 }

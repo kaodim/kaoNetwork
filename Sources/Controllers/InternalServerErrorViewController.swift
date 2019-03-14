@@ -13,11 +13,12 @@ public class InternalServerErrorViewController: UIViewController {
     private lazy var internalServer: KaoEmptyStateView = {
         let view: KaoEmptyStateView = KaoEmptyStateView()
         var data = KaoEmptyState()
+        data.topSpace = 60
         data.icon = UIImage.imageFromNetworkIos("img_downtime")
         data.title = NSAttributedString(string: "Kaodim is facing server downtime")
         data.message = NSAttributedString(string: "Please bear with us while we work to resolve this.")
         data.buttonTitle = "Close"
-        data.buttonDidTapped = { self.dismiss(animated: true, completion: nil) }
+        data.buttonDidTapped = retryButtonTapped
         view.configure(data)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -29,6 +30,14 @@ public class InternalServerErrorViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         configureLayout()
+    }
+
+    public func retryButtonTapped() {
+        if let retry = retry {
+            retry()
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 
     private func configureLayout() {

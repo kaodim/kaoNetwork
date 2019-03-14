@@ -15,7 +15,9 @@ import kaoNetwork
 public struct NetworkRequest: KaoNetworkErrorHandler {
 
     public static func handleUnauthorized() {
-        print("showing unauthorized from network request")
+        let topView = UIApplication.topViewController()
+        let retryAction = (topView as? KaoNetworkProtocol)?.retry
+        topView?.presentTimeOutError(retryAction)
     }
 
     public static func multipartDataHandler(formData: MultipartFormData, data: Data, fileName: String) {

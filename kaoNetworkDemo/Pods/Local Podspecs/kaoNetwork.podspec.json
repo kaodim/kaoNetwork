@@ -1,6 +1,6 @@
 {
   "name": "kaoNetwork",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "kaodim network library",
   "description": "Provides network request",
   "homepage": "https://github.com/kaodim/kaoNetwork",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:kaodim/kaoNetwork.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "source_files": "Sources/**/*.{swift}",
   "resource_bundles": {
@@ -28,7 +28,7 @@
       "0.1.48"
     ],
     "Alamofire": [
-      "4.6.0"
+      "4.8.1"
     ]
   },
   "pod_target_xcconfig": {

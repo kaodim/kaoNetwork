@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.6.0)
+  - Alamofire (4.8.1)
   - DZNEmptyDataSet (1.8.1)
   - FontAwesome.swift (1.3.2)
   - KaoDesign (0.1.48):
@@ -9,8 +9,8 @@ PODS:
     - NotificationBannerSwift (= 1.6.3)
     - SVProgressHUD (= 2.2.5)
     - XLPagerTabStrip (= 8.0.0)
-  - kaoNetwork (0.1.1):
-    - Alamofire (= 4.6.0)
+  - kaoNetwork (0.1.2):
+    - Alamofire (= 4.8.1)
     - KaoDesign (= 0.1.48)
   - Kingfisher (4.6.2)
   - MarqueeLabel/Swift (3.2.0)
@@ -43,11 +43,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FontAwesome.swift: b4e4c8ccbbecb12f9b592bc533ff237af3706667
   KaoDesign: 6c8c2fab30cddf9c4de931fb2938a3cbb28876bb
-  kaoNetwork: 561707eb63c0c35c833f20d00bac8f9954dabf0d
+  kaoNetwork: 48eca624db0053822b1926ff26f0db3fbdbdbb8d
   Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
   MarqueeLabel: 440a502b91a9179bd98f9fff00ba1150650a1c0e
   NotificationBannerSwift: b231e4c3244848ef300e1c53ce027b9756b9b06f

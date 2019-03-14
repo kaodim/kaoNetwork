@@ -13,11 +13,12 @@ public class TimeOutViewController: UIViewController {
     private lazy var timeOut: KaoEmptyStateView = {
         let view: KaoEmptyStateView = KaoEmptyStateView()
         var data = KaoEmptyState()
+        data.topSpace = 100
         data.icon = UIImage.imageFromNetworkIos("img_waiting")
         data.title = NSAttributedString(string: "You were inactive for a while")
         data.message = NSAttributedString(string: "Your session ended due to inactivity. \n Please start over.")
         data.buttonTitle = "Start Over"
-        data.buttonDidTapped = { self.dismiss(animated: true, completion: nil) }
+        data.buttonDidTapped = retryButtonTapped
         view.configure(data)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -29,6 +30,14 @@ public class TimeOutViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         configureLayout()
+    }
+
+    public func retryButtonTapped() {
+        if let retry = retry {
+            retry()
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 
     private func configureLayout() {
@@ -43,7 +52,7 @@ public class TimeOutViewController: UIViewController {
 }
 
 extension UIViewController {
-    func presentTimeOutError(_ retry: (() -> Void)? = nil) {
+    public func presentTimeOutError(_ retry: (() -> Void)? = nil) {
         let view = TimeOutViewController()
         view.retry = retry
         self.present(view, animated: true, completion: nil)
