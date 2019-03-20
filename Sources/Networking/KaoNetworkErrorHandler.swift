@@ -35,11 +35,6 @@ extension KaoNetworkErrorHandler {
     ///   - completion: error completion be called in network request
     public static func handleErrorResponse<T>(response: DataResponse<T>, error: Error, completion: (_ resultError: Any) -> Void) {
 
-        guard let statusCode = response.response?.statusCode, let statusCodeError = NetworkErrorStatusCode(rawValue: statusCode) else {
-//            completion(error.localizedDescription)
-            return
-        }
-
         if let data = response.data {
             do {
                 let error = try JSONSerialization.jsonObject(with: data, options: [])
@@ -53,14 +48,18 @@ extension KaoNetworkErrorHandler {
             completion(error.localizedDescription)
         }
 
+        guard let statusCode = response.response?.statusCode, let statusCodeError = NetworkErrorStatusCode(rawValue: statusCode) else {
+            //            completion(error.localizedDescription)
+            return
+        }
+
         switch statusCodeError {
         case .unauthorized:
             handleUnauthorized()
         case .internalServerError:
             handleInternalServerError()
         }
-
-//        completion(statusCodeError.statusCodeDescription)
+        //        completion(statusCodeError.statusCodeDescription)
     }
 
     /// Request Response JSON
@@ -84,10 +83,8 @@ extension KaoNetworkErrorHandler {
         Alamofire.request(url, method: method, parameters: parameters, headers: headers).validate().responseJSON { (response) in
             switch response.result {
             case .success(let json):
-                print("🎉 \(url):\n \(json)")
                 completion(.success(json))
             case .failure(let error):
-                print("💩 \(url): \(error.localizedDescription)")
                 handleErrorResponse(response: response, error: error, completion: { resultError in
                     completion(.failure(resultError))
                 })
@@ -110,10 +107,8 @@ extension KaoNetworkErrorHandler {
         Alamofire.request(url, method: method, parameters: parameters, headers: headers).validate().responseData { (response) in
             switch response.result {
             case .success(let data):
-                print("🎉 \(url):\n \(data)")
                 completion(.success(data))
             case .failure(let error):
-                print("💩 \(url): \(error.localizedDescription)")
                 handleErrorResponse(response: response, error: error, completion: { resultError in
                     completion(.failure(resultError))
                 })
@@ -130,9 +125,7 @@ extension KaoNetworkErrorHandler {
         let network = (topView as? KaoNetworkProtocol)
         let retryAction = network?.retry
 
-        if topView?.isKind(of: InternalServerErrorViewController.self) ?? false {
-
-        } else {
+        if !(topView?.isKind(of: InternalServerErrorViewController.self) ?? false) {
             topView?.presentInternalServerError(retryAction)
         }
     }
@@ -154,7 +147,7 @@ extension KaoNetworkErrorHandler {
     ///   - fileName: atatchment file name
     ///   - progressHandler: progress handler
     ///   - completion: success(NetworkResult<Any>) / failure(String)
-    public static func postMultiPart(_ url: URLConvertible, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: NetworkResult<Any>) -> Void) {
+    public static func postMultiPartJSON(_ url: URLConvertible, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: NetworkResult<Any>) -> Void) {
 
         Alamofire.upload(multipartFormData: { (multipartData) in
             self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
@@ -162,7 +155,32 @@ extension KaoNetworkErrorHandler {
             switch encodingResult {
             case .success(let request, _, _):
                 request.uploadProgress(closure: progressHandler)
-                self.uploadFile(dataRequest: request, completion: { (result) in
+                self.uploadFileJSON(dataRequest: request, completion: { (result) in
+                    completion(result)
+                })
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        })
+    }
+
+    /// Send POST Multipart network call request
+    ///
+    /// - Parameters:
+    ///   - endpoint: attachment upload endpoint
+    ///   - attachmentData: atatchment data
+    ///   - fileName: atatchment file name
+    ///   - progressHandler: progress handler
+    ///   - completion: success(NetworkResult<Data>) / failure(String)
+    public static func postMultiPartData(_ url: URLConvertible, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: NetworkResult<Data>) -> Void) {
+
+        Alamofire.upload(multipartFormData: { (multipartData) in
+            self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
+        }, to: url, method: .post, headers: header, encodingCompletion: { (encodingResult) in
+            switch encodingResult {
+            case .success(let request, _, _):
+                request.uploadProgress(closure: progressHandler)
+                self.uploadFileData(dataRequest: request, completion: { (result) in
                     completion(result)
                 })
             case .failure(let error):
@@ -194,8 +212,6 @@ extension KaoNetworkErrorHandler {
             mimeType = "text/plain"
         }
 
-        print("original called")
-
         formData.append(data, withName: "file", fileName: fileName, mimeType: mimeType)
     }
 
@@ -205,9 +221,28 @@ extension KaoNetworkErrorHandler {
     /// - Parameters:
     ///   - request: upload request
     ///   - completion: success(NetworkResult<Any>) / failure(String)
-    private static func uploadFile(dataRequest: DataRequest, completion: @escaping (_ result: NetworkResult<Any>) -> Void) {
+    private static func uploadFileJSON(dataRequest: DataRequest, completion: @escaping (_ result: NetworkResult<Any>) -> Void) {
         dataRequest.validate()
             .responseJSON(completionHandler: { (response) in
+                switch response.result {
+                case .success(let json):
+                    completion(.success(json))
+                case .failure(let error):
+                    handleErrorResponse(response: response, error: error, completion: { resultError in
+                        completion(.failure(resultError))
+                    })
+                }
+            })
+    }
+
+    /// Upload encoded data to server
+    ///
+    /// - Parameters:
+    ///   - request: upload request
+    ///   - completion: success(NetworkResult<Data>) / failure(String)
+    private static func uploadFileData(dataRequest: DataRequest, completion: @escaping (_ result: NetworkResult<Data>) -> Void) {
+        dataRequest.validate()
+            .responseData(completionHandler: { (response) in
                 switch response.result {
                 case .success(let json):
                     completion(.success(json))
