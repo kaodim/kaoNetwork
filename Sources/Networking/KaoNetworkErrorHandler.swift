@@ -33,8 +33,25 @@ extension KaoNetworkErrorHandler {
     ///   - response: network respose
     ///   - error: error request
     ///   - completion: error completion be called in network request
-    public static func handleErrorResponse<T>(response: DataResponse<T>, error: Error, completion: (_ resultError: Any) -> Void) {
+    public static func handleErrorResponse<T>(response: DataResponse<T>, error: Error, needAuth: Bool = false, completion: (_ resultError: Any) -> Void) {
 
+        if let statusCode = response.response?.statusCode, let statusCodeError = NetworkErrorStatusCode(rawValue: statusCode) {
+            switch statusCodeError {
+            case .unauthorized:
+                if needAuth { // this bcs backend return 401 when sign in / sign up
+                    handleUnauthorized()
+                } else {
+                    tryToReadBackendErrorMessage(response: response, completion: completion)
+                }
+            case .internalServerError:
+                handleInternalServerError()
+            }
+        } else {
+            tryToReadBackendErrorMessage(response: response, completion: completion)
+        }
+    }
+
+    public static func tryToReadBackendErrorMessage<T>(response: DataResponse<T>, completion: (_ resultError: Any) -> Void) {
         if let data = response.data {
             do {
                 let error = try JSONSerialization.jsonObject(with: data, options: [])
@@ -44,22 +61,9 @@ extension KaoNetworkErrorHandler {
             } catch {
                 completion(error.localizedDescription)
             }
-        } else {
-            completion(error.localizedDescription)
-        }
-
-        guard let statusCode = response.response?.statusCode, let statusCodeError = NetworkErrorStatusCode(rawValue: statusCode) else {
-            //            completion(error.localizedDescription)
-            return
-        }
-
-        switch statusCodeError {
-        case .unauthorized:
-            handleUnauthorized()
-        case .internalServerError:
-            handleInternalServerError()
-        }
-        //        completion(statusCodeError.statusCodeDescription)
+        } //else {
+            //completion(error.localizedDescription)
+        //}
     }
 
     /// Request Response JSON
@@ -71,7 +75,7 @@ extension KaoNetworkErrorHandler {
     ///   - headers:
     ///   - showLoader:
     ///   - completion: success(NetworkResult<Any>) / failure(String)
-    public static func requestJSON(_ url: URLConvertible, method: HTTPMethod, parameters: Parameters? = nil, headers: HTTPHeaders? = nil, showLoader: Bool = false, completion: @escaping (_ result: NetworkResult<Any>) -> Void) {
+    public static func requestJSON(_ url: URLConvertible, method: HTTPMethod, parameters: Parameters? = nil, headers: HTTPHeaders? = nil, showLoader: Bool = false, needAuth: Bool, completion: @escaping (_ result: NetworkResult<Any>) -> Void) {
 
         if showLoader {
             KaoLoading.shared.show()
@@ -85,7 +89,7 @@ extension KaoNetworkErrorHandler {
             case .success(let json):
                 completion(.success(json))
             case .failure(let error):
-                handleErrorResponse(response: response, error: error, completion: { resultError in
+                handleErrorResponse(response: response, error: error, needAuth: needAuth, completion: { resultError in
                     completion(.failure(resultError))
                 })
             }
@@ -96,7 +100,7 @@ extension KaoNetworkErrorHandler {
         }
     }
 
-    public static func requestData(_ url: URLConvertible, method: HTTPMethod, parameters: Parameters? = nil, headers: HTTPHeaders? = nil, showLoader: Bool = false, completion: @escaping (_ result: NetworkResult<Data>) -> Void) {
+    public static func requestData(_ url: URLConvertible, method: HTTPMethod, parameters: Parameters? = nil, headers: HTTPHeaders? = nil, showLoader: Bool = false, needAuth: Bool, completion: @escaping (_ result: NetworkResult<Data>) -> Void) {
         if showLoader {
             KaoLoading.shared.show()
         }
@@ -109,7 +113,7 @@ extension KaoNetworkErrorHandler {
             case .success(let data):
                 completion(.success(data))
             case .failure(let error):
-                handleErrorResponse(response: response, error: error, completion: { resultError in
+                handleErrorResponse(response: response, error: error, needAuth: needAuth, completion: { resultError in
                     completion(.failure(resultError))
                 })
             }
@@ -128,12 +132,6 @@ extension KaoNetworkErrorHandler {
         if !(topView?.isKind(of: InternalServerErrorViewController.self) ?? false) {
             topView?.presentInternalServerError(retryAction)
         }
-    }
-
-    static func handleUnauthorized() {
-        let topView = UIApplication.topViewController()
-        let retryAction = (topView as? KaoNetworkProtocol)?.retry
-        topView?.presentTimeOutError(retryAction)
     }
 }
 
