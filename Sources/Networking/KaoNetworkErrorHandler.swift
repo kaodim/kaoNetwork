@@ -17,6 +17,7 @@ private var defaultParameters: [String: Any] = {
     parameters["device_id"] = UIDevice.current.identifierForVendor?.uuidString.replacingOccurrences(of: "-", with: "") ?? ""
     parameters["os"] = UIDevice.current.systemVersion
     parameters["app_version"] = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+    parameters["device_type"] = "mobile"
     return parameters
 }()
 
