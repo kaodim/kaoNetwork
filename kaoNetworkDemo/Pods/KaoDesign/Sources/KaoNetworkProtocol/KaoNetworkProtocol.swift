@@ -8,6 +8,6 @@
 import Foundation
 
 public protocol KaoNetworkProtocol {
-    func retry()
+    var retry: (() -> Void)? { get set }
     func addNetworkErrorView(_ errorView: UIView)
 }

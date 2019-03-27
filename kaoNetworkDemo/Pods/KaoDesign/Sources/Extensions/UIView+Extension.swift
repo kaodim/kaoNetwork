@@ -76,6 +76,4 @@ private class NibLoader {
         }
         return nib
     }
-
-    
 }

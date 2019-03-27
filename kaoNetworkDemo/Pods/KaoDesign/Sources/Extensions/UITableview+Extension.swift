@@ -73,7 +73,7 @@ public extension UITableView {
 }
 
 public extension UITableView {
-    class func kaoDefault(style: UITableView.Style = .plain, delegate: UITableViewDelegate, dataSource: UITableViewDataSource, emptyDelegate: DZNEmptyDataSetDelegate? = nil, emptyDataSource: DZNEmptyDataSetSource? = nil, refresher: UIRefreshControl? = nil, bottomLoading: UIActivityIndicatorView? = nil) -> UITableView {
+    class func kaoDefault(style: UITableView.Style = .plain, delegate: UITableViewDelegate? = nil, dataSource: UITableViewDataSource? = nil, emptyDelegate: DZNEmptyDataSetDelegate? = nil, emptyDataSource: DZNEmptyDataSetSource? = nil, refresher: UIRefreshControl? = nil, bottomLoading: UIActivityIndicatorView? = nil) -> UITableView {
         let view = UITableView(frame: .zero, style: style)
         view.dataSource = dataSource
         view.delegate = delegate

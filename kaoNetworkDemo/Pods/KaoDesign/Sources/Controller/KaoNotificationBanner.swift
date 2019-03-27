@@ -18,14 +18,15 @@ open class KaoNotificationBanner {
 
         let notificationView = KaoNotificationBannerView()
         notificationView.translatesAutoresizingMaskIntoConstraints = false
-        let height = notificationView.configure(type, titleText: title, messageText: message)
+        var height = notificationView.configure(type, titleText: title, messageText: message)
         removeNotification()
         banner = NotificationBanner(customView: notificationView)
         notificationView.dismissTapped = { [weak self] in
             self?.banner?.dismiss()
         }
-        let needExtraHeight = (viewController?.navigationController?.isNavigationBarHidden ?? true)
-        banner?.bannerHeight =  needExtraHeight ? (height + 20) : height
+
+        height += getExtraHeight(viewController)
+        banner?.bannerHeight = height
         banner?.delegate = bannerDelegate
         banner?.dismissOnTap = false
         banner?.onTap = didTapView
@@ -34,5 +35,26 @@ open class KaoNotificationBanner {
 
     public func removeNotification() {
         banner?.removeFromSuperview()
+    }
+
+    private func getExtraHeight(_ viewController: UIViewController?) -> CGFloat {
+        let hasNavigation = (viewController?.navigationController?.isNavigationBarHidden ?? true)
+        let notchHeight: CGFloat = (isiPhoneX() && hasNavigation) ? 24 : 0
+        let navigationHeight: CGFloat = hasNavigation ? 20 : 0
+        let extraHeight = notchHeight + navigationHeight
+        return extraHeight
+    }
+
+    private func isiPhoneX() -> Bool {
+        if UIDevice.current.userInterfaceIdiom != .phone {
+            return false
+        }
+        
+        switch UIDevice.modelName {
+        case "iPhone X", "iPhone XS", "iPhone XS Max", "iPhone XR":
+            return true
+        default:
+            return false
+        }
     }
 }

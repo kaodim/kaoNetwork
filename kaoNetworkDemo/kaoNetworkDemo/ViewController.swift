@@ -35,22 +35,20 @@ class ViewController: KaoBaseViewController {
     @IBOutlet weak var textField: UITextField!
 
     override func viewDidLoad() {
+        super.retry = retryCallback
         super.viewDidLoad()
     }
 
     @IBAction func jsonConnectTapped() {
         if let url = URL(string: "https://httpstat.us/\(textField.text ?? "")") {
-            NetworkRequest.requestJSON(url, method: .get, parameters: nil, headers: nil, showLoader: false) { (result) in
+            NetworkRequest.requestJSON(url, method: .get, parameters: nil, headers: nil, showLoader: false, needAuth: true) { (result) in
 
             }
         }
     }
     @IBAction func dataConnectTapped() {
         if let url = URL(string: "https://httpstat.us/\(textField.text ?? "")") {
-            NetworkRequest.requestData(url, method: .get) { (data) in
-
-            }
-            NetworkRequest.requestData(url, method: .get) { (data) in
+            NetworkRequest.requestData(url, method: .get, needAuth: true) { (data) in
 
             }
         }
@@ -58,18 +56,18 @@ class ViewController: KaoBaseViewController {
 
     @IBAction func uploadTapped() {
         let icon = UIImage.imageFromNetworkIos("img_waiting")
-        if let data = icon?.compressedData(.low) {
-            NetworkRequest.postMultiPart("https://api.imgur.com/3/image", header: [:], attachmentData: data, fileName: "jpg", progressHandler: { (progres) in
-                print(progres)
-            }) { (result) in
-                switch result {
-                case .success:
-                    print("sucess")
-                case .failure:
-                    print("failure")
-                }
-            }
-        }
+//        if let data = icon?.compressedData(.low) {
+//            NetworkRequest.postMultiPart("https://api.imgur.com/3/image", header: [:], attachmentData: data, fileName: "jpg", progressHandler: { (progres) in
+//                print(progres)
+//            }) { (result) in
+//                switch result {
+//                case .success:
+//                    print("sucess")
+//                case .failure:
+//                    print("failure")
+//                }
+//            }
+//        }
     }
 
     @IBAction func noInternetTapped() {
@@ -87,7 +85,8 @@ class ViewController: KaoBaseViewController {
         self.present(view, animated: true, completion: nil)
     }
 
-    override func retry() {
+    func retryCallback() {
+        dismiss(animated: true, completion: nil)
         print("dont know what i am doing")
     }
 

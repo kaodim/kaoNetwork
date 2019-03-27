@@ -10,14 +10,29 @@ import Foundation
 import UIKit
 
 open class KaoBaseViewController: UIViewController, KaoNetworkProtocol {
-
+    public var retry: (() -> Void)? = nil
     public var needListenToKeyboard: Bool = false
+    public var hideTabbar: Bool = true
+
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nil, bundle: nil)
+        initialConfiguration()
+    }
+
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initialConfiguration()
+    }
+
+    private func initialConfiguration() {
+        hidesBottomBarWhenPushed = hideTabbar
+        navigationItem.backBarButtonItem = UIBarButtonItem.clearBackButton()
+        navigationController?.navigationBar.kaodimStyle()
+    }
 
     // MARK: - View cycle
     override open func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.backBarButtonItem = UIBarButtonItem.clearBackButton()
-        navigationController?.navigationBar.kaodimStyle()
         view.backgroundColor = .groupTableViewBackground
     }
 
@@ -50,8 +65,6 @@ open class KaoBaseViewController: UIViewController, KaoNetworkProtocol {
     }
 
     // MARK: - KaoNetworkProtocol
-    open func retry() { }
-
     open func addNetworkErrorView(_ errorView: UIView) {
         view.addSubview(errorView)
         NSLayoutConstraint.activate([
