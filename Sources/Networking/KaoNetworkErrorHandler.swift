@@ -82,10 +82,12 @@ extension KaoNetworkErrorHandler {
             KaoLoading.shared.show()
         }
 
-        var parameters: [String: Any]? = parameters == nil ? [:] : parameters
-        parameters?.merge(defaultParameters, uniquingKeysWith: { (first, _) in first })
+        var finalParameters = defaultParameters
+        if let parameters = parameters {
+            finalParameters.merged(with: parameters)
+        }
 
-        Alamofire.request(url, method: method, parameters: parameters, headers: headers).validate().responseJSON { (response) in
+        Alamofire.request(url, method: method, parameters: finalParameters, headers: headers).validate().responseJSON { (response) in
             switch response.result {
             case .success(let json):
                 completion(.success(json))
@@ -106,10 +108,12 @@ extension KaoNetworkErrorHandler {
             KaoLoading.shared.show()
         }
 
-        var parameters: [String: Any]? = parameters == nil ? [:] : parameters
-        parameters?.merge(defaultParameters, uniquingKeysWith: { (first, _) in first })
+        var finalParameters = defaultParameters
+        if let parameters = parameters {
+            finalParameters.merged(with: parameters)
+        }
 
-        Alamofire.request(url, method: method, parameters: parameters, headers: headers).validate().responseData { (response) in
+        Alamofire.request(url, method: method, parameters: finalParameters, headers: headers).validate().responseData { (response) in
             switch response.result {
             case .success(let data):
                 completion(.success(data))
@@ -253,4 +257,3 @@ extension KaoNetworkErrorHandler {
             })
     }
 }
-

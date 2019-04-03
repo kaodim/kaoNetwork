@@ -67,11 +67,16 @@ public enum KaoColorHex: UInt {
 }
 
 public extension UIColor {
+
     class func kaoColor(_ hex: KaoColorHex, alpha: CGFloat = 1.0) -> UIColor {
+        return self.kaoColor(hex.rawValue, alpha: alpha)
+    }
+
+    class func kaoColor(_ customhex: UInt, alpha: CGFloat = 1.0) -> UIColor {
         return UIColor(
-            red: CGFloat((hex.rawValue & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((hex.rawValue & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(hex.rawValue & 0x0000FF) / 255.0,
+            red: CGFloat((customhex & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((customhex & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(customhex & 0x0000FF) / 255.0,
             alpha: alpha
         )
     }
