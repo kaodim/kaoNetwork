@@ -48,7 +48,7 @@ class ViewController: KaoBaseViewController {
     }
     @IBAction func dataConnectTapped() {
         if let url = URL(string: "https://httpstat.us/\(textField.text ?? "")") {
-            NetworkRequest.requestData(url, method: .get, needAuth: true) { (data) in
+            NetworkRequest.requestData(url, method: .get, parameters: ["message" : "This is parameter"], headers: ["header":"wahhhh"], showLoader: false, needAuth: false) {  (data) in
 
             }
         }

@@ -123,6 +123,8 @@ extension KaoNetworkErrorHandler {
             encodingType = JSONEncoding.default
         }
 
+        printRequest(headers: headers ?? [:], parameters: finalParameters)
+
         Alamofire.request(url, method: method, parameters: finalParameters, encoding: encodingType, headers: headers).validate().responseData { (response) in
             switch response.result {
             case .success(let data):
@@ -265,5 +267,20 @@ extension KaoNetworkErrorHandler {
                     })
                 }
             })
+    }
+
+    private static func printRequest(headers: HTTPHeaders, parameters: [String: Any]) {
+        #if STAGING
+        print("===============[Headers]==================")
+        print(String(data: try! JSONSerialization.data(withJSONObject: headers, options: .prettyPrinted), encoding: .utf8 ) ?? [:])
+
+        print("===============[Parameters]===============")
+        print(String(data: try! JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted), encoding: .utf8 ) ?? [:])
+        print("==========================================")
+        #elseif OMEGA
+        print("MACRO FAILED")
+        #else
+        print("CHECK YOUR CODE")
+        #endif
     }
 }
