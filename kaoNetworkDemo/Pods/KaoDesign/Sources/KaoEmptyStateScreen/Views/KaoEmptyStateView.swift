@@ -13,17 +13,19 @@ public struct KaoEmptyState {
     public var message: NSAttributedString?
     public var buttonTitle: String?
     public var topSpace: CGFloat
+    public var titleSpace: CGFloat
     public var iconSpace: CGFloat
     public var buttonSpace: CGFloat
     public var buttonDidTapped: (() -> Void)?
 
     public init
-        (icon: UIImage? = nil, title: NSAttributedString? = nil, message: NSAttributedString? = nil, buttonTitle: String? = nil, topSpace: CGFloat = 20, iconSpace: CGFloat = 24, buttonSpace: CGFloat = 16, buttonDidTapped: (() -> Void)? = nil) {
+        (icon: UIImage? = nil, title: NSAttributedString? = nil, message: NSAttributedString? = nil, buttonTitle: String? = nil, topSpace: CGFloat = 20, iconSpace: CGFloat = 24, titleSpace: CGFloat = 8 , buttonSpace: CGFloat = 16, buttonDidTapped: (() -> Void)? = nil) {
         self.icon = icon
         self.title = title
         self.message = message
         self.buttonTitle = buttonTitle
         self.topSpace = topSpace
+        self.titleSpace = titleSpace
         self.iconSpace = iconSpace
         self.buttonSpace = buttonSpace
         self.buttonDidTapped = buttonDidTapped
@@ -36,7 +38,9 @@ public class KaoEmptyStateView: UIView {
     @IBOutlet private weak var topConstraint: NSLayoutConstraint!
     @IBOutlet private weak var icon: UIImageView!
     @IBOutlet private weak var iconBottomSpace: NSLayoutConstraint!
+    @IBOutlet private weak var titleContentView: UIView!
     @IBOutlet private weak var titleLabel: KaoLabel!
+    @IBOutlet private weak var titleBottomSpace: NSLayoutConstraint!
     @IBOutlet private weak var messageLabel: KaoLabel!
     @IBOutlet private weak var buttonContentView: UIView!
     @IBOutlet private weak var buttonTopSpace: NSLayoutConstraint!
@@ -68,8 +72,9 @@ public class KaoEmptyStateView: UIView {
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         addSubview(contentView)
-        titleLabel.font = UIFont.kaoFont(style: .medium, size: .large)
-        messageLabel.font = UIFont.kaoFont(style: .regular, size: .regular)
+        titleLabel.font = UIFont.kaoFont(style: .semibold, size: .title)
+        messageLabel.font = UIFont.kaoFont(style: .regular, size: .large)
+        messageLabel.textColor = UIColor.kaoColor(.black)
     }
 
     public func configure(_ data: KaoEmptyState) {
@@ -93,9 +98,12 @@ public class KaoEmptyStateView: UIView {
 
     private func configureTitle(_ data: KaoEmptyState) {
         if let stitle = data.title {
+            titleBottomSpace.constant = data.titleSpace
             titleLabel.isHidden = false
             titleLabel.attributedText = stitle
+            titleContentView.isHidden = false
         } else {
+            titleContentView.isHidden = true
             titleLabel.isHidden = true
         }
     }

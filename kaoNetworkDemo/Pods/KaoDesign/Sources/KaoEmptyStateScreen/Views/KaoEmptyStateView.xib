@@ -19,6 +19,8 @@
                 <outlet property="iconBottomSpace" destination="ND6-Jl-Q3k" id="6OM-WY-8aL"/>
                 <outlet property="iconContentView" destination="l2Y-wR-dwV" id="o9J-H7-ze8"/>
                 <outlet property="messageLabel" destination="ux3-G3-kHH" id="iwK-ea-OTt"/>
+                <outlet property="titleBottomSpace" destination="dKP-zC-Tk2" id="4Gm-3F-CmP"/>
+                <outlet property="titleContentView" destination="ABK-kn-Ugn" id="V5Z-U6-Kse"/>
                 <outlet property="titleLabel" destination="pz2-A4-X0q" id="Ohs-D5-JsZ"/>
                 <outlet property="topConstraint" destination="Bii-gN-ckK" id="H3l-bs-wGx"/>
             </connections>
@@ -29,16 +31,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOm-Qp-HSH">
-                    <rect key="frame" x="60" y="40" width="255" height="557"/>
+                    <rect key="frame" x="60" y="40" width="255" height="368.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="YzW-K5-kQ2">
-                            <rect key="frame" x="0.0" y="0.0" width="255" height="557"/>
+                            <rect key="frame" x="0.0" y="0.0" width="255" height="368.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2Y-wR-dwV">
-                                    <rect key="frame" x="0.0" y="0.0" width="255" height="506"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="255" height="247"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_empty_announcements" translatesAutoresizingMaskIntoConstraints="NO" id="QMP-Mc-NGF">
-                                            <rect key="frame" x="0.0" y="0.0" width="255" height="486"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="255" height="227"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,20 +51,32 @@
                                         <constraint firstItem="QMP-Mc-NGF" firstAttribute="top" secondItem="l2Y-wR-dwV" secondAttribute="top" id="edb-Yp-Elj"/>
                                     </constraints>
                                 </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pz2-A4-X0q" customClass="KaoLabel" customModule="KaoDesign">
-                                    <rect key="frame" x="0.0" y="508" width="255" height="0.0"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ux3-G3-kHH" customClass="KaoLabel" customModule="KaoDesign">
-                                    <rect key="frame" x="0.0" y="510" width="255" height="0.0"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABK-kn-Ugn">
+                                    <rect key="frame" x="0.0" y="249" width="255" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdasdasdas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pz2-A4-X0q" customClass="KaoLabel" customModule="KaoDesign">
+                                            <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="pz2-A4-X0q" secondAttribute="bottom" id="dKP-zC-Tk2"/>
+                                        <constraint firstItem="pz2-A4-X0q" firstAttribute="leading" secondItem="ABK-kn-Ugn" secondAttribute="leading" id="exE-1r-vYi"/>
+                                        <constraint firstAttribute="trailing" secondItem="pz2-A4-X0q" secondAttribute="trailing" id="mUw-UM-0tz"/>
+                                        <constraint firstItem="pz2-A4-X0q" firstAttribute="top" secondItem="ABK-kn-Ugn" secondAttribute="top" id="oFK-mI-LDY"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdasdasdasd" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ux3-G3-kHH" customClass="KaoLabel" customModule="KaoDesign">
+                                    <rect key="frame" x="0.0" y="301" width="255" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.3529411764705882" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-uQ-etr">
-                                    <rect key="frame" x="0.0" y="512" width="255" height="45"/>
+                                    <rect key="frame" x="0.0" y="323.5" width="255" height="45"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLu-6g-WIp" customClass="KaoButton" customModule="KaoDesign">
                                             <rect key="frame" x="112.5" y="0.0" width="30" height="45"/>
@@ -106,7 +120,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="134" y="157"/>
+            <point key="canvasLocation" x="133.59999999999999" y="156.97151424287858"/>
         </view>
     </objects>
     <resources>

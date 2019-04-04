@@ -1,6 +1,6 @@
 {
   "name": "kaoNetwork",
-  "version": "0.1.10",
+  "version": "0.1.13",
   "summary": "kaodim network library",
   "description": "Provides network request",
   "homepage": "https://github.com/kaodim/kaoNetwork",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:kaodim/kaoNetwork.git",
-    "tag": "0.1.10"
+    "tag": "0.1.13"
   },
   "source_files": "Sources/**/*.{swift}",
   "resource_bundles": {
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "KaoDesign": [
-      "0.1.54"
+      "0.1.55"
     ],
     "Alamofire": [
       "4.8.1"

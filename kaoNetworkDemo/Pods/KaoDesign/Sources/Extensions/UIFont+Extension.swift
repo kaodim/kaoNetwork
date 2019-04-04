@@ -25,8 +25,7 @@ public enum KaoFontSize: CGFloat {
 public extension UIFont {
 
     class func kaoFont(style: UIFont.Weight, size: KaoFontSize) -> UIFont {
-        let font = UIFont.systemFont(ofSize: size.rawValue, weight: style)
-        return font
+        return self.kaoFont(style: style, size: size.rawValue)
 
 //        if let font = UIFont(name: style.rawValue, size: size.rawValue) {
 //            return font
@@ -35,6 +34,11 @@ public extension UIFont {
 //            let font = UIFont(name: style.rawValue, size: size.rawValue)!
 //            return font
 //        }
+    }
+
+    class func kaoFont(style: UIFont.Weight, size: CGFloat) -> UIFont {
+        let font = UIFont.systemFont(ofSize: size, weight: style)
+        return font
     }
 }
 

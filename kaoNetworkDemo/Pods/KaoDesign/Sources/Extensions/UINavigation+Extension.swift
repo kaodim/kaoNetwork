@@ -10,15 +10,15 @@ import Foundation
 public extension UINavigationBar {
     func kaodimStyle() {
         /// Navigation bar content
-        let backIcon = UIImage.imageFromDesignIos("ic_left_arrow_dark")
+        let backIcon = UIImage.imageFromDesignIos("icon_mini_left")
         backIndicatorImage = backIcon
         backIndicatorTransitionMaskImage = backIcon
         isTranslucent = false
         barTintColor = .white
         tintColor = .black
         titleTextAttributes = [
-            NSAttributedStringKey.foregroundColor: UIColor.kaoColor(.bigStone),
-            NSAttributedStringKey.font: UIFont.kaoFont(style: .regular, size: .large)
+            NSAttributedStringKey.foregroundColor: UIColor.kaoColor(.black),
+            NSAttributedStringKey.font: UIFont.kaoFont(style: .semibold, size: .large)
         ]
         /// Bottom line
         shadowImage = UIColor.kaoColor(.whiteLilac).as1ptImage()
@@ -74,7 +74,7 @@ public extension UIBarButtonItem {
     }
 
     class func kaodimBackButton(target: Any?, action: Selector?) -> UIBarButtonItem {
-        let backIcon = UIImage.imageFromDesignIos("ic_left_arrow_dark")
+        let backIcon = UIImage.imageFromDesignIos("icon_mini_left")
         return UIBarButtonItem(image: backIcon, style: .done, target: target, action: action)
     }
 }
