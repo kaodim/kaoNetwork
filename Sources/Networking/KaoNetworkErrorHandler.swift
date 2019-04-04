@@ -87,7 +87,12 @@ extension KaoNetworkErrorHandler {
             finalParameters.merged(with: parameters)
         }
 
-        Alamofire.request(url, method: method, parameters: finalParameters, headers: headers).validate().responseJSON { (response) in
+        var encodingType: ParameterEncoding = URLEncoding.default
+        if method == .post || method == .patch {
+            encodingType = JSONEncoding.default
+        }
+
+        Alamofire.request(url, method: method, parameters: finalParameters, encoding: encodingType, headers: headers).validate().responseJSON { (response) in
             switch response.result {
             case .success(let json):
                 completion(.success(json))
@@ -113,7 +118,12 @@ extension KaoNetworkErrorHandler {
             finalParameters.merged(with: parameters)
         }
 
-        Alamofire.request(url, method: method, parameters: finalParameters, headers: headers).validate().responseData { (response) in
+        var encodingType: ParameterEncoding = URLEncoding.default
+        if method == .post || method == .patch {
+            encodingType = JSONEncoding.default
+        }
+
+        Alamofire.request(url, method: method, parameters: finalParameters, encoding: encodingType, headers: headers).validate().responseData { (response) in
             switch response.result {
             case .success(let data):
                 completion(.success(data))
