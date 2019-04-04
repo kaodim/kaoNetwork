@@ -88,7 +88,7 @@ extension KaoNetworkErrorHandler {
         }
 
         var encodingType: ParameterEncoding = URLEncoding.default
-        if method == .post || method == .patch {
+        if method == .post || method == .patch || method == .delete {
             encodingType = JSONEncoding.default
         }
 
@@ -119,7 +119,7 @@ extension KaoNetworkErrorHandler {
         }
 
         var encodingType: ParameterEncoding = URLEncoding.default
-        if method == .post || method == .patch {
+        if method == .post || method == .patch || method == .delete {
             encodingType = JSONEncoding.default
         }
 
