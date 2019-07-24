@@ -10,6 +10,8 @@ import Foundation
 import XLPagerTabStrip
 
 open class KaoBarPagerTabStripViewController: BaseButtonBarPagerTabStripViewController<KaoPageBarCell> {
+    
+    public var desiredIndex: Int?
 
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -27,6 +29,7 @@ open class KaoBarPagerTabStripViewController: BaseButtonBarPagerTabStripViewCont
     }
 
     override open func viewDidLoad() {
+        navigationController?.navigationBar.kaodimStyle()
         configureTabbarSetting()
         super.viewDidLoad()
         configureTabbar()
@@ -35,6 +38,7 @@ open class KaoBarPagerTabStripViewController: BaseButtonBarPagerTabStripViewCont
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.showBottomLine(false)
+        self.moveToDesiredIndex()
     }
 
     open override func viewWillDisappear(_ animated: Bool) {
@@ -57,7 +61,7 @@ open class KaoBarPagerTabStripViewController: BaseButtonBarPagerTabStripViewCont
 
         changeCurrentIndexProgressive = { (oldCell: KaoPageBarCell?, newCell: KaoPageBarCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
-            oldCell?.label.textColor = UIColor.kaoColor(.alto)
+            oldCell?.label.textColor = UIColor.kaoColor(.greyishBrown)
             newCell?.label.textColor = UIColor.kaoColor(.crimson)
         }
     }
@@ -69,6 +73,16 @@ open class KaoBarPagerTabStripViewController: BaseButtonBarPagerTabStripViewCont
         buttonBarView.layer.shadowOpacity = 1
         buttonBarView.layer.shadowRadius = 1
     }
+    
+    private func moveToDesiredIndex() {
+        if let index = desiredIndex {
+            desiredIndex = nil
+            DispatchQueue.main.async {
+                self.moveToViewController(at: index, animated: false)
+                self.buttonBarView.reloadData()
+            }
+        }
+    }
 
     // MARK: - PagerTabStripDataSource
     override open func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
@@ -78,8 +92,8 @@ open class KaoBarPagerTabStripViewController: BaseButtonBarPagerTabStripViewCont
     override open func configure(cell: KaoPageBarCell, for indicatorInfo: IndicatorInfo) {
         cell.label.text = indicatorInfo.title
         cell.unreadButton.makeRoundCorner()
-        cell.unreadButton.setBackgroundColor(color: (indicatorInfo.image == nil) ? UIColor.clear  : UIColor.kaoColor(.crimson), forState: .normal)
-        cell.label.font = UIFont.kaoFont(style: .regular, size: .regular)
+        cell.unreadButton.setBackgroundColor(color: (indicatorInfo.image == nil) ? UIColor.white  : UIColor.kaoColor(.crimson), forState: .normal)
+        cell.label.font = UIFont.kaoFont(style: .regular, size: 15)
     }
 
     override open func updateIndicator(for viewController: PagerTabStripViewController, fromIndex: Int, toIndex: Int, withProgressPercentage progressPercentage: CGFloat, indexWasChanged: Bool) {

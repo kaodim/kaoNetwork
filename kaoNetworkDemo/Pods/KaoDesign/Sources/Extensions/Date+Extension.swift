@@ -111,6 +111,7 @@ public extension Date {
         dateFromat.dateFormat = "EE"
         return dateFromat.string(from: self)
     }
+    
 
     func pickerDateFormat(showTime: Bool) -> String {
         return "\(getDay()), \(toString("dd MMM yyyy")) \(showTime ? "- \(getTime().removeAllWhiteSpace())" : "")"

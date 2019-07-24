@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewReplyEditView" customModule="KaoDesign">
+            <connections>
+                <outlet property="cancelButton" destination="Avh-hu-vKh" id="dk5-9n-Hm2"/>
+                <outlet property="replyTo" destination="H0j-UN-VV8" id="Vfn-47-D8a"/>
+                <outlet property="sendButton" destination="LhV-Kl-wg5" id="1o2-d4-VG7"/>
+                <outlet property="textView" destination="VGP-xS-Y0H" id="ff8-YO-z8J"/>
+                <outlet property="textViewContainer" destination="CP8-lR-iNV" id="dpp-Rr-dTp"/>
+                <outlet property="username" destination="ObS-8q-07e" id="r4S-dn-tx2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKK-uv-UM2">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Mnt-LT-oUi">
+                            <rect key="frame" x="16" y="12" width="103" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0j-UN-VV8" customClass="KaoLabel" customModule="KaoDesign">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObS-8q-07e" customClass="KaoLabel" customModule="KaoDesign">
+                                    <rect key="frame" x="53" y="0.0" width="50" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CP8-lR-iNV">
+                            <rect key="frame" x="12" y="74" width="390" height="133"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VGP-xS-Y0H">
+                                    <rect key="frame" x="12" y="12" width="366" height="109"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="Ec8-56-NeA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="VGP-xS-Y0H" firstAttribute="top" secondItem="CP8-lR-iNV" secondAttribute="top" constant="12" id="8lJ-Vz-N3U"/>
+                                <constraint firstAttribute="bottom" secondItem="VGP-xS-Y0H" secondAttribute="bottom" constant="12" id="fR1-Cl-iLC"/>
+                                <constraint firstAttribute="trailing" secondItem="VGP-xS-Y0H" secondAttribute="trailing" constant="12" id="h5e-xd-j8e"/>
+                                <constraint firstItem="VGP-xS-Y0H" firstAttribute="leading" secondItem="CP8-lR-iNV" secondAttribute="leading" constant="12" id="oe1-bn-JvF"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSV-71-umq">
+                            <rect key="frame" x="12" y="223" width="390" height="45"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="SfF-as-Fmr">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="45"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avh-hu-vKh" customClass="KaoButton" customModule="KaoDesign">
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="45"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="cancelTap" destination="-1" eventType="touchUpInside" id="hQn-cA-5m4"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhV-Kl-wg5" customClass="KaoButton" customModule="KaoDesign">
+                                            <rect key="frame" x="155" y="0.0" width="235" height="45"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="sendTap" destination="-1" eventType="touchUpInside" id="hT6-gQ-Vfy"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Avh-hu-vKh" firstAttribute="width" secondItem="LhV-Kl-wg5" secondAttribute="width" multiplier="0.6" id="wnC-fh-IQy"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="SfF-as-Fmr" secondAttribute="bottom" id="VbJ-2l-Ehr"/>
+                                <constraint firstItem="SfF-as-Fmr" firstAttribute="top" secondItem="QSV-71-umq" secondAttribute="top" id="YrR-ju-hjg"/>
+                                <constraint firstAttribute="height" constant="45" id="eow-so-S7d"/>
+                                <constraint firstAttribute="trailing" secondItem="SfF-as-Fmr" secondAttribute="trailing" id="fZg-v2-CFc"/>
+                                <constraint firstItem="SfF-as-Fmr" firstAttribute="leading" secondItem="QSV-71-umq" secondAttribute="leading" id="zej-po-g3u"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="QSV-71-umq" firstAttribute="leading" secondItem="CP8-lR-iNV" secondAttribute="leading" id="7qa-Gr-ZNs"/>
+                        <constraint firstItem="QSV-71-umq" firstAttribute="top" secondItem="CP8-lR-iNV" secondAttribute="bottom" constant="16" id="A6c-hY-SDN"/>
+                        <constraint firstAttribute="trailing" secondItem="CP8-lR-iNV" secondAttribute="trailing" constant="12" id="EAV-Yb-QTC"/>
+                        <constraint firstItem="QSV-71-umq" firstAttribute="trailing" secondItem="CP8-lR-iNV" secondAttribute="trailing" id="I2H-s5-iSr"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Mnt-LT-oUi" secondAttribute="trailing" constant="12" id="JIU-eg-OJW"/>
+                        <constraint firstItem="Mnt-LT-oUi" firstAttribute="top" secondItem="rKK-uv-UM2" secondAttribute="top" constant="12" id="NwJ-NK-wQJ"/>
+                        <constraint firstItem="CP8-lR-iNV" firstAttribute="top" secondItem="Mnt-LT-oUi" secondAttribute="bottom" constant="12" id="RoU-hD-nvh"/>
+                        <constraint firstItem="CP8-lR-iNV" firstAttribute="leading" secondItem="rKK-uv-UM2" secondAttribute="leading" constant="12" id="iZC-I2-Lcb"/>
+                        <constraint firstItem="Mnt-LT-oUi" firstAttribute="leading" secondItem="rKK-uv-UM2" secondAttribute="leading" constant="16" id="vTW-2e-xgs"/>
+                        <constraint firstAttribute="bottom" secondItem="QSV-71-umq" secondAttribute="bottom" constant="12" id="viT-p1-0ug"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rKK-uv-UM2" secondAttribute="trailing" id="5jH-DY-slb"/>
+                <constraint firstItem="rKK-uv-UM2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EjQ-7r-ADP"/>
+                <constraint firstItem="rKK-uv-UM2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="J53-yz-6Qx"/>
+                <constraint firstAttribute="bottom" secondItem="rKK-uv-UM2" secondAttribute="bottom" id="wel-ZX-yG8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="133.33333333333334" y="172.76785714285714"/>
+        </view>
+    </objects>
+</document>

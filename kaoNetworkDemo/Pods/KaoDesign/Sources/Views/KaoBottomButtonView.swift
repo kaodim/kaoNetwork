@@ -9,7 +9,14 @@ import Foundation
 
 public class KaoBottomButtonView: UIView {
 
+    @IBOutlet private weak var seperatorLine: KaoLineView!
     @IBOutlet private weak var button: KaoButton!
+    @IBOutlet private weak var cardView: UIView!
+    @IBOutlet private weak var buttonTrailing: NSLayoutConstraint!
+    @IBOutlet private weak var buttonLeading: NSLayoutConstraint!
+    @IBOutlet private weak var buttonTop: NSLayoutConstraint!
+    @IBOutlet private weak var buttonBottom: NSLayoutConstraint!
+
 
     public var enableButton: Bool = true {
         didSet {
@@ -21,6 +28,30 @@ public class KaoBottomButtonView: UIView {
             button.setTitle(title, for: .normal)
         }
     }
+    public var titleAttr: NSAttributedString? {
+        didSet {
+            button.setAttributedTitle(titleAttr, for: .normal)
+        }
+    }
+    public var hideSeperatorLine: Bool = true {
+        didSet {
+            seperatorLine.isHidden = hideSeperatorLine
+        }
+    }
+    public var edge: UIEdgeInsets = UIEdgeInsets.zero {
+        didSet {
+            buttonTop.constant = edge.top
+            buttonBottom.constant = edge.bottom
+            buttonLeading.constant = edge.left
+            buttonTrailing.constant = edge.right
+        }
+    }
+    public var backColor: UIColor = .clear {
+        didSet {
+            cardView.backgroundColor = backColor
+        }
+    }
+
     private var contentView: UIView!
     public var buttonDidTapped: (() -> Void)?
 

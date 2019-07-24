@@ -39,22 +39,23 @@ open class KaoNotificationBanner {
 
     private func getExtraHeight(_ viewController: UIViewController?) -> CGFloat {
         let hasNavigation = (viewController?.navigationController?.isNavigationBarHidden ?? true)
-        let notchHeight: CGFloat = (isiPhoneX() && hasNavigation) ? 24 : 0
+        let notchHeight: CGFloat = (phoneHasNotch && hasNavigation) ? 24 : 0
         let navigationHeight: CGFloat = hasNavigation ? 20 : 0
         let extraHeight = notchHeight + navigationHeight
         return extraHeight
     }
-
-    private func isiPhoneX() -> Bool {
-        if UIDevice.current.userInterfaceIdiom != .phone {
-            return false
-        }
-        
-        switch UIDevice.modelName {
-        case "iPhone X", "iPhone XS", "iPhone XS Max", "iPhone XR":
-            return true
-        default:
-            return false
-        }
-    }
 }
+
+public var phoneHasNotch: Bool = {
+    if UIDevice.current.userInterfaceIdiom != .phone {
+        return false
+    }
+
+    switch UIDevice.modelName {
+    case "iPhone X", "iPhone XS", "iPhone XS Max", "iPhone XR",
+         "Simulator iPhone X", "Simulator iPhone XS", "Simulator iPhone XS Max", "Simulator iPhone XR":
+        return true
+    default:
+        return false
+    }
+}()

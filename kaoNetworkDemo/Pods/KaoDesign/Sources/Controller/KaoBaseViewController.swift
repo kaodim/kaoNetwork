@@ -33,7 +33,7 @@ open class KaoBaseViewController: UIViewController, KaoNetworkProtocol {
     // MARK: - View cycle
     override open func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .groupTableViewBackground
+        view.backgroundColor = .kaoColor(.veryLightPink)
     }
 
     override open func viewWillAppear(_ animated: Bool) {
@@ -50,6 +50,11 @@ open class KaoBaseViewController: UIViewController, KaoNetworkProtocol {
             NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
             NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         }
+    }
+
+    // MARK: - rightBar button action default function
+    @objc open func rightBarTapped() {
+        self.dismiss(animated: true, completion: nil)
     }
 
     // MARK: - Keyboard listener

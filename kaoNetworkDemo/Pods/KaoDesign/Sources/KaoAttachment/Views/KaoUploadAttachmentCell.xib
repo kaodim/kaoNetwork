@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,29 +18,30 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="KaoUploadAttachmentCell" id="XRU-CM-kAu" customClass="KaoUploadAttachmentCell" customModule="KaoDesign">
-            <rect key="frame" x="0.0" y="0.0" width="340" height="174"/>
+            <rect key="frame" x="0.0" y="0.0" width="340" height="212"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                <rect key="frame" x="0.0" y="0.0" width="340" height="174"/>
+                <rect key="frame" x="0.0" y="0.0" width="340" height="212"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoT-JK-a6I">
-                        <rect key="frame" x="0.0" y="0.0" width="340" height="174"/>
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="212"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpp-u4-Cgv">
-                                <rect key="frame" x="0.0" y="0.0" width="340" height="174"/>
+                                <rect key="frame" x="0.0" y="0.0" width="340" height="193"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uWn-vp-JEQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="340" height="174"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="193"/>
                                         <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8C-97-F6V">
                                         <rect key="frame" x="311" y="12" width="17" height="17"/>
-                                        <color key="backgroundColor" red="0.070588235289999995" green="0.13725490200000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="DyK-P9-IMt"/>
                                             <constraint firstAttribute="width" constant="17" id="PS3-3C-Pjq"/>
                                         </constraints>
+                                        <color key="tintColor" red="0.34117889404296875" green="0.34117192029953003" blue="0.34117668867111206" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <real key="value" value="8.5"/>
@@ -51,27 +52,27 @@
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ez6-nF-gdj" customClass="question">
-                                        <rect key="frame" x="0.0" y="169" width="340" height="5"/>
+                                        <rect key="frame" x="0.0" y="188" width="340" height="5"/>
                                         <color key="tintColor" red="0.89000000000000001" green="0.10000000000000001" blue="0.23000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="5" id="OBg-A7-7fm"/>
                                         </constraints>
                                     </progressView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Kj-5b-OCo">
-                                        <rect key="frame" x="155" y="56" width="30" height="40"/>
+                                        <rect key="frame" x="155" y="65.5" width="30" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="RRZ-IU-N4c"/>
                                             <constraint firstAttribute="height" constant="40" id="ht4-Uv-iEb"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42H-kr-AWZ" customClass="KaoLabel" customModule="KaoDesign">
-                                        <rect key="frame" x="170" y="109" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="170" y="118.5" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                         <color key="textColor" red="0.070588235289999995" green="0.13725490200000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVl-B9-MxP">
-                                        <rect key="frame" x="0.0" y="144" width="340" height="30"/>
+                                        <rect key="frame" x="0.0" y="163" width="340" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItW-3g-TWW" customClass="KaoLabel" customModule="KaoDesign">
                                                 <rect key="frame" x="16" y="15" width="0.0" height="0.0"/>
@@ -121,12 +122,24 @@
                                     <constraint firstItem="Ez6-nF-gdj" firstAttribute="trailing" secondItem="uWn-vp-JEQ" secondAttribute="trailing" id="wDv-H9-BQU"/>
                                 </constraints>
                             </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJG-fY-td9">
+                                <rect key="frame" x="0.0" y="198" width="340" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="XXN-Lf-tCQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.93333333333333335" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DJG-fY-td9" secondAttribute="trailing" id="60n-ba-F4S"/>
                             <constraint firstAttribute="trailing" secondItem="mpp-u4-Cgv" secondAttribute="trailing" id="LRY-Hc-54S"/>
+                            <constraint firstItem="DJG-fY-td9" firstAttribute="top" secondItem="mpp-u4-Cgv" secondAttribute="bottom" constant="5" id="RvQ-CM-DKR"/>
+                            <constraint firstItem="DJG-fY-td9" firstAttribute="leading" secondItem="eoT-JK-a6I" secondAttribute="leading" id="RwO-KZ-pBE"/>
                             <constraint firstItem="mpp-u4-Cgv" firstAttribute="top" secondItem="eoT-JK-a6I" secondAttribute="top" id="dkd-uq-dM8"/>
-                            <constraint firstAttribute="bottom" secondItem="mpp-u4-Cgv" secondAttribute="bottom" id="kBy-ee-d8K"/>
+                            <constraint firstAttribute="bottom" secondItem="DJG-fY-td9" secondAttribute="bottom" id="sjH-uI-bms"/>
                             <constraint firstItem="mpp-u4-Cgv" firstAttribute="leading" secondItem="eoT-JK-a6I" secondAttribute="leading" id="yNL-bq-V7a"/>
                         </constraints>
                     </view>
@@ -139,10 +152,11 @@
                 <constraint firstItem="bHt-8a-Cz6" firstAttribute="trailing" secondItem="eoT-JK-a6I" secondAttribute="trailing" id="zb2-d7-oyO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="bHt-8a-Cz6"/>
-            <size key="customSize" width="340" height="174"/>
+            <size key="customSize" width="340" height="212"/>
             <connections>
                 <outlet property="attachmentIcon" destination="uWn-vp-JEQ" id="oEk-c4-HCg"/>
                 <outlet property="borderView" destination="mpp-u4-Cgv" id="0a5-sP-Z5R"/>
+                <outlet property="errorLabel" destination="DJG-fY-td9" id="js4-of-NoJ"/>
                 <outlet property="failUploadLabel" destination="ItW-3g-TWW" id="t5U-Wt-kjt"/>
                 <outlet property="filename" destination="42H-kr-AWZ" id="ZZ5-bm-yxL"/>
                 <outlet property="pdfIcon" destination="2Kj-5b-OCo" id="ih9-U8-dHQ"/>
@@ -151,7 +165,7 @@
                 <outlet property="retryLabel" destination="WJK-0T-qPm" id="pCt-qP-neq"/>
                 <outlet property="retryView" destination="hVl-B9-MxP" id="PHV-mT-TlI"/>
             </connections>
-            <point key="canvasLocation" x="4.7999999999999998" y="64.767616191904054"/>
+            <point key="canvasLocation" x="4.7999999999999998" y="81.859070464767626"/>
         </collectionViewCell>
     </objects>
 </document>

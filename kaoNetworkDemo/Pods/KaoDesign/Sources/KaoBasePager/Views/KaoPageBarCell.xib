@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,18 +29,18 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPD-VF-amc">
-                        <rect key="frame" x="99" y="22.5" width="7" height="7"/>
+                        <rect key="frame" x="102.5" y="30.5" width="9" height="9"/>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="7" id="PJO-vD-qJq"/>
+                            <constraint firstAttribute="height" constant="9" id="PJO-vD-qJq"/>
                             <constraint firstAttribute="width" secondItem="gPD-VF-amc" secondAttribute="height" multiplier="1:1" id="smb-MB-REa"/>
                         </constraints>
                     </button>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="gPD-VF-amc" firstAttribute="top" secondItem="PCN-b5-fj5" secondAttribute="top" id="2Oc-Tm-OsI"/>
-                <constraint firstItem="gPD-VF-amc" firstAttribute="leading" secondItem="PCN-b5-fj5" secondAttribute="trailing" id="BzY-2X-efK"/>
+                <constraint firstItem="gPD-VF-amc" firstAttribute="centerY" secondItem="PCN-b5-fj5" secondAttribute="centerY" id="17J-5T-J4u"/>
+                <constraint firstItem="gPD-VF-amc" firstAttribute="leading" secondItem="PCN-b5-fj5" secondAttribute="trailing" constant="3.5" id="BzY-2X-efK"/>
                 <constraint firstItem="PCN-b5-fj5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IXt-u1-Dnl" secondAttribute="leading" id="VJK-Pl-xx3"/>
                 <constraint firstItem="PCN-b5-fj5" firstAttribute="centerX" secondItem="IXt-u1-Dnl" secondAttribute="centerX" id="X2r-Dl-hx7"/>
                 <constraint firstItem="PCN-b5-fj5" firstAttribute="centerY" secondItem="IXt-u1-Dnl" secondAttribute="centerY" id="bS2-z7-VMs"/>

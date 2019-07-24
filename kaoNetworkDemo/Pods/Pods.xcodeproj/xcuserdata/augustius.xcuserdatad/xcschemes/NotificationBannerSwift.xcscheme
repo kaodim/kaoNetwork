@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AECE76CB82E484C1ACDF232F8B1015C2"
+               BlueprintIdentifier = "CE35E62E6C9A8C2DE44042A30BC28E89"
+               BuildableName = "NotificationBannerSwift.framework"
                BlueprintName = "NotificationBannerSwift"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "NotificationBannerSwift.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

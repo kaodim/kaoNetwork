@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KaoHeaderView" customModule="KaoDesign">
+            <connections>
+                <outlet property="bottomSpace" destination="1lZ-PO-Zdk" id="ghV-O9-M8i"/>
+                <outlet property="leadingSpace" destination="D5f-xo-ZkL" id="2QW-Di-hqq"/>
+                <outlet property="titleLabel" destination="2ge-2C-4bM" id="ydp-NP-qLX"/>
+                <outlet property="topSpace" destination="QLN-Gz-jpw" id="ciU-KE-Vzn"/>
+                <outlet property="trailingSpace" destination="TKa-yo-31f" id="fvq-a3-ONp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dhx-Sb-C4a">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="47"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ge-2C-4bM" customClass="KaoLabel" customModule="KaoDesign">
+                            <rect key="frame" x="16" y="14" width="382" height="19"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IX0-g9-bxn">
+                            <rect key="frame" x="0.0" y="46" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="MyS-qg-5UQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2ge-2C-4bM" secondAttribute="trailing" constant="16" id="8H2-Gn-8CA"/>
+                        <constraint firstAttribute="height" constant="47" id="AKI-zf-wz5"/>
+                        <constraint firstItem="IX0-g9-bxn" firstAttribute="leading" secondItem="Dhx-Sb-C4a" secondAttribute="leading" id="CiZ-jw-Nnh"/>
+                        <constraint firstItem="2ge-2C-4bM" firstAttribute="top" secondItem="Dhx-Sb-C4a" secondAttribute="top" constant="14" id="FSS-DX-0T6"/>
+                        <constraint firstAttribute="trailing" secondItem="IX0-g9-bxn" secondAttribute="trailing" id="fMd-pv-Ibc"/>
+                        <constraint firstItem="2ge-2C-4bM" firstAttribute="leading" secondItem="Dhx-Sb-C4a" secondAttribute="leading" constant="16" id="n2U-Od-oQm"/>
+                        <constraint firstAttribute="bottom" secondItem="IX0-g9-bxn" secondAttribute="bottom" id="tSR-3j-Q9v"/>
+                        <constraint firstAttribute="bottom" secondItem="2ge-2C-4bM" secondAttribute="bottom" constant="14" id="xEt-z9-Dnm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Dhx-Sb-C4a" secondAttribute="bottom" id="1lZ-PO-Zdk"/>
+                <constraint firstItem="Dhx-Sb-C4a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="D5f-xo-ZkL"/>
+                <constraint firstItem="Dhx-Sb-C4a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QLN-Gz-jpw"/>
+                <constraint firstAttribute="trailing" secondItem="Dhx-Sb-C4a" secondAttribute="trailing" id="TKa-yo-31f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="667.29910714285711"/>
+        </view>
+    </objects>
+</document>

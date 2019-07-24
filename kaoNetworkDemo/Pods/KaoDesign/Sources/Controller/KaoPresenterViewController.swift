@@ -9,7 +9,7 @@ import Foundation
 
 open class KaoPresenterViewController: UIViewController {
 
-    public var presentView: UIView = UIView()
+    public var presentView: UIView!
 
     private lazy var blurView: UIView = {
         let view = UIView()
@@ -67,7 +67,7 @@ open class KaoPresenterViewController: UIViewController {
             blurView.leadingAnchor.constraint(equalTo: safeLeadingAnchor),
             blurView.trailingAnchor.constraint(equalTo: safeTrailingAnchor),
             blurView.topAnchor.constraint(equalTo: safeTopAnchor, constant: -100),
-            blurView.bottomAnchor.constraint(equalTo: safeBottomAnchor)
+            blurView.bottomAnchor.constraint(equalTo: safeBottomAnchor, constant: 100)
             ])
 
         presentViewCenter = presentView.centerYAnchor.constraint(equalTo: view.centerYAnchor)

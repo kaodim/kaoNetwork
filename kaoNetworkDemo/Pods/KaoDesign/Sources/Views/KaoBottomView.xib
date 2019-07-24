@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KaoBottomView" customModule="KaoDesign">
+            <connections>
+                <outlet property="amtLabel" destination="wzH-7w-NQe" id="Tag-xU-LIj"/>
+                <outlet property="button" destination="ATk-Jv-DSA" id="s3U-G5-sb1"/>
+                <outlet property="buttonView" destination="btV-J8-exz" id="1bB-aa-ZY9"/>
+                <outlet property="descLabel" destination="6fY-fW-p8p" id="dLw-g6-if2"/>
+                <outlet property="firstStackView" destination="LXu-2t-nif" id="c81-b9-htZ"/>
+                <outlet property="secondStackView" destination="R6x-ND-OgL" id="Axq-7I-Njz"/>
+                <outlet property="thirdStackView" destination="z7l-sQ-cNf" id="q52-og-FGm"/>
+                <outlet property="titleLabel" destination="qAF-JV-2gn" id="vJl-83-LkJ"/>
+                <outlet property="topView" destination="Dfe-la-swb" id="Xfb-AP-p3W"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9U6-KN-OHB">
+                    <rect key="frame" x="0.0" y="0.0" width="255" height="150"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfe-la-swb">
+                            <rect key="frame" x="0.0" y="0.0" width="255" height="250"/>
+                            <color key="backgroundColor" red="0.99215686270000003" green="0.92941176469999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TO9-ml-hNt">
+                            <rect key="frame" x="20" y="16" width="219" height="118"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LXu-2t-nif">
+                                    <rect key="frame" x="0.0" y="0.0" width="219" height="118"/>
+                                    <subviews>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAF-JV-2gn" customClass="KaoLabel" customModule="KaoDesign">
+                                            <rect key="frame" x="0.0" y="0.0" width="219" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="fo3-ob-Ua6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R6x-ND-OgL">
+                                            <rect key="frame" x="0.0" y="0.0" width="219" height="118"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="z7l-sQ-cNf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="24" height="118"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fY-fW-p8p" customClass="KaoLabel" customModule="KaoDesign">
+                                                            <rect key="frame" x="0.0" y="0.0" width="24" height="118"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzH-7w-NQe" customClass="KaoLabel" customModule="KaoDesign">
+                                                            <rect key="frame" x="0.0" y="0.0" width="24" height="0.0"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="0.066666666669999999" green="0.72549019609999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="btV-J8-exz">
+                                                    <rect key="frame" x="44" y="0.0" width="175" height="118"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATk-Jv-DSA" customClass="KaoButton" customModule="KaoDesign">
+                                                            <rect key="frame" x="0.0" y="76" width="175" height="42"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="42" id="SIT-q4-UQt"/>
+                                                            </constraints>
+                                                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                                            <state key="normal" title="Book this vendor now"/>
+                                                            <connections>
+                                                                <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="z5j-qE-byS"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="ATk-Jv-DSA" secondAttribute="trailing" id="Dhk-AH-tJX"/>
+                                                        <constraint firstItem="ATk-Jv-DSA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="btV-J8-exz" secondAttribute="leading" id="eEa-RO-xhd"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ATk-Jv-DSA" secondAttribute="bottom" id="hS6-iY-6Oy"/>
+                                                        <constraint firstItem="ATk-Jv-DSA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="btV-J8-exz" secondAttribute="top" id="tme-8x-BIX"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="LXu-2t-nif" secondAttribute="bottom" id="ChI-0x-Rdj"/>
+                                <constraint firstAttribute="trailing" secondItem="LXu-2t-nif" secondAttribute="trailing" id="Glb-Ur-9hU"/>
+                                <constraint firstItem="LXu-2t-nif" firstAttribute="top" secondItem="TO9-ml-hNt" secondAttribute="top" id="SQq-af-JI3"/>
+                                <constraint firstItem="LXu-2t-nif" firstAttribute="leading" secondItem="TO9-ml-hNt" secondAttribute="leading" id="XRA-qv-vLT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Dfe-la-swb" secondAttribute="trailing" id="19a-HH-ZOz"/>
+                        <constraint firstAttribute="bottom" secondItem="TO9-ml-hNt" secondAttribute="bottom" constant="16" id="7ai-ZC-AwT"/>
+                        <constraint firstItem="TO9-ml-hNt" firstAttribute="top" secondItem="9U6-KN-OHB" secondAttribute="top" constant="16" id="SHV-Ow-Ptn"/>
+                        <constraint firstAttribute="trailing" secondItem="TO9-ml-hNt" secondAttribute="trailing" constant="16" id="YWF-sS-1rL"/>
+                        <constraint firstItem="TO9-ml-hNt" firstAttribute="leading" secondItem="9U6-KN-OHB" secondAttribute="leading" constant="20" id="b9f-rp-tXi"/>
+                        <constraint firstItem="Dfe-la-swb" firstAttribute="leading" secondItem="9U6-KN-OHB" secondAttribute="leading" id="qaa-78-zW3"/>
+                        <constraint firstAttribute="bottom" secondItem="Dfe-la-swb" secondAttribute="bottom" constant="-100" id="v3O-S4-YvH"/>
+                        <constraint firstItem="Dfe-la-swb" firstAttribute="top" secondItem="9U6-KN-OHB" secondAttribute="top" id="xlH-t6-gtB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.99215686274509807" green="0.92941176470588238" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="9U6-KN-OHB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6Hw-Nw-OkQ"/>
+                <constraint firstItem="9U6-KN-OHB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Fe-BJ-hRH"/>
+                <constraint firstAttribute="trailing" secondItem="9U6-KN-OHB" secondAttribute="trailing" id="NXy-fi-JAh"/>
+                <constraint firstAttribute="bottom" secondItem="9U6-KN-OHB" secondAttribute="bottom" id="iqi-Cx-F8J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-93.478260869565219" y="124.55357142857142"/>
+        </view>
+    </objects>
+</document>

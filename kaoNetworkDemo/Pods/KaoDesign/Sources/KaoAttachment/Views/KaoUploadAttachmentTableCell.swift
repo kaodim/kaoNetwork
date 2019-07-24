@@ -21,6 +21,10 @@ public class KaoUploadAttachmentTableCell: UITableViewCell {
         uploadHeight.constant = attachmentView.idealHeight
     }
 
+    public func updateViewHeight() {
+        uploadHeight.constant = attachmentView.idealHeight
+    }
+
     public func configureEdge(_ edge: UIEdgeInsets) {
         topSpace.constant = edge.top
         bottomSpace.constant = edge.bottom

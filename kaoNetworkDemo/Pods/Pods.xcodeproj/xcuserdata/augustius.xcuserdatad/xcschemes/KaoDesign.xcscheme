@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "99E6D850A829A2A8F3333A4779DC345D"
+               BlueprintIdentifier = "6B3CE743AC7FEE8E86DEC394FCD3D4E9"
+               BuildableName = "KaoDesign.framework"
                BlueprintName = "KaoDesign"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "KaoDesign.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
