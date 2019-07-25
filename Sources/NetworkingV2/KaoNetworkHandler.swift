@@ -21,18 +21,20 @@ var defaultParameters: [String: Any] = {
     return parameters
 }()
 
+public protocol ApprovedErrors: Decodable { }
+
 public protocol KaoNetworkHandler {
-    associatedtype T: Decodable
+    associatedtype E: ApprovedErrors
+    associatedtype D: Decodable
     static func handleUnauthorized()
     static func multipartDataHandler(formData: MultipartFormData, data: Data, fileName: String)
     static func printRequest(headers: HTTPHeaders, parameters: [String: Any])
-    static func printSuccessResponse(data: Data?)
-    static func printErrorResponse(data: Data?)
+    static func printResponse(url: URL?, data: Data?)
 }
 
 extension KaoNetworkHandler {
 
-    public static func handleErrorResponse<T>(response: DataResponse<T>, error: Error, needAuth: Bool = false) -> KaoError {
+    public static func handleErrorResponse<T>(response: DataResponse<T>, needAuth: Bool = false, completion: @escaping (_ result: KaoNetworkResult<D,E>) -> Void) {
 
         if let statusCode = response.response?.statusCode, let statusCodeError = NetworkErrorStatusCode(rawValue: statusCode) {
             switch statusCodeError {
@@ -45,27 +47,25 @@ extension KaoNetworkHandler {
             }
         }
 
-        let resultError = tryToReadBackendErrorMessage(response: response)
-        return resultError
+        // tryToReadBackendErrorMessage must always return completion
+        tryToReadBackendErrorMessage(response: response, completion: completion)
     }
 
-    public static func tryToReadBackendErrorMessage<T>(response: DataResponse<T>) -> KaoError {
-        var resultError = KaoError()
+    public static func tryToReadBackendErrorMessage<T>(response: DataResponse<T>, completion: @escaping (_ result: KaoNetworkResult<D, E>) -> Void) {
         if let data = response.data {
             do {
-                let error = try JSONSerialization.jsonObject(with: data, options: [])
-                if let payload = error as? [String: Any], !(payload.isEmpty) {
-                    resultError.errorDict = payload
-                }
+                let errorObj = try E.decode(from: data)
+                completion(.failure(errorObj))
             } catch {
                 let errorStatusCode = " (\(response.response?.statusCode.description ?? ""))"
-                resultError.errorString = error.localizedDescription + errorStatusCode
+                completion(.failAndDecodeFail(error.localizedDescription + errorStatusCode))
             }
+        } else {
+            completion(.failNoDataToDecode)
         }
-        return resultError
     }
 
-    public static func request(_ url: URLConvertible, method: HTTPMethod, parameters: Parameters? = nil, headers: HTTPHeaders? = nil, showLoader: Bool = false, needAuth: Bool, completion: @escaping (_ result: KaoNetworkResult<T>) -> Void) {
+    public static func request(_ url: URLConvertible, method: HTTPMethod, parameters: Parameters? = nil, headers: HTTPHeaders? = nil, showLoader: Bool = false, needAuth: Bool, completion: @escaping (_ result: KaoNetworkResult<D, E>) -> Void) {
         if showLoader {
             KaoLoading.shared.show()
         }
@@ -84,19 +84,18 @@ extension KaoNetworkHandler {
 
         Alamofire.request(url, method: method, parameters: finalParameters, encoding: encodingType, headers: headers).validate().responseData { (response) in
 
+            self.printResponse(url: response.request?.url, data: response.data)
+
             switch response.result {
             case .success(let data):
-                self.printSuccessResponse(data: data)
                 do {
-                    let decodeObj = try T.decode(from: data)
+                    let decodeObj = try D.decode(from: data)
                     completion(.success(decodeObj))
                 } catch let error {
-                    completion(.decodeFailure(error.localizedDescription))
+                    completion(.successButDecodeFail(error.localizedDescription))
                 }
-            case .failure(let error):
-                self.printErrorResponse(data: response.data)
-                let resultError = self.handleErrorResponse(response: response, error: error, needAuth: needAuth)
-                completion(.failure(resultError))
+            case .failure:
+                self.handleErrorResponse(response: response, needAuth: needAuth, completion: completion)
             }
 
             if showLoader {
@@ -114,9 +113,12 @@ extension KaoNetworkHandler {
     }
 }
 
+// FOR uploading attachment we use KaoUploadNetworkResult
 extension KaoNetworkHandler {
 
-    public static func uploadAttachment(_ url: URLConvertible, method: HTTPMethod = .post, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: KaoNetworkResult<T>) -> Void) {
+    public static func uploadAttachment(_ url: URLConvertible, method: HTTPMethod = .post, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: KaoUploadNetworkResult<D>) -> Void) {
+
+        printRequest(headers: header, parameters: [:])
 
         Alamofire.upload(multipartFormData: { (multipartData) in
             self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
@@ -128,9 +130,7 @@ extension KaoNetworkHandler {
                     completion(result)
                 })
             case .failure(let error):
-                var errorResult = KaoError()
-                errorResult.errorString = error.localizedDescription
-                completion(.failure(errorResult))
+                completion(.failure(error.localizedDescription))
             }
         })
     }
@@ -155,22 +155,22 @@ extension KaoNetworkHandler {
         formData.append(data, withName: "file", fileName: fileName, mimeType: mimeType)
     }
 
-    private static func uploadFileData(dataRequest: DataRequest, completion: @escaping (_ result: KaoNetworkResult<T>) -> Void) {
+    private static func uploadFileData(dataRequest: DataRequest, completion: @escaping (_ result: KaoUploadNetworkResult<D>) -> Void) {
         dataRequest.validate()
             .responseData(completionHandler: { (response) in
+
+                self.printResponse(url: response.request?.url, data: response.data)
+
                 switch response.result {
                 case .success(let data):
-                    self.printSuccessResponse(data: data)
                     do {
-                        let decodeObj = try T.decode(from: data)
+                        let decodeObj = try D.decode(from: data)
                         completion(.success(decodeObj))
                     } catch let error {
-                        completion(.decodeFailure(error.localizedDescription))
+                        completion(.successButDecodeFail(error.localizedDescription))
                     }
                 case .failure(let error):
-                    self.printErrorResponse(data: response.data)
-                    let resultError = self.handleErrorResponse(response: response, error: error)
-                    completion(.failure(resultError))
+                    completion(.failure(error.localizedDescription))
                 }
             })
     }

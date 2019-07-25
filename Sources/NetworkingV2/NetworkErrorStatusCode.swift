@@ -25,9 +25,17 @@ public enum NetworkErrorStatusCode: Int, NetworkStatusCodeDescription {
     }
 }
 
-public enum KaoNetworkResult<T: Decodable> {
+public enum KaoNetworkResult<T: Decodable, E: ApprovedErrors> {
     case success(T)
-    case failure(KaoError)
-    case decodeFailure(String)
+    case successButDecodeFail(String)
+    case failure(E)
+    case failAndDecodeFail(String)
+    case failNoDataToDecode
+}
+
+public enum KaoUploadNetworkResult<T: Decodable> {
+    case success(T)
+    case failure(String)
+    case successButDecodeFail(String)
 }
 

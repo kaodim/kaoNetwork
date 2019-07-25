@@ -7,21 +7,17 @@
 
 import Foundation
 
-public struct KaoError {
-    var errorString: String?
-    var errorDict: [String: Any]?
+public struct BackendErrors: ApprovedErrors {
+    public var errors: [BackendError]
 }
 
-public extension KaoError {
-    func getErrorMessage() -> String? {
-        if let errorString = self.errorString, !errorString.isEmpty {
-            return errorString
-        } else if let errorDict = self.errorDict, let errors = errorDict["errors"] as? [[String: Any]] {
-            let allErrorMsg = errors.map({ $0["message"] as? String ?? "" })
-            let joinedErrorMsg = allErrorMsg.joined(separator: "\n")
-            return joinedErrorMsg
-        } else {
-            return nil
-        }
+public struct BackendError: Decodable {
+    public var key: String
+    public var message: String
+}
+
+public extension BackendErrors {
+    func getAllMessage() -> String? {
+        return errors.map({ $0.message }).joined(separator: "\n")
     }
 }

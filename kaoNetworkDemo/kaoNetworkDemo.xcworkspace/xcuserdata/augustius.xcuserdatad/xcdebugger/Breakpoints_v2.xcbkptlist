@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kaoNetworkDemo/ViewController.swift"
-            timestampString = "585650212.033812"
+            timestampString = "585733094.720739"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "uploadTapped()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kaoNetworkDemo/ViewController.swift"
-            timestampString = "585650212.034804"
+            timestampString = "585733094.721056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "uploadTapped()"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kaoNetworkDemo/ViewController.swift"
-            timestampString = "585650212.036355"
+            timestampString = "585733094.7212681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "uploadTapped()"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,12 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Sources/NetworkingV2/KaoNetworkHandler.swift"
-            timestampString = "585650212.037044"
+            timestampString = "585733094.721473"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "multipartDataHandler(formData:data:fileName:)"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "handleErrorResponse(response:needAuth:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -106,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Sources/NetworkingV2/KaoNetworkHandler.swift"
-            timestampString = "585650212.037519"
+            timestampString = "585733094.7215199"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
-            landmarkName = "uploadAttachment(_:method:header:attachmentData:fileName:progressHandler:completion:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "handleErrorResponse(response:needAuth:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -121,93 +121,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../Sources/NetworkingV2/KaoNetworkHandler.swift"
-            timestampString = "585650212.037589"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "uploadAttachment(_:method:header:attachmentData:fileName:progressHandler:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Alamofire.SessionManager.MultipartFormDataEncodingResult) -&gt; () in static (extension in kaoNetwork):kaoNetwork.KaoNetworkHandler.uploadAttachment(_: Alamofire.URLConvertible, method: Alamofire.HTTPMethod, header: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, attachmentData: Foundation.Data, fileName: Swift.String, progressHandler: (__C.NSProgress) -&gt; (), completion: (kaoNetwork.KaoNetworkResult&lt;A.T&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "kaoNetwork"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/augustius/Developer/kaodim/kaoNetwork/Sources/NetworkingV2/KaoNetworkHandler.swift"
-                  timestampString = "585650212.59858"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "826">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (kaoNetwork.KaoNetworkResult&lt;A.T&gt;) -&gt; () in closure #2 (Alamofire.SessionManager.MultipartFormDataEncodingResult) -&gt; () in static (extension in kaoNetwork):kaoNetwork.KaoNetworkHandler.uploadAttachment(_: Alamofire.URLConvertible, method: Alamofire.HTTPMethod, header: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, attachmentData: Foundation.Data, fileName: Swift.String, progressHandler: (__C.NSProgress) -&gt; (), completion: (kaoNetwork.KaoNetworkResult&lt;A.T&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "kaoNetwork"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/augustius/Developer/kaodim/kaoNetwork/Sources/NetworkingV2/KaoNetworkHandler.swift"
-                  timestampString = "585650212.599858"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "109">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Sources/NetworkingV2/KaoNetworkHandler.swift"
-            timestampString = "585650212.0376461"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "171"
-            endingLineNumber = "171"
-            landmarkName = "uploadFileData(dataRequest:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Sources/NetworkingV2/KaoNetworkHandler.swift"
-            timestampString = "585650212.0377001"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "handleErrorResponse(response:error:needAuth:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Sources/NetworkingV2/KaoNetworkHandler.swift"
-            timestampString = "585650212.037758"
+            filePath = "kaoNetworkDemo/ViewController.swift"
+            timestampString = "585733094.721563"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
-            landmarkName = "handleErrorResponse(response:error:needAuth:)"
+            landmarkName = "printResponse(url:data:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -218,12 +138,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kaoNetworkDemo/ViewController.swift"
-            timestampString = "585650212.0378211"
+            timestampString = "585733094.721764"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "printSuccessResponse(data:)"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "printResponse(url:data:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -234,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kaoNetworkDemo/ViewController.swift"
-            timestampString = "585650212.038164"
+            timestampString = "585733094.721963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "printSuccessResponse(data:)"
+            landmarkName = "printResponse(url:data:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -250,76 +170,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kaoNetworkDemo/ViewController.swift"
-            timestampString = "585650212.03842"
+            timestampString = "585733115.2697411"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "printSuccessResponse(data:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Sources/NetworkingV2/KaoNetworkHandler.swift"
-            timestampString = "585650212.038664"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
-            landmarkName = "uploadFileData(dataRequest:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Sources/NetworkingV2/KaoNetworkHandler.swift"
-            timestampString = "585650212.038717"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
-            landmarkName = "uploadFileData(dataRequest:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "kaoNetworkDemo/ViewController.swift"
-            timestampString = "585650212.038763"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "multipartDataHandler(formData:data:fileName:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "kaoNetworkDemo/ViewController.swift"
-            timestampString = "585650212.038955"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "uploadTapped()"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "dataConnectTapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

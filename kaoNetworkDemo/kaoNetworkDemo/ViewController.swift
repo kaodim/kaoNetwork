@@ -14,7 +14,7 @@ import kaoNetwork
 
 public struct SampleLocation: Decodable {
     var language: String
-    var texts: String
+    var text: String
 }
 
 public struct SampleLocationV2: Decodable {
@@ -32,11 +32,16 @@ public struct ImageUploadResponse: Decodable {
 
 //{"id":"fbdf16df-598a-4f6e-a34f-39959b5bf311","text":"Humans are the only primates that don`t have pigment in the palms of their hands.","source":"djtech.net","source_url":"http:\/\/www.djtech.net\/humor\/useless_facts.htm","language":"en","permalink":"https:\/\/uselessfacts.jsph.pl\/fbdf16df-598a-4f6e-a34f-39959b5bf311"}
 
-public struct NetworkRequest<T: Decodable>: KaoNetworkHandler {
+public struct NetworkRequest<D: Decodable, E: ApprovedErrors>: KaoNetworkHandler {
 
-    public typealias T = T
+    public typealias E = E
 
-    public static func printSuccessResponse(data: Data?) {
+    public typealias D = D
+
+    public static func printResponse(url: URL?, data: Data?) {
+        print("===============[Response]=================")
+        print("From Url: \(url?.absoluteString ?? "")")
+
         // #if Staging
         if let data = data {
             do {
@@ -49,23 +54,9 @@ public struct NetworkRequest<T: Decodable>: KaoNetworkHandler {
                 print(str)
             }
         }
+        print("==========================================")
     }
 
-    public static func printErrorResponse(data: Data?) {
-        // #if Staging
-        if let data = data {
-            do {
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                if let payload = json as? [String: Any], !(payload.isEmpty) {
-                    print(payload)
-                }
-            } catch {
-                let str = String(data: data, encoding: .utf8)
-                print(str)
-            }
-        }
-    }
-    
     public static func printRequest(headers: HTTPHeaders, parameters: [String : Any]) {
         // #if Staging
         print("===============[Headers]==================")
@@ -106,16 +97,20 @@ class ViewController: KaoBaseViewController {
 
     @IBAction func dataConnectTapped() {
 
-        if let url = URL(string: "https://uselessfacts.jsph.pl/random.json") {
-//        if let url = URL(string: "https://httpstat.us/\(textField.text ?? "")") {
-            NetworkRequest<SampleLocation>.request(url, method: .get, needAuth: false) { (result) in
+//        if let url = URL(string: "https://uselessfacts.jsph.pl/random.json") {
+        if let url = URL(string: "https://httpstat.us/\(textField.text ?? "")") {
+            NetworkRequest<SampleLocationV2, BackendErrors>.request(url, method: .get, needAuth: false) { (result) in
                 switch result {
                 case .success(let smpl):
                     print(smpl)
-                case .decodeFailure(let errMsg):
+                case .successButDecodeFail(let errMsg):
                     print(errMsg)
-                case .failure(let errorObj):
-                    print(errorObj.getErrorMessage())
+                case .failure(let sampl):
+                    print(sampl.getAllMessage())
+                case .failAndDecodeFail(let errMsg):
+                    print(errMsg)
+                case .failNoDataToDecode:
+                    break
                 }
             }
         }
@@ -127,16 +122,16 @@ class ViewController: KaoBaseViewController {
 
             let header = ["Authorization": "Client-ID 546c25a59c58ad7"]
 
-            NetworkRequest<ImageUploadResponse>.uploadAttachment("https://api.imgur.com/3/upload", method: .post, header: header, attachmentData: data, fileName: "sasssss", progressHandler: { (progres) in
+            NetworkRequest<ImageUploadResponse, BackendErrors>.uploadAttachment("https://api.imgur.com/3/upload", method: .post, header: header, attachmentData: data, fileName: "sasssss", progressHandler: { (progres) in
                 print(progres)
             }) { (result) in
                 switch result {
                 case .success(let smpl):
                     print(smpl)
-                case .decodeFailure(let errMsg):
+                case .successButDecodeFail(let errMsg):
                     print(errMsg)
-                case .failure(let errorObj):
-                    print(errorObj.getErrorMessage())
+                case .failure(let errMsg):
+                    print(errMsg)
                 }
             }
         }
