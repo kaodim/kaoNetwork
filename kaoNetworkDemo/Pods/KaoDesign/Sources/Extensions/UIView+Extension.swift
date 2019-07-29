@@ -60,6 +60,26 @@ public extension UIView {
         clipsToBounds = false
     }
 
+    func applyGradientTopDown(_ colors: [Any]) -> CAGradientLayer {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.bounds
+        gradientLayer.colors = colors
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 1)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 0)
+        self.layer.insertSublayer(gradientLayer, at: 0)
+        return gradientLayer
+    }
+
+    func applyGradientLeftRight(_ colors: [Any]) -> CAGradientLayer {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.bounds
+        gradientLayer.colors = colors
+        gradientLayer.startPoint = CGPoint(x: 1, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 0, y: 0.5)
+        self.layer.insertSublayer(gradientLayer, at: 0)
+        return gradientLayer
+    }
+
     class func nibFromDesignIos(_ fileName: String) -> UINib {
         return NibLoader.loadNib(fileName: fileName)
     }

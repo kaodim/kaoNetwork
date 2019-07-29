@@ -10,17 +10,6 @@ import UIKit
 import Alamofire
 import KaoDesign
 
-private var defaultParameters: [String: Any] = {
-    var parameters: [String: Any] = [:]
-    parameters["preferred_timezone"] = TimeZone.current.secondsFromGMT()/3600 as Any
-    parameters["platform"] = "ios"
-    parameters["device_id"] = UIDevice.current.identifierForVendor?.uuidString.replacingOccurrences(of: "-", with: "") ?? ""
-    parameters["os"] = UIDevice.current.systemVersion
-    parameters["app_version"] = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
-    parameters["device_type"] = "mobile"
-    return parameters
-}()
-
 public protocol KaoNetworkErrorHandler {
     static func handleUnauthorized()
     static func multipartDataHandler(formData: MultipartFormData, data: Data, fileName: String)
@@ -145,10 +134,8 @@ extension KaoNetworkErrorHandler {
         let topView = UIApplication.topViewController()
         let network = (topView as? KaoNetworkProtocol)
         let retryAction = network?.retry
-
-        if !(topView?.isKind(of: InternalServerErrorViewController.self) ?? false) {
-            topView?.presentInternalServerError(retryAction)
-        }
+        
+        topView?.presentInternalServerError(retryAction)
     }
 }
 

@@ -35,6 +35,10 @@ open class TablePaginationViewModel: TableViewModel, KaoPaginationProtocol, DZNE
 
     // MARK: - DZNEmptyDataSetSource, DZNEmptyDataSetDelegate
     public func customView(forEmptyDataSet scrollView: UIScrollView!) -> UIView! {
+        if #available(iOS 11.0, *) {
+            emptyStateView.centerXAnchor.constraint(equalTo: scrollView.contentLayoutGuide.centerXAnchor)
+            emptyStateView.centerYAnchor.constraint(equalTo: scrollView.contentLayoutGuide.centerYAnchor)
+        }
         return emptyStateView
     }
 
@@ -43,7 +47,7 @@ open class TablePaginationViewModel: TableViewModel, KaoPaginationProtocol, DZNE
     }
 
     open func emptyDataSetShouldAllowScroll(_ scrollView: UIScrollView!) -> Bool {
-        return false
+        return true
     }
 
     open func emptyDataSetShouldFade(in scrollView: UIScrollView!) -> Bool {

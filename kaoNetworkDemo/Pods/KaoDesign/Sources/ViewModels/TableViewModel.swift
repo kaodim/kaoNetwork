@@ -32,7 +32,9 @@ open class TableViewModel: NSObject, UITableViewDataSource, UITableViewDelegate 
 
     open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.section]
-        return item.tableView(tableView, cellForRowAt: indexPath)
+        let cell = item.tableView(tableView, cellForRowAt: indexPath)
+        cell.layoutIfNeeded()
+        return cell
     }
 
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

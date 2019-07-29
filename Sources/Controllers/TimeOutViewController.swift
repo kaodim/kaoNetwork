@@ -13,7 +13,6 @@ public class TimeOutViewController: UIViewController {
     private lazy var timeOut: KaoEmptyStateView = {
         let view: KaoEmptyStateView = KaoEmptyStateView()
         var data = KaoEmptyState()
-        data.topSpace = 100
         data.icon = UIImage.imageFromNetworkIos("img_waiting")
         data.title = NSAttributedString(string: "You were inactive for a while")
         data.message = NSAttributedString(string: "Your session ended due to inactivity. \n Please start over.")
@@ -43,18 +42,20 @@ public class TimeOutViewController: UIViewController {
     private func configureLayout() {
         view.addSubview(timeOut)
         NSLayoutConstraint.activate([
-            timeOut.topAnchor.constraint(equalTo: safeTopAnchor),
-            timeOut.bottomAnchor.constraint(equalTo: safeBottomAnchor),
+            timeOut.topAnchor.constraint(greaterThanOrEqualTo: safeTopAnchor, constant: 0),
+            timeOut.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
             timeOut.leadingAnchor.constraint(equalTo: safeLeadingAnchor),
             timeOut.trailingAnchor.constraint(equalTo: safeTrailingAnchor)
             ])
     }
 }
 
-extension UIViewController {
-    public func presentTimeOutError(_ retry: (() -> Void)? = nil) {
-        let view = TimeOutViewController()
-        view.retry = retry
-        self.present(view, animated: true, completion: nil)
+public extension UIViewController {
+    func presentTimeOutError(_ retry: (() -> Void)? = nil) {
+        if !self.isKind(of: TimeOutViewController.self) {
+            let view = TimeOutViewController()
+            view.retry = retry
+            self.present(view, animated: true, completion: nil)
+        }
     }
 }

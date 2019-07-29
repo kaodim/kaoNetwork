@@ -35,28 +35,28 @@ public class DisconnectedViewController: UIViewController {
     public func retryButtonTapped() {
         if (NetworkReachabilityManager(host: "www.apple.com")!.isReachable) {
             self.dismiss(animated: true, completion: nil)
-        } else {
-            if let retry = retry {
-                retry()
-            }
+        } else if let retry = retry {
+            retry()
         }
     }
 
     private func configureLayout() {
         view.addSubview(noInternet)
         NSLayoutConstraint.activate([
-            noInternet.topAnchor.constraint(equalTo: safeTopAnchor),
-            noInternet.bottomAnchor.constraint(equalTo: safeBottomAnchor),
+            noInternet.topAnchor.constraint(greaterThanOrEqualTo: safeTopAnchor, constant: 0),
+            noInternet.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
             noInternet.leadingAnchor.constraint(equalTo: safeLeadingAnchor),
             noInternet.trailingAnchor.constraint(equalTo: safeTrailingAnchor)
             ])
     }
 }
 
-extension UIViewController {
+public extension UIViewController {
     func presentDisconnectScreen(_ retry: (() -> Void)? = nil) {
-        let view = DisconnectedViewController()
-        view.retry = retry
-        self.present(view, animated: true, completion: nil)
+        if !self.isKind(of: DisconnectedViewController.self) {
+            let view = DisconnectedViewController()
+            view.retry = retry
+            self.present(view, animated: true, completion: nil)
+        }
     }
 }

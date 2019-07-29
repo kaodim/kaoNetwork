@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="82" id="Rcq-To-70f" customClass="BreakdownTableViewCell" customModule="KaoDesign">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rcq-To-70f" id="s8B-sg-cLQ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aI5-PS-roa">
+                        <rect key="frame" x="16" y="8" width="382" height="66.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFh-wM-h7O" customClass="KaoLabel" customModule="KaoDesign">
+                                <rect key="frame" x="0.0" y="0.0" width="42" height="66.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRX-UX-KUL" customClass="KaoLabel" customModule="KaoDesign">
+                                <rect key="frame" x="340" y="23" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DRX-UX-KUL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tFh-wM-h7O" secondAttribute="trailing" constant="24" id="QhY-wZ-3XJ"/>
+                            <constraint firstItem="tFh-wM-h7O" firstAttribute="top" secondItem="aI5-PS-roa" secondAttribute="top" id="RlZ-CY-n1K"/>
+                            <constraint firstItem="tFh-wM-h7O" firstAttribute="leading" secondItem="aI5-PS-roa" secondAttribute="leading" id="TZL-oq-fBg"/>
+                            <constraint firstAttribute="trailing" secondItem="DRX-UX-KUL" secondAttribute="trailing" id="eFD-5h-kYG"/>
+                            <constraint firstItem="DRX-UX-KUL" firstAttribute="centerY" secondItem="tFh-wM-h7O" secondAttribute="centerY" id="krW-g1-mF1"/>
+                            <constraint firstAttribute="bottom" secondItem="tFh-wM-h7O" secondAttribute="bottom" id="vLB-CS-jFZ"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INS-Dg-t16">
+                        <rect key="frame" x="16" y="7" width="382" height="1"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="tAE-NT-65W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="INS-Dg-t16" firstAttribute="leading" secondItem="aI5-PS-roa" secondAttribute="leading" id="4qD-2V-IPE"/>
+                    <constraint firstItem="aI5-PS-roa" firstAttribute="leading" secondItem="s8B-sg-cLQ" secondAttribute="leading" constant="16" id="9Z8-I9-vXM"/>
+                    <constraint firstAttribute="bottom" secondItem="aI5-PS-roa" secondAttribute="bottom" constant="7" id="cGm-Gr-S8r"/>
+                    <constraint firstItem="INS-Dg-t16" firstAttribute="trailing" secondItem="aI5-PS-roa" secondAttribute="trailing" id="d6W-ls-Uvl"/>
+                    <constraint firstItem="aI5-PS-roa" firstAttribute="top" secondItem="INS-Dg-t16" secondAttribute="bottom" id="dGk-jb-5gl"/>
+                    <constraint firstAttribute="trailing" secondItem="aI5-PS-roa" secondAttribute="trailing" constant="16" id="qLO-ur-fff"/>
+                    <constraint firstItem="INS-Dg-t16" firstAttribute="top" secondItem="s8B-sg-cLQ" secondAttribute="top" constant="7" id="uZn-UH-YUc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardViewBottom" destination="cGm-Gr-S8r" id="LJX-3u-Ymk"/>
+                <outlet property="cardViewLeading" destination="9Z8-I9-vXM" id="L0v-uH-vEo"/>
+                <outlet property="cardViewTop" destination="uZn-UH-YUc" id="f1K-Oj-ddV"/>
+                <outlet property="cardViewTrailing" destination="qLO-ur-fff" id="6aJ-vp-ovA"/>
+                <outlet property="leftLabel" destination="tFh-wM-h7O" id="4cM-L6-hJs"/>
+                <outlet property="rightLabel" destination="DRX-UX-KUL" id="HH6-y4-4Lh"/>
+                <outlet property="seperatorBottom" destination="dGk-jb-5gl" id="8Qo-p1-Oyv"/>
+                <outlet property="seperatorView" destination="INS-Dg-t16" id="1tK-Q8-4kS"/>
+            </connections>
+            <point key="canvasLocation" x="-13.043478260869566" y="60.267857142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

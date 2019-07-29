@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,15 +13,21 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KaoBottomButtonView" customModule="KaoDesign">
             <connections>
                 <outlet property="button" destination="T68-aj-VlC" id="8Qz-Pg-Hwy"/>
+                <outlet property="buttonBottom" destination="cyL-tn-hsi" id="Ve2-Or-BNC"/>
+                <outlet property="buttonLeading" destination="5hZ-XI-BjP" id="iTn-fJ-QR0"/>
+                <outlet property="buttonTop" destination="g8k-AP-Ur7" id="d1a-Oh-x11"/>
+                <outlet property="buttonTrailing" destination="7He-uQ-1t1" id="dbp-YL-s1c"/>
+                <outlet property="cardView" destination="lTe-Qp-4yN" id="fdZ-Kb-e0y"/>
+                <outlet property="seperatorLine" destination="ejJ-d4-cM5" id="Rba-Cs-noD"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTe-Qp-4yN">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejJ-d4-cM5" customClass="KaoLineView" customModule="KaoDesign">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
@@ -31,9 +37,9 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T68-aj-VlC" customClass="KaoButton" customModule="KaoDesign">
-                            <rect key="frame" x="15" y="14" width="345" height="35"/>
+                            <rect key="frame" x="15" y="14" width="345" height="45"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="35" id="QzY-DT-0gT"/>
+                                <constraint firstAttribute="height" constant="45" id="QzY-DT-0gT"/>
                             </constraints>
                             <connections>
                                 <action selector="buttonPressed" destination="-1" eventType="touchUpInside" id="iq9-SL-KbX"/>
@@ -52,7 +58,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lTe-Qp-4yN" secondAttribute="trailing" id="4Ru-J9-ZDE"/>
                 <constraint firstItem="lTe-Qp-4yN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JLo-ze-1nO"/>

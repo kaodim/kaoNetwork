@@ -1,0 +1,6 @@
+framework module AZYCalendarView {
+  umbrella header "AZYCalendarView-umbrella.h"
+
+  export *
+  module * { export * }
+}

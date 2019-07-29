@@ -30,13 +30,13 @@ extension KaoPaginationProtocol {
         if meta?.currentPage == 1 {
             self.replaceObject(object)
         } else {
-            if !displayEmptyDataSet {
+//            if !displayEmptyDataSet {
                 /// Append new dataset to list
                 self.appendObject(object)
-            } else {
-                /// Insert as new list
-                self.replaceObject(object)
-            }
+//            } else {
+//                /// Insert as new list
+//                self.replaceObject(object)
+//            }
         }
         self.paginationLoader.stopAnimating()
     }

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="AnswerTableViewCell" customModule="KaoDesign">
+            <rect key="frame" x="0.0" y="0.0" width="516" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="516" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J94-h1-Iau">
+                        <rect key="frame" x="0.0" y="0.0" width="516" height="90.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGb-1X-HAT">
+                                <rect key="frame" x="21" y="12" width="18" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agg-Ly-pNF" customClass="KaoLabel" customModule="KaoCustomPod" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="401-Ov-Pli"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="18" id="zYg-Lh-SEm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.63529411759999999" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="agg-Ly-pNF" secondAttribute="trailing" id="HG3-H8-x4B"/>
+                                    <constraint firstItem="agg-Ly-pNF" firstAttribute="leading" secondItem="VGb-1X-HAT" secondAttribute="leading" id="HWX-JU-tyi"/>
+                                    <constraint firstAttribute="bottom" secondItem="agg-Ly-pNF" secondAttribute="bottom" id="Nl0-dF-DDl"/>
+                                    <constraint firstItem="agg-Ly-pNF" firstAttribute="top" secondItem="VGb-1X-HAT" secondAttribute="top" id="q18-Oo-sY6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P43-zA-RMt">
+                                <rect key="frame" x="54" y="0.0" width="462" height="90.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When do you need it?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iln-Vz-eFR" customClass="KaoLabel" customModule="KaoCustomPod" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="12" width="402" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="fl4-qc-BlJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="17 May 2019" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ps-Z9-0FI" customClass="KaoLabel" customModule="KaoCustomPod" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="36" width="402" height="42.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="bFM-M3-7sZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5V-Db-R4e">
+                                        <rect key="frame" x="416" y="16" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="z4F-7b-Gmy"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.14901960780000001" green="0.57254901960000004" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Edit">
+                                            <color key="titleColor" red="0.14901960784313725" green="0.5725490196078431" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editButonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="geh-i0-YZR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3ps-Z9-0FI" firstAttribute="trailing" secondItem="iln-Vz-eFR" secondAttribute="trailing" id="9K2-wi-eLn"/>
+                                    <constraint firstItem="3ps-Z9-0FI" firstAttribute="top" secondItem="iln-Vz-eFR" secondAttribute="bottom" constant="4" id="EdP-X8-9NM"/>
+                                    <constraint firstItem="iln-Vz-eFR" firstAttribute="top" secondItem="P43-zA-RMt" secondAttribute="top" constant="12" id="LPF-hg-bFT"/>
+                                    <constraint firstItem="H5V-Db-R4e" firstAttribute="top" secondItem="P43-zA-RMt" secondAttribute="top" constant="16" id="Prt-V3-6CF"/>
+                                    <constraint firstItem="iln-Vz-eFR" firstAttribute="leading" secondItem="P43-zA-RMt" secondAttribute="leading" id="TQX-L1-tjn"/>
+                                    <constraint firstAttribute="bottom" secondItem="3ps-Z9-0FI" secondAttribute="bottom" constant="12" id="b3t-wq-dr7"/>
+                                    <constraint firstItem="H5V-Db-R4e" firstAttribute="leading" secondItem="iln-Vz-eFR" secondAttribute="trailing" constant="14" id="bxf-Ep-e9y"/>
+                                    <constraint firstAttribute="trailing" secondItem="H5V-Db-R4e" secondAttribute="trailing" constant="16" id="gui-PJ-TEx"/>
+                                    <constraint firstAttribute="trailing" secondItem="iln-Vz-eFR" secondAttribute="trailing" priority="999" constant="16" id="sBn-0D-Lw1"/>
+                                    <constraint firstItem="3ps-Z9-0FI" firstAttribute="leading" secondItem="iln-Vz-eFR" secondAttribute="leading" id="z4t-Bu-8Im"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="P43-zA-RMt" secondAttribute="bottom" id="Cqc-1B-554"/>
+                            <constraint firstItem="P43-zA-RMt" firstAttribute="leading" secondItem="VGb-1X-HAT" secondAttribute="trailing" constant="15" id="Lae-JT-Ftu"/>
+                            <constraint firstItem="P43-zA-RMt" firstAttribute="leading" secondItem="J94-h1-Iau" secondAttribute="leading" priority="999" constant="13" id="Qz0-dQ-jZB"/>
+                            <constraint firstItem="P43-zA-RMt" firstAttribute="top" secondItem="J94-h1-Iau" secondAttribute="top" id="Url-oz-cH2"/>
+                            <constraint firstItem="VGb-1X-HAT" firstAttribute="leading" secondItem="J94-h1-Iau" secondAttribute="leading" constant="21" id="dzG-1l-atV"/>
+                            <constraint firstItem="VGb-1X-HAT" firstAttribute="top" secondItem="J94-h1-Iau" secondAttribute="top" constant="12" id="f7F-Vf-XK4"/>
+                            <constraint firstAttribute="trailing" secondItem="P43-zA-RMt" secondAttribute="trailing" id="gmn-3t-fs4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="J94-h1-Iau" secondAttribute="bottom" id="9tO-co-fuK"/>
+                    <constraint firstItem="J94-h1-Iau" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KwU-fQ-JxX"/>
+                    <constraint firstItem="J94-h1-Iau" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gmj-KM-X6d"/>
+                    <constraint firstAttribute="trailing" secondItem="J94-h1-Iau" secondAttribute="trailing" id="sMd-qH-ssH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bulletLabel" destination="agg-Ly-pNF" id="ySw-Pn-nfQ"/>
+                <outlet property="bulletView" destination="VGb-1X-HAT" id="Ihd-BX-nLN"/>
+                <outlet property="editButton" destination="H5V-Db-R4e" id="yd3-pr-5wG"/>
+                <outlet property="subTitleLabel" destination="3ps-Z9-0FI" id="3tP-xp-icq"/>
+                <outlet property="titleLabel" destination="iln-Vz-eFR" id="miL-wS-DcW"/>
+            </connections>
+            <point key="canvasLocation" x="273.91304347826087" y="80.022321428571431"/>
+        </tableViewCell>
+    </objects>
+</document>

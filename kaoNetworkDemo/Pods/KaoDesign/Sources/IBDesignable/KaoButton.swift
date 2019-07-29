@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public enum KaoButtonType {
-    case primary, secondary, textOnly, dismiss
+    case primary, secondary, textOnly, dismiss, outline, whiteOnly
 }
 
 @IBDesignable
@@ -47,22 +47,28 @@ public class KaoButton: UIButton {
         return CGSize(width: adjustedWidth, height: adjustedHeight)
     }
 
-    public func configure(type: KaoButtonType = .primary, size: KaoFontSize = .regular) {
+    public func configure(type: KaoButtonType = .primary, size: KaoFontSize = .large) {
         // Common logic goes here
+        configure(type: type, size: size.rawValue)
+    }
+
+    public func configure(type: KaoButtonType = .primary, size: CGFloat) {
         addCornerRadius()
         setAttributes(type: type, size: size)
     }
 
-    private func setAttributes(type: KaoButtonType, size: KaoFontSize) {
+    private func setAttributes(type: KaoButtonType, size: CGFloat) {
         switch type {
         case .primary:
+            addBorderLine(width: 1, color: .clear)
             setBackgroundColor(color: .kaoColor(.cardinal), forState: .highlighted)
-            setBackgroundColor(color: .kaoColor(.silver), forState: .disabled)
+            setBackgroundColor(color: .kaoColor(.kaodimRed40), forState: .disabled)
             setBackgroundColor(color: .kaoColor(.crimson), forState: .normal)
             titleLabel?.textColor = .white
             setTitleColor(.white, for: .highlighted)
             tintColor = .white
         case .secondary:
+            addBorderLine(width: 1, color: .clear)
             setBackgroundColor(color: .kaoColor(.midnight), forState: .highlighted)
             setBackgroundColor(color: .kaoColor(.silver), forState: .disabled)
             setBackgroundColor(color: .kaoColor(.prussianBlue), forState: .normal)
@@ -70,6 +76,7 @@ public class KaoButton: UIButton {
             setTitleColor(.white, for: .highlighted)
             tintColor = .white
         case .textOnly:
+            addBorderLine(width: 1, color: .clear)
             setBackgroundColor(color: .kaoColor(.mercury), forState: .highlighted)
             setBackgroundColor(color: .clear, forState: .disabled)
             setBackgroundColor(color: .clear, forState: .normal)
@@ -79,15 +86,37 @@ public class KaoButton: UIButton {
             setTitleColor(.kaoColor(.whiteLilac), for: .disabled)
             tintColor = .kaoColor(.curiousBlue)
         case .dismiss:
+            addBorderLine(width: 1, color: .clear)
             setBackgroundColor(color: .kaoColor(.whiteThree), forState: .highlighted)
             setBackgroundColor(color: .kaoColor(.whiteThree), forState: .disabled)
             setBackgroundColor(color: .kaoColor(.whiteThree), forState: .normal)
             titleLabel?.textColor = .kaoColor(.greyishBrown)
             setTitleColor(.kaoColor(.greyishBrown), for: .normal)
+            setTitleColor(.kaoColor(.greyishBrown, alpha: 0.6), for: .disabled)
             tintColor = .kaoColor(.greyishBrown)
+        case .outline:
+            addBorderLine(width: 1, color: .kaoColor(.whiteThree))
+            setBackgroundColor(color: .clear, forState: .highlighted)
+            setBackgroundColor(color: .clear, forState: .disabled)
+            setBackgroundColor(color: .clear, forState: .normal)
+            titleLabel?.textColor = .kaoColor(.crimson)
+            setTitleColor(.kaoColor(.crimson), for: .normal)
+            setTitleColor(.kaoColor(.crimson, alpha: 0.6), for: .disabled)
+            setTitleColor(.kaoColor(.crimson, alpha: 0.6), for: .highlighted)
+            tintColor = .kaoColor(.crimson)
+        case .whiteOnly:
+            addBorderLine(width: 1, color: UIColor.white.withAlphaComponent(0.7))
+            setBackgroundColor(color: .clear, forState: .highlighted)
+            setBackgroundColor(color: .clear, forState: .disabled)
+            setBackgroundColor(color: .clear, forState: .normal)
+            titleLabel?.textColor = .white
+            setTitleColor(.white, for: .normal)
+            setTitleColor(UIColor.white.withAlphaComponent(0.7), for: .disabled)
+            setTitleColor(UIColor.white.withAlphaComponent(0.7), for: .highlighted)
+            tintColor = .white
         }
 
-        titleLabel?.font = .kaoFont(style: .medium, size: size)
+        titleLabel?.font = .kaoFont(style: .semibold, size: size)
         adjustsImageWhenHighlighted = false
     }
 }
