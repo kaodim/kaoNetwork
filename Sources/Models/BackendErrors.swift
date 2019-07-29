@@ -1,5 +1,5 @@
 //
-//  KaoError.swift
+//  BackendErrors.swift
 //  kaoNetwork
 //
 //  Created by Augustius on 23/07/2019.

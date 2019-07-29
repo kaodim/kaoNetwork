@@ -66,6 +66,7 @@
 		25E69B60F8D6FAE92668C65012C48008 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CBD4700C68304489BB83E20F0465EC /* UIView+Extension.swift */; };
 		2688CA226395C6B00A6DF3BB28E97724 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517E935A393AC5E738609E55AD3FF971 /* ConstraintMaker.swift */; };
 		270D7B5D7FADC4974578BDFF40C3EBA8 /* ReviewListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FBB3600542C6DD093384560ABD3103A /* ReviewListHeaderView.xib */; };
+		27101E7C22EEA9AE00FFE58A /* BackendErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC308A2D3B92B8E8BE86FD15532B008 /* BackendErrors.swift */; };
 		28DCF0977E10DD7C22ADD5EDEE2B5FA9 /* CollectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF95F8EC66C99D8B9F5E67290EB647DA /* CollectionHeaderReusableView.swift */; };
 		2A630D85C8ED092E1AA8810131C40602 /* KaoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B44B7BC5B3C3639BFC5020D7B37D33 /* KaoHelper.swift */; };
 		2A84B8718F1A7FE0448A0FA3E779CF83 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FAE06814122DA541F5CF836E01888C /* CacheSerializer.swift */; };
@@ -243,7 +244,6 @@
 		9CD1A67205F6404A4A301CBFD563326D /* SelectedReviewTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C93C137D1C1A91C6E10A450955E481 /* SelectedReviewTag.swift */; };
 		9DA0D91E1ACBE363E7F4FB20DF7424AE /* KaoNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF012B83891462FD73DA4B31DF7E43E0 /* KaoNavigationController.swift */; };
 		9DBEDD4F875C77B447B2D06E07C53620 /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E14325A2B2B737EE54DC3005989F5188 /* XLPagerTabStrip-dummy.m */; };
-		9E546AF9A5C1A82B9E33C4E2E985A293 /* KaoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC308A2D3B92B8E8BE86FD15532B008 /* KaoError.swift */; };
 		9E62CE8429145C584E1BD38AA4E1E5F8 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1002FF7C4F8D530AECE9964222DBC3C3 /* AnimatedImageView.swift */; };
 		9E7FEAA1F6D75A01E269BF5C32B0823A /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D7F553B8FD4D57546D862AB3D8A7D /* Placeholder.swift */; };
 		9F669A0581E3748642DA5994284E2918 /* KaoLinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E73F431AA6179351AD5F0906B05D780 /* KaoLinkButton.swift */; };
@@ -586,9 +586,9 @@
 		03986F39BE082F44B28A77DAB81C805B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		042E425E28E8ECA79068CB67150202D0 /* DateTime.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = DateTime.storyboard; path = Sources/KaoDateTimePicker/Storyboards/DateTime.storyboard; sourceTree = "<group>"; };
 		047F59A26BF5C192232DF968450FAB16 /* KaoTextField.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoTextField.xib; path = Sources/KaoTextField/KaoTextField.xib; sourceTree = "<group>"; };
-		063841A22714699361982CFB9FF9FE6F /* NotificationBannerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NotificationBannerSwift.framework; path = NotificationBannerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		063841A22714699361982CFB9FF9FE6F /* NotificationBannerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotificationBannerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B78CDE8CA00580F291C1F17CEFC5B6 /* KaoUploadOptionCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoUploadOptionCell.xib; path = Sources/KaoAttachment/Views/KaoUploadOptionCell.xib; sourceTree = "<group>"; };
-		06C61D42F854D916C59E0D01E2EC637A /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Light.ttf"; path = "Sources/Resources/Fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		06C61D42F854D916C59E0D01E2EC637A /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "Sources/Resources/Fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		06C67BD469D7417B4AE4925E7E4DD4ED /* UIViewController+Permission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Permission.swift"; path = "Sources/Extensions/UIViewController+Permission.swift"; sourceTree = "<group>"; };
 		07CE9572E1D508C268FC6F4EFD88F7BA /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStoryboard+Extension.swift"; path = "Sources/Extensions/UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		07F2E4E890964B459E4CF0968A3A42E6 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
@@ -623,7 +623,7 @@
 		181D99B98607150CEE5A793E463B162F /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
 		19145910EC8A593B26F67B344724B53D /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		19B44B7BC5B3C3639BFC5020D7B37D33 /* KaoHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoHelper.swift; path = Sources/HelperFunction/KaoHelper.swift; sourceTree = "<group>"; };
-		1A6577798A274442541BD87A80623E97 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6577798A274442541BD87A80623E97 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A74AE02D919A70968AACC26D828FBB7 /* RatingCount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RatingCount.swift; path = Sources/RatingReviews/Model/RatingCount.swift; sourceTree = "<group>"; };
 		1B483FA7A5B91D62C8CFD9C7EF81D2DC /* KaoImagePreviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoImagePreviewViewController.swift; path = Sources/Controller/KaoImagePreviewViewController.swift; sourceTree = "<group>"; };
 		1C5F3728F7A7467FAA1780ECD2411D62 /* KaoPaymentStatusCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoPaymentStatusCell.swift; path = Sources/KaoPayment/KaoPaymentStatusCell.swift; sourceTree = "<group>"; };
@@ -633,7 +633,7 @@
 		1DF59E79C64EEAD3B21C4D10A01195C0 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		1E1CEA116D2A761A47781F9149C67B17 /* ResourceBundle-FontAwesome.swift-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
 		1E46686523195FC6F4B939EA746D48A8 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
-		1EC20B8A52B73093904666FF2E719EEC /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MarqueeLabel.framework; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC20B8A52B73093904666FF2E719EEC /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDD1E0D5496185245B60CC48F0947EF /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
 		1F12DA866F0E75D375688D33C3A9BE66 /* UITableview+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableview+Extension.swift"; path = "Sources/Extensions/UITableview+Extension.swift"; sourceTree = "<group>"; };
 		1F612557F633784EA0A5579F48EA6C1B /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
@@ -641,7 +641,7 @@
 		1FA24B2D21AF078E5857A46A324C96A5 /* KaoHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoHeaderView.xib; path = Sources/Views/KaoHeaderView.xib; sourceTree = "<group>"; };
 		212BD6C53CA557D60789C4A24D9B4585 /* backImg_start.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = backImg_start.png; path = ZYCalendarView/Images/backImg_start.png; sourceTree = "<group>"; };
 		218395F1D26797D566DCEB967007E31D /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
-		225AB91C94C637476EADA3FB15593F54 /* AZYCalendarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AZYCalendarView.framework; path = AZYCalendarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		225AB91C94C637476EADA3FB15593F54 /* AZYCalendarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AZYCalendarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2305D919ADAA74422DF33323CEAB44FC /* kaoNetwork-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "kaoNetwork-Info.plist"; sourceTree = "<group>"; };
 		23CE6E8AA3779E31C99BF674DA735EB7 /* kaoNetwork.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = kaoNetwork.xcconfig; sourceTree = "<group>"; };
 		23E5E15B8570B96AE5B4D8755AC57190 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
@@ -662,8 +662,8 @@
 		2ADA370E6DB3B4D59162B89A63AB06D1 /* circle.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = circle.png; path = ZYCalendarView/Images/circle.png; sourceTree = "<group>"; };
 		2B90C87627E4DE21B2C5D41B73B3FD7B /* ZYDayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYDayView.m; path = ZYCalendarView/ZYDayView.m; sourceTree = "<group>"; };
 		2B9688EDE0A7D304E91F9CFE56264B25 /* MarqueeLabel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MarqueeLabel-Info.plist"; sourceTree = "<group>"; };
-		2C5179FBA6519D31081B62396A5DED7D /* kaoNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = kaoNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2CC4131A1526D9C8173E61476088A508 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.swift.bundle; path = "FontAwesome.swift-FontAwesome.swift.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5179FBA6519D31081B62396A5DED7D /* kaoNetwork.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = kaoNetwork.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2CC4131A1526D9C8173E61476088A508 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontAwesome.swift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCFFCB9A8657B08F1530195EA59D4A1 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF8074FC7DBD166B3C6E6BA24E28CF3 /* NotificationBannerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NotificationBannerSwift-Info.plist"; sourceTree = "<group>"; };
 		30F141655CD0BF4D751C9E30AB1DC2A7 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
@@ -680,7 +680,7 @@
 		34C75E12F7323778F62FC7E5A566719F /* NetworkErrorStatusCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkErrorStatusCode.swift; sourceTree = "<group>"; };
 		34C871F330F6797AD7C5B70A9F679993 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
 		359D21EA6E1FEA121FC6049ADFAA7109 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		35AA321D4954CBF3BC854DA47E2FAA5A /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.otf; path = FontAwesome/FontAwesome.otf; sourceTree = "<group>"; };
+		35AA321D4954CBF3BC854DA47E2FAA5A /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.otf; path = FontAwesome/FontAwesome.otf; sourceTree = "<group>"; };
 		3637290E56C9E96703FEC59F9EF928F9 /* ZYCalendarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYCalendarManager.m; path = ZYCalendarView/ZYCalendarManager.m; sourceTree = "<group>"; };
 		36B05C6B66FD1BCDA015B0011EAEF6A9 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		382AB013105AC71A4B58CA5A172A18F0 /* UIApplication+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+extension.swift"; path = "Sources/Extensions/UIApplication+extension.swift"; sourceTree = "<group>"; };
@@ -707,7 +707,7 @@
 		4551958F7F87D88B7023B4479EE87A31 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		459F8D0D501CFE2AC2DB6FD20D43B73C /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		45BF87A1EED32B6BE67BDB3688BB7881 /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageRepresentable.swift; path = FontAwesome/FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
-		45C08FD54DDFA39C177862DB606DD252 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesome_swift.framework; path = FontAwesome.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45C08FD54DDFA39C177862DB606DD252 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E147A63A72679558E9EC93400B6D1E /* KaoInfoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoInfoView.swift; path = Sources/Views/KaoInfoView.swift; sourceTree = "<group>"; };
 		4643B8615818D05542858EA162438FBB /* PayOptionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PayOptionCell.swift; path = Sources/KaoPayment/PayOptionCell.swift; sourceTree = "<group>"; };
 		468DAE3441B58BA0416F38C5BDCA4A71 /* Date+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "Sources/Extensions/Date+Extension.swift"; sourceTree = "<group>"; };
@@ -790,11 +790,11 @@
 		71EC8E3FA37E019CD4CD93497831CEEF /* NotificationBannerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NotificationBannerSwift-dummy.m"; sourceTree = "<group>"; };
 		7283A952D6487B3D00AFB6FB6137C916 /* KaoUploadAttachmentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoUploadAttachmentView.swift; path = Sources/KaoAttachment/Views/KaoUploadAttachmentView.swift; sourceTree = "<group>"; };
 		72F5165EE3F91D2564E95F962292864E /* KaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoTextField.swift; path = Sources/KaoTextField/KaoTextField.swift; sourceTree = "<group>"; };
-		7363B04E684107C586239F94B7DB3F5D /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XLPagerTabStrip.bundle; path = "XLPagerTabStrip-XLPagerTabStrip.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7363B04E684107C586239F94B7DB3F5D /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLPagerTabStrip.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		739FFE614EB89B5B1FA383A265E16502 /* kaoNetwork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = kaoNetwork.modulemap; sourceTree = "<group>"; };
 		73C27DC446A850116866F468D9D73D1C /* Pods-kaoNetworkDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-kaoNetworkDemo.modulemap"; sourceTree = "<group>"; };
 		7424BE7170F816BADCDDFCC3770AABDD /* MarqueeLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MarqueeLabel.modulemap; sourceTree = "<group>"; };
-		74C70E58B957AEE2C93ACFC67021EEA3 /* KaoNetworkCustomPod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KaoNetworkCustomPod.bundle; path = "kaoNetwork-KaoNetworkCustomPod.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C70E58B957AEE2C93ACFC67021EEA3 /* KaoNetworkCustomPod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaoNetworkCustomPod.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		768CC8520B884D7C7ABBB3B458B5FC6C /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		777FC0537BE0FC5203A3578B205409B6 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		7806B6CD7E6D1ED98E2A3AD1502BC4B8 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Extensions/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
@@ -809,7 +809,7 @@
 		7EE29F716E74E52A1A70916B364CACFF /* UbudController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UbudController.swift; path = Sources/KaoPhotoPager/UbudController.swift; sourceTree = "<group>"; };
 		81C6BF9075BC724EA97697140D32D462 /* DisconnectedViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisconnectedViewController.swift; sourceTree = "<group>"; };
 		82595B29F9922C6259C6C4EB243EC39D /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		826379CE87BC64F7DAB3351550929AEC /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		826379CE87BC64F7DAB3351550929AEC /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A48042AD1FEC5631A14CF33BBA808F /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
 		82E99D15CCB396B962E0D06B200F1A41 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		8390C751856806AC1CCD63795B544180 /* UbudControllerPaginationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UbudControllerPaginationDelegate.swift; path = Sources/KaoPhotoPager/Protocols/UbudControllerPaginationDelegate.swift; sourceTree = "<group>"; };
@@ -845,8 +845,8 @@
 		980FE192A6E78D4B9200EA8453E6098F /* BannerColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BannerColors.swift; path = NotificationBanner/Classes/BannerColors.swift; sourceTree = "<group>"; };
 		9837FF33B6E4A19440D35E4428038991 /* Pods-kaoNetworkDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kaoNetworkDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		98ABC3204CB40102372349D35314FC17 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
-		98E2AA2F0F2BFF3A66A83E1851816A43 /* KaoCustomPod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = KaoCustomPod.bundle; path = "KaoDesign-KaoCustomPod.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9903A31DBAF153B04A2EC4A37E3E91B6 /* Pods_kaoNetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kaoNetworkDemo.framework; path = "Pods-kaoNetworkDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98E2AA2F0F2BFF3A66A83E1851816A43 /* KaoCustomPod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaoCustomPod.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9903A31DBAF153B04A2EC4A37E3E91B6 /* Pods_kaoNetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kaoNetworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		993F4D29FC9CA1045C5086DF4FB19BA4 /* KaoPageBarCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoPageBarCell.swift; path = Sources/KaoBasePager/Views/KaoPageBarCell.swift; sourceTree = "<group>"; };
 		994BCB63C5476FBF475DE5DE86AB7264 /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
 		99CF4E3F2CACB11BC07FDBB4EC814D1B /* MarqueeLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MarqueeLabel.xcconfig; sourceTree = "<group>"; };
@@ -854,9 +854,9 @@
 		9B2FDD615621B90D3D9A7344B94E1BC3 /* InternalServerErrorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InternalServerErrorViewController.swift; sourceTree = "<group>"; };
 		9B4FE85F4D05E357DE1F4B8856738A7C /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
 		9D17F38A058FD31308FEEAA1B0109F87 /* ZYWeekView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYWeekView.m; path = ZYCalendarView/ZYWeekView.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D96E449ADB7CAE635D0AB30569177F2 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DZNEmptyDataSet.framework; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D97108361C1269E7AA26B54103A26C2 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D96E449ADB7CAE635D0AB30569177F2 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D97108361C1269E7AA26B54103A26C2 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCDD9ACE0A0AC91A8BE5489AAEA077F /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 		9DE8C84B899C33B4F66205904683D5BB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		9E12ED184021D5A946057AB6644372A0 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
@@ -887,7 +887,7 @@
 		AF3F17CA4BB28FB985F1AC642BF5CCBF /* ZYMonthView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZYMonthView.h; path = ZYCalendarView/ZYMonthView.h; sourceTree = "<group>"; };
 		AF863074556A8DCB0FA6CBFA4BE7F8CD /* KaoUploadOptionTableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoUploadOptionTableCell.swift; path = Sources/KaoAttachment/Views/KaoUploadOptionTableCell.swift; sourceTree = "<group>"; };
 		B0311A73F36B1F670FCBAD85C02CE41A /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		B0BCEBD2BBC04D066E515AAACCFD62E9 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Medium.ttf"; path = "Sources/Resources/Fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		B0BCEBD2BBC04D066E515AAACCFD62E9 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "Sources/Resources/Fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		B1C93C137D1C1A91C6E10A450955E481 /* SelectedReviewTag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectedReviewTag.swift; path = Sources/RatingReviews/Model/SelectedReviewTag.swift; sourceTree = "<group>"; };
 		B227052722F51D93A77C2B7160A29648 /* KaoPaginationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoPaginationViewController.swift; path = Sources/KaoPagination/KaoPaginationViewController.swift; sourceTree = "<group>"; };
 		B33737C532E3516F6FFE982BE0DA329F /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
@@ -898,16 +898,16 @@
 		B59FF5E90CC8DD353C6A80EB5A911C65 /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
 		B72EA32DF97C9389E42BA91785EF3456 /* Rating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rating.swift; path = Sources/RatingReviews/Model/Rating.swift; sourceTree = "<group>"; };
 		B79DBB484863DFBE17D7C42AE124D28E /* Encodable+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Encodable+Extension.swift"; path = "Sources/Extensions/Encodable+Extension.swift"; sourceTree = "<group>"; };
-		B7E1A9C385257263638461B32BFB971D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Bold.ttf"; path = "Sources/Resources/Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		B7E1A9C385257263638461B32BFB971D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "Sources/Resources/Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		B90096D43AC556076A4C87E3B42C2A71 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
-		B982E1C0FF316AA785D40D69BBD9694C /* KaoDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KaoDesign.framework; path = KaoDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B982E1C0FF316AA785D40D69BBD9694C /* KaoDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KaoDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D00C854BF0D92661882684C367834B /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		B9D7A6BFB561F991BED323D99A43909B /* BreakdownTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BreakdownTableViewCell.swift; path = Sources/GenericCells/BreakdownTableViewCell.swift; sourceTree = "<group>"; };
 		BB6D2BE25B2E132941AC59571F44609C /* AZYCalendarView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZYCalendarView-umbrella.h"; sourceTree = "<group>"; };
 		BBB7BB702EAF759995F75CDD29DC0CCE /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Sources/Extensions/UIColor+Extension.swift"; sourceTree = "<group>"; };
 		BBC47872DDBD8A0FE401636E39E2C904 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
 		BC3398502C5CDFB896AA1DCB6A5B8825 /* KaoBottomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoBottomView.swift; path = Sources/Views/KaoBottomView.swift; sourceTree = "<group>"; };
-		BD6DE17621250EFC7836927D68296018 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-LightItalic.ttf"; path = "Sources/Resources/Fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		BD6DE17621250EFC7836927D68296018 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "Sources/Resources/Fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		BD9B3D156EE35CCEC2924DE85220F8AD /* kaoNetwork-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kaoNetwork-prefix.pch"; sourceTree = "<group>"; };
 		BE31640905DF75A9A017B2EB423B9447 /* UbudPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UbudPresentationController.swift; path = Sources/KaoPhotoPager/Animator/UbudPresentationController.swift; sourceTree = "<group>"; };
 		BEB9D342922F1DBA09863E208CD3F8FA /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
@@ -962,13 +962,13 @@
 		DB84F8417B0B3E83D43C271CC6D01816 /* KaoModalDialogView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KaoModalDialogView.xib; path = Sources/Views/KaoModalDialogView.xib; sourceTree = "<group>"; };
 		DBB55260103C4A56E644FAB76F3A701F /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		DC4E48DC3D6A30D721A422E161CAE51F /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
-		DCDEC4DFC3CD255511E356CDE2D9AF5A /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCDEC4DFC3CD255511E356CDE2D9AF5A /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD95E1C78927979362951399C00FEA3E /* KaoNoticeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaoNoticeView.swift; path = Sources/KaoNoticeView/KaoNoticeView.swift; sourceTree = "<group>"; };
-		DE7668FEEB58BB1BC61B4B14575E54C3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Regular.ttf"; path = "Sources/Resources/Fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		DE7668FEEB58BB1BC61B4B14575E54C3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "Sources/Resources/Fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		DF02192D5F95ECF57AEF8B60417ED417 /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwitterPagerTabStripViewController.swift; path = Sources/TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		DF95F8EC66C99D8B9F5E67290EB647DA /* CollectionHeaderReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionHeaderReusableView.swift; path = Sources/KaoDateTimePicker/Views/MonthSlider/CollectionHeaderReusableView.swift; sourceTree = "<group>"; };
 		DFAE65A541E4700EDCD7C56E29598DEF /* DateTimeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTimeManager.swift; path = Sources/KaoDateTimePicker/Manager/DateTimeManager.swift; sourceTree = "<group>"; };
-		DFC308A2D3B92B8E8BE86FD15532B008 /* KaoError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KaoError.swift; sourceTree = "<group>"; };
+		DFC308A2D3B92B8E8BE86FD15532B008 /* BackendErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BackendErrors.swift; sourceTree = "<group>"; };
 		DFCC326F2AF5582C8889FE0F179CF013 /* StatusBarNotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusBarNotificationBanner.swift; path = NotificationBanner/Classes/StatusBarNotificationBanner.swift; sourceTree = "<group>"; };
 		E082D75DFC7E6D8B52B1BFE7818FC43D /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
 		E126A18B528561CE30BB5F56D3B3402E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extension.swift"; path = "Sources/Extensions/UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -993,7 +993,7 @@
 		F094422A9C245CB9227E3B48FC12CF84 /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
 		F0A0DC34A34E98DDEFAD916071E2B662 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
 		F2289743EE2F3E06F379FA8CA3583451 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
-		F3F71626D697F71903CDEB8E8BCC1214 /* kaoNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = kaoNetwork.framework; path = kaoNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F71626D697F71903CDEB8E8BCC1214 /* kaoNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = kaoNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F414AD4E2577209C9E1277C475408285 /* ReviewListEditViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReviewListEditViewController.swift; path = Sources/RatingReviews/ViewController/ReviewListEditViewController.swift; sourceTree = "<group>"; };
 		F428A22952D9FBDFB4404C6543F33CF8 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
 		F51CF8DE0093D09272996EDD5D6B1D93 /* NotificationBannerQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationBannerQueue.swift; path = NotificationBanner/Classes/NotificationBannerQueue.swift; sourceTree = "<group>"; };
@@ -1002,7 +1002,7 @@
 		F78DC0F57A8CE2F5D209F25493A68F37 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		F8012134BEAB08523BB7A94165476DAE /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		F820C3AD28210500EE40274781242435 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
-		F8EF4E7DD98CA7F5AE5EECD4A2CD1FFC /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLPagerTabStrip.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8EF4E7DD98CA7F5AE5EECD4A2CD1FFC /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DBD0BF5E45FC84CE70F8ECF5FD379F /* ZYMonthView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZYMonthView.m; path = ZYCalendarView/ZYMonthView.m; sourceTree = "<group>"; };
 		F9EEE7A106A50D8B67D20C1273172C8D /* CollectionCellAutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionCellAutoLayout.swift; path = Sources/HelperFunction/CollectionCellAutoLayout.swift; sourceTree = "<group>"; };
 		FA9517408A3F0DB44C2CA4BC70D3C1A1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -1220,7 +1220,6 @@
 				CFC9D812361479DCE481C9FB308B5C67 /* UIButton+Kingfisher.swift */,
 				649FB76B48105D4B81140A33D9E0948F /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -1246,7 +1245,6 @@
 				D6C4AFE7578CA59017D9812DADEDDBC8 /* UIScrollView+EmptyDataSet.m */,
 				68A02495F348AF5305C15CE441185EA4 /* Support Files */,
 			);
-			name = DZNEmptyDataSet;
 			path = DZNEmptyDataSet;
 			sourceTree = "<group>";
 		};
@@ -1316,7 +1314,6 @@
 				47D1DF54704D4B0C4BD8868179A8AC19 /* Resources */,
 				8501DA87594E45DEC37AA7F20A562C6C /* Support Files */,
 			);
-			name = AZYCalendarView;
 			path = AZYCalendarView;
 			sourceTree = "<group>";
 		};
@@ -1428,7 +1425,6 @@
 				6DEB05C7D1C462E156912C4DC26E5427 /* Resources */,
 				7ADA25E446F0D212C22F95B5C0F1A91E /* Support Files */,
 			);
-			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -1616,7 +1612,6 @@
 				BCB53F4B563B388B5E6A5C9151799F3F /* Resources */,
 				1A320E1FF4058D62D2587B9756C58F21 /* Support Files */,
 			);
-			name = KaoDesign;
 			path = KaoDesign;
 			sourceTree = "<group>";
 		};
@@ -1659,7 +1654,6 @@
 				E3A6BEFB671B72111FCD7B10BB5EFFFE /* UILayoutSupport+Extensions.swift */,
 				8BCD8FC0A673C927E8E306E16B0506BE /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -1669,7 +1663,6 @@
 				25FED34465026F12801A2374F204569A /* Support Files */,
 				D0AC72B164519A4E8E2851AEB665F382 /* Swift */,
 			);
-			name = MarqueeLabel;
 			path = MarqueeLabel;
 			sourceTree = "<group>";
 		};
@@ -1827,7 +1820,6 @@
 				9387B6A87D1A3FD8C122562175BBBD4D /* Validation.swift */,
 				8D8C6328C8D4CF03459A35AE89BC008A /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1853,7 +1845,6 @@
 				DFCC326F2AF5582C8889FE0F179CF013 /* StatusBarNotificationBanner.swift */,
 				6270A461665CE67C129BCBA4E1982E13 /* Support Files */,
 			);
-			name = NotificationBannerSwift;
 			path = NotificationBannerSwift;
 			sourceTree = "<group>";
 		};
@@ -1943,14 +1934,13 @@
 				A1A4DDB33DB860BEB9E81685EF02583A /* Resources */,
 				769FB7380A409DD5C1D0235981D2F02C /* Support Files */,
 			);
-			name = XLPagerTabStrip;
 			path = XLPagerTabStrip;
 			sourceTree = "<group>";
 		};
 		EA7812EA852090FB701C28443BED031F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DFC308A2D3B92B8E8BE86FD15532B008 /* KaoError.swift */,
+				DFC308A2D3B92B8E8BE86FD15532B008 /* BackendErrors.swift */,
 			);
 			name = Models;
 			path = Sources/Models;
@@ -1991,7 +1981,6 @@
 				60A62C1057909C6991CDFDF3689F921E /* Resources */,
 				DE4F5B499893BCC35A1F8606EED39724 /* Support Files */,
 			);
-			name = FontAwesome.swift;
 			path = FontAwesome.swift;
 			sourceTree = "<group>";
 		};
@@ -2701,8 +2690,8 @@
 			files = (
 				CF45CF3D92333994BBE1DF4816D3575A /* DisconnectedViewController.swift in Sources */,
 				12E6C567B58EDA2D986F65ED2A1AB417 /* InternalServerErrorViewController.swift in Sources */,
-				9E546AF9A5C1A82B9E33C4E2E985A293 /* KaoError.swift in Sources */,
 				9A610B103D56A04EFC945197BD1B942F /* kaoNetwork-dummy.m in Sources */,
+				27101E7C22EEA9AE00FFE58A /* BackendErrors.swift in Sources */,
 				CFC58659D86231397FD18311B780D436 /* KaoNetworkErrorHandler.swift in Sources */,
 				B681B4AF58AE86038B6ABD7F32894AAF /* KaoNetworkHandler.swift in Sources */,
 				808A056F5347081E04E2BB9657D58900 /* KaoNetworkReach.swift in Sources */,

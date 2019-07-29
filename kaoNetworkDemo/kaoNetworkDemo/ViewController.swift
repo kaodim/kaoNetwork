@@ -97,21 +97,20 @@ class ViewController: KaoBaseViewController {
 
     @IBAction func dataConnectTapped() {
 
-//        if let url = URL(string: "https://uselessfacts.jsph.pl/random.json") {
+        //        if let url = URL(string: "https://uselessfacts.jsph.pl/random.json") {
         if let url = URL(string: "https://httpstat.us/\(textField.text ?? "")") {
-            NetworkRequest<SampleLocationV2, BackendErrors>.request(url, method: .get, needAuth: false) { (result) in
-                switch result {
-                case .success(let smpl):
-                    print(smpl)
-                case .successButDecodeFail(let errMsg):
-                    print(errMsg)
-                case .failure(let sampl):
-                    print(sampl.getAllMessage())
-                case .failAndDecodeFail(let errMsg):
-                    print(errMsg)
-                case .failNoDataToDecode:
-                    break
-                }
+            NetworkRequest<SampleLocationV2, BackendErrors>
+                .request(url, method: .get, needAuth: false) { (result) in
+                    switch result {
+                    case .success(let smpl):
+                        print(smpl)
+                    case .successButDecodeFail(let errMsg):
+                        print(errMsg)
+                    case .failure(let sampl):
+                        print(sampl.getAllMessage())
+                    case .failAndDecodeFail(let errMsg):
+                        print(errMsg)
+                    }
             }
         }
     }
@@ -122,17 +121,18 @@ class ViewController: KaoBaseViewController {
 
             let header = ["Authorization": "Client-ID 546c25a59c58ad7"]
 
-            NetworkRequest<ImageUploadResponse, BackendErrors>.uploadAttachment("https://api.imgur.com/3/upload", method: .post, header: header, attachmentData: data, fileName: "sasssss", progressHandler: { (progres) in
-                print(progres)
-            }) { (result) in
-                switch result {
-                case .success(let smpl):
-                    print(smpl)
-                case .successButDecodeFail(let errMsg):
-                    print(errMsg)
-                case .failure(let errMsg):
-                    print(errMsg)
-                }
+            NetworkRequest<ImageUploadResponse, BackendErrors>
+                .requestMultiPartData("https://api.imgur.com/3/upload", method: .post, header: header, attachmentData: data, fileName: "sasssss", progressHandler: { (progres) in
+                    print(progres)
+                }) { (result) in
+                    switch result {
+                    case .success(let smpl):
+                        print(smpl)
+                    case .successButDecodeFail(let errMsg):
+                        print(errMsg)
+                    case .failure(let errMsg):
+                        print(errMsg)
+                    }
             }
         }
     }

@@ -21,7 +21,9 @@ var defaultParameters: [String: Any] = {
     return parameters
 }()
 
-public protocol ApprovedErrors: Decodable { }
+public protocol ApprovedErrors: Decodable {
+    func getAllMessage() -> String?
+}
 
 public protocol KaoNetworkHandler {
     associatedtype E: ApprovedErrors
@@ -61,7 +63,7 @@ extension KaoNetworkHandler {
                 completion(.failAndDecodeFail(error.localizedDescription + errorStatusCode))
             }
         } else {
-            completion(.failNoDataToDecode)
+            completion(.failAndDecodeFail("- NO DATA RECEIVED -"))
         }
     }
 
@@ -116,7 +118,7 @@ extension KaoNetworkHandler {
 // FOR uploading attachment we use KaoUploadNetworkResult
 extension KaoNetworkHandler {
 
-    public static func uploadAttachment(_ url: URLConvertible, method: HTTPMethod = .post, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: KaoUploadNetworkResult<D>) -> Void) {
+    public static func requestMultiPartData(_ url: URLConvertible, method: HTTPMethod = .post, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: KaoUploadNetworkResult<D>) -> Void) {
 
         printRequest(headers: header, parameters: [:])
 
