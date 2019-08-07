@@ -32,38 +32,10 @@ public enum KaoNetworkResult<T: Decodable, E: ApprovedErrors> {
     case failAndDecodeFail(String)
 }
 
-public extension KaoNetworkResult {
-    func toDataSourceResult() -> DataSourceResult<T> {
-        switch self {
-        case .success(let object):
-            return .success(object)
-        case .successButDecodeFail(let errMsg):
-            return .failure(errMsg)
-        case .failure(let errMsg):
-            return .failure(errMsg.getAllMessage() ?? "")
-        case .failAndDecodeFail(let errMsg):
-            return .failure(errMsg)
-        }
-    }
-}
-
 public enum KaoUploadNetworkResult<T: Decodable> {
     case success(T)
     case failure(String)
     case successButDecodeFail(String)
-}
-
-public extension KaoUploadNetworkResult {
-    func toDataSourceResult() -> DataSourceResult<T> {
-        switch self {
-        case .success(let object):
-            return .success(object)
-        case .successButDecodeFail(let errMsg):
-            return .failure(errMsg)
-        case .failure(let errMsg):
-            return .failure(errMsg)
-        }
-    }
 }
 
 public enum DataSourceResult<T: Decodable> {

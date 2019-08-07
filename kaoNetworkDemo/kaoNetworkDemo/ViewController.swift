@@ -98,9 +98,10 @@ class ViewController: KaoBaseViewController {
     @IBAction func dataConnectTapped() {
 
         //        if let url = URL(string: "https://uselessfacts.jsph.pl/random.json") {
-        if let url = URL(string: "https://httpstat.us/\(textField.text ?? "")") {
+//        if let url = URL(string: "https://httpstat.us/\(textField.text ?? "")") {
+        if let url = URL(string: "https://my-json-server.typicode.com/typicode/demo/posts") {
             NetworkRequest<SampleLocationV2, BackendErrors>
-                .request(url, method: .get, needAuth: false) { (result) in
+                .request(url, method: .post, needAuth: false) { (result) in
                     switch result {
                     case .success(let smpl):
                         print(smpl)
