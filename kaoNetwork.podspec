@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'kaoNetwork'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'kaodim network library'
  
   s.description      = <<-DESC
@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
      'KaoNetworkCustomPod' => [
         'Sources/**/*.{xib}',
         'Sources/Views/**/*.{xib}',
+
         'Sources/Resources/icon.xcassets'
      ]
    }
