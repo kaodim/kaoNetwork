@@ -7,8 +7,9 @@
 
 import UIKit
 import KaoDesign
+import Alamofire
 
-public class TimeOutViewController: UIViewController {
+public class TimeOutViewController: KaoBaseViewController {
 
     private lazy var timeOut: KaoEmptyStateView = {
         let view: KaoEmptyStateView = KaoEmptyStateView()
@@ -23,8 +24,6 @@ public class TimeOutViewController: UIViewController {
         return view
     }()
 
-    var retry: (() -> Void)?
-
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -32,10 +31,12 @@ public class TimeOutViewController: UIViewController {
     }
 
     public func retryButtonTapped() {
-        if let retry = retry {
-            retry()
-        } else {
-            self.dismiss(animated: true, completion: nil)
+        if (NetworkReachabilityManager(host: "www.apple.com")!.isReachable) {
+            if let retry = retry {
+                retry()
+            } else {
+                 self.dismiss(animated: true, completion: nil)
+            }
         }
     }
 
@@ -55,6 +56,7 @@ public extension UIViewController {
         if !self.isKind(of: TimeOutViewController.self) {
             let view = TimeOutViewController()
             view.retry = retry
+            view.modalPresentationStyle = .overFullScreen
             self.present(view, animated: true, completion: nil)
         }
     }

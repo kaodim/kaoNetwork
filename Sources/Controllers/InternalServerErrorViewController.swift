@@ -7,8 +7,9 @@
 
 import Foundation
 import KaoDesign
+import Alamofire
 
-public class InternalServerErrorViewController: UIViewController {
+public class InternalServerErrorViewController: KaoBaseViewController {
 
     private lazy var internalServer: KaoEmptyStateView = {
         let view: KaoEmptyStateView = KaoEmptyStateView()
@@ -23,8 +24,6 @@ public class InternalServerErrorViewController: UIViewController {
         return view
     }()
 
-    var retry: (() -> Void)?
-
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -32,10 +31,12 @@ public class InternalServerErrorViewController: UIViewController {
     }
 
     public func retryButtonTapped() {
-        if let retry = retry {
-            retry()
-        } else {
-            self.dismiss(animated: true, completion: nil)
+        if (NetworkReachabilityManager(host: "www.apple.com")!.isReachable) {
+            if let retry = retry {
+                retry()
+            } else {
+                 self.dismiss(animated: true, completion: nil)
+            }
         }
     }
 
@@ -55,6 +56,7 @@ public extension UIViewController {
         if !self.isKind(of: InternalServerErrorViewController.self) {
             let view = InternalServerErrorViewController()
             view.retry = retry
+            view.modalPresentationStyle = .overFullScreen
             self.present(view, animated: true, completion: nil)
         }
     }

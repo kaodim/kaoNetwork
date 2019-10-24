@@ -9,7 +9,7 @@ import Foundation
 import KaoDesign
 import Alamofire
 
-public class DisconnectedViewController: UIViewController {
+public class DisconnectedViewController: KaoBaseViewController {
 
     private lazy var noInternet: KaoEmptyStateView = {
         let view: KaoEmptyStateView = KaoEmptyStateView()
@@ -24,8 +24,6 @@ public class DisconnectedViewController: UIViewController {
         return view
     }()
 
-    var retry: (() -> Void)?
-
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -34,9 +32,11 @@ public class DisconnectedViewController: UIViewController {
 
     public func retryButtonTapped() {
         if (NetworkReachabilityManager(host: "www.apple.com")!.isReachable) {
-            self.dismiss(animated: true, completion: nil)
-        } else if let retry = retry {
-            retry()
+            if let retry = retry {
+                retry()
+            } else {
+                 self.dismiss(animated: true, completion: nil)
+            }
         }
     }
 
@@ -56,6 +56,7 @@ public extension UIViewController {
         if !self.isKind(of: DisconnectedViewController.self) {
             let view = DisconnectedViewController()
             view.retry = retry
+            view.modalPresentationStyle = .overFullScreen
             self.present(view, animated: true, completion: nil)
         }
     }
