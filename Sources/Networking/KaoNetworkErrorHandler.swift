@@ -23,7 +23,7 @@ extension KaoNetworkErrorHandler {
     ///   - response: network respose
     ///   - error: error request
     ///   - completion: error completion be called in network request
-    public static func handleErrorResponse<T>(response: DataResponse<T>, error: Error, needAuth: Bool = false, completion: (_ resultError: Any) -> Void) {
+    public static func handleErrorResponse<T>(response: AFDataResponse<T>, error: Error, needAuth: Bool = false, completion: (_ resultError: Any) -> Void) {
 
         if let statusCode = response.response?.statusCode, let statusCodeError = NetworkErrorStatusCode(rawValue: statusCode) {
             switch statusCodeError {
@@ -41,7 +41,7 @@ extension KaoNetworkErrorHandler {
         }
     }
 
-    public static func tryToReadBackendErrorMessage<T>(response: DataResponse<T>, completion: (_ resultError: Any) -> Void) {
+    public static func tryToReadBackendErrorMessage<T>(response: AFDataResponse<T>, completion: (_ resultError: Any) -> Void) {
         if let data = response.data {
             do {
                 let error = try JSONSerialization.jsonObject(with: data, options: [])
@@ -81,11 +81,13 @@ extension KaoNetworkErrorHandler {
             encodingType = JSONEncoding.default
         }
 
-        Alamofire.request(url, method: method, parameters: finalParameters, encoding: encodingType, headers: headers).validate().responseJSON { (response) in
+
+        AF.request(url, method: method, parameters: finalParameters, encoding: encodingType, headers: headers).validate().responseJSON { (response) in
             switch response.result {
             case .success(let json):
                 completion(.success(json))
             case .failure(let error):
+
                 handleErrorResponse(response: response, error: error, needAuth: needAuth, completion: { resultError in
                     completion(.failure(resultError))
                 })
@@ -114,7 +116,7 @@ extension KaoNetworkErrorHandler {
 
         printRequest(headers: headers ?? [:], parameters: finalParameters)
 
-        Alamofire.request(url, method: method, parameters: finalParameters, encoding: encodingType, headers: headers).validate().responseData { (response) in
+        AF.request(url, method: method, parameters: finalParameters, encoding: encodingType, headers: headers).validate().responseData { (response) in
             switch response.result {
             case .success(let data):
                 completion(.success(data))
@@ -149,21 +151,38 @@ extension KaoNetworkErrorHandler {
     ///   - fileName: atatchment file name
     ///   - progressHandler: progress handler
     ///   - completion: success(NetworkResult<Any>) / failure(String)
-    public static func postMultiPartJSON(_ url: URLConvertible, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: NetworkResult<Any>) -> Void) {
+     static func postMultiPartJSON(_ url: URLConvertible, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: NetworkResult<Any>) -> Void) {
 
-        Alamofire.upload(multipartFormData: { (multipartData) in
+        AF.upload(multipartFormData: { (multipartData) in
             self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
-        }, to: url, method: .post, headers: header, encodingCompletion: { (encodingResult) in
-            switch encodingResult {
-            case .success(let request, _, _):
-                request.uploadProgress(closure: progressHandler)
-                self.uploadFileJSON(dataRequest: request, completion: { (result) in
-                    completion(result)
-                })
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        })
+            }, to: url,method: .post,headers: header).responseJSON(completionHandler: { (response) in
+
+                switch response.result {
+                          case .success(let data):
+                                completion(.success(data))
+                          case .failure(let error):
+                             completion(.failure(error))
+
+                          }
+
+
+            })
+
+
+
+//        AF.upload(multipartFormData: { (multipartData) in
+//            self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
+//        }, to: url, method: .post, headers: header, encodingCompletion: { (encodingResult) in
+//            switch encodingResult {
+//            case .success(let request, _, _):
+//                request.uploadProgress(closure: progressHandler)
+//                self.uploadFileJSON(dataRequest: request, completion: { (result) in
+//                    completion(result)
+//                })
+//            case .failure(let error):
+//                completion(.failure(error))
+//            }
+//        })
     }
 
     /// Send POST Multipart network call request
@@ -174,21 +193,38 @@ extension KaoNetworkErrorHandler {
     ///   - fileName: atatchment file name
     ///   - progressHandler: progress handler
     ///   - completion: success(NetworkResult<Data>) / failure(String)
-    public static func postMultiPartData(_ url: URLConvertible, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: NetworkResult<Data>) -> Void) {
+     static func postMultiPartData(_ url: URLConvertible, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: NetworkResult<Data>) -> Void) {
 
-        Alamofire.upload(multipartFormData: { (multipartData) in
-            self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
-        }, to: url, method: .post, headers: header, encodingCompletion: { (encodingResult) in
-            switch encodingResult {
-            case .success(let request, _, _):
-                request.uploadProgress(closure: progressHandler)
-                self.uploadFileData(dataRequest: request, completion: { (result) in
-                    completion(result)
-                })
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        })
+
+
+        AF.upload(multipartFormData: { (multipartData) in
+                   self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
+                   }, to: url,method: .post,headers: header).responseData(completionHandler: { (response) in
+
+                       switch response.result {
+                                 case .success(let data):
+                                       completion(.success(data))
+                                 case .failure(let error):
+                                    completion(.failure(error))
+
+                                 }
+
+
+                   })
+
+//        AF.upload(multipartFormData: { (multipartData) in
+//            self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
+//        }, to: url, method: .post, headers: header, encodingCompletion: { (encodingResult) in
+//            switch encodingResult {
+//            case .success(let request, _, _):
+//                request.uploadProgress(closure: progressHandler)
+//                self.uploadFileData(dataRequest: request, completion: { (result) in
+//                    completion(result)
+//                })
+//            case .failure(let error):
+//                completion(.failure(error))
+//            }
+//        })
     }
 
     /// Handle multipart data encoding
@@ -197,7 +233,7 @@ extension KaoNetworkErrorHandler {
     ///   - formData: multipart data
     ///   - data: file data
     ///   - fileName: file name
-    public static func multipartDataHandler(formData: MultipartFormData, data: Data, fileName: String) {
+     static func multipartDataHandler(formData: MultipartFormData, data: Data, fileName: String) {
 
         let fileNameString = fileName as NSString
         let fileExtension = fileNameString.pathExtension.lowercased()

@@ -13,11 +13,11 @@ public class KaoNetworkReach {
 
     public static let shared = KaoNetworkReach()
 
-    let manager = NetworkReachabilityManager(host: "www.apple.com")
+    let manager = NetworkReachabilityManager.default//(host: "www.apple.com")
 
     public func startObserve() {
 
-        manager?.listener = { status in
+        manager?.startListening { status in
             switch status {
             case .notReachable:
                 self.presentNoInternetScreen()
@@ -25,12 +25,12 @@ public class KaoNetworkReach {
                 print("It is unknown whether the network is reachable")
             case .reachable(.ethernetOrWiFi):
                 print("The network is reachable over the WiFi connection")
-            case .reachable(.wwan):
+            case .reachable(.cellular):
                 print("The network is reachable over the WWAN connection")
             }
         }
 
-        self.manager?.startListening()
+       // self.manager?.startListening()
     }
 
     public func stopObserve() {
