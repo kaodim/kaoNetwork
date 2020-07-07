@@ -82,7 +82,7 @@ extension KaoNetworkHandler {
             encodingType = JSONEncoding.default
         }
 
-        printRequest(headers: headers ?? [:], parameters: finalParameters)
+        //printRequest(headers: headers ?? [:], parameters: finalParameters)
 
         AF.request(url, method: method, parameters: finalParameters, encoding: encodingType, headers: headers).validate().responseData { (response) in
 
