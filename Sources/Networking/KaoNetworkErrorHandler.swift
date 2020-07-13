@@ -51,9 +51,7 @@ extension KaoNetworkErrorHandler {
             } catch {
                 completion(error.localizedDescription)
             }
-        } //else {
-            //completion(error.localizedDescription)
-        //}
+        }
     }
 
     /// Request Response JSON
@@ -168,21 +166,6 @@ extension KaoNetworkErrorHandler {
 
             })
 
-
-
-//        AF.upload(multipartFormData: { (multipartData) in
-//            self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
-//        }, to: url, method: .post, headers: header, encodingCompletion: { (encodingResult) in
-//            switch encodingResult {
-//            case .success(let request, _, _):
-//                request.uploadProgress(closure: progressHandler)
-//                self.uploadFileJSON(dataRequest: request, completion: { (result) in
-//                    completion(result)
-//                })
-//            case .failure(let error):
-//                completion(.failure(error))
-//            }
-//        })
     }
 
     /// Send POST Multipart network call request
@@ -206,25 +189,9 @@ extension KaoNetworkErrorHandler {
                                        completion(.success(data))
                                  case .failure(let error):
                                     completion(.failure(error))
-
                                  }
 
-
                    })
-
-//        AF.upload(multipartFormData: { (multipartData) in
-//            self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
-//        }, to: url, method: .post, headers: header, encodingCompletion: { (encodingResult) in
-//            switch encodingResult {
-//            case .success(let request, _, _):
-//                request.uploadProgress(closure: progressHandler)
-//                self.uploadFileData(dataRequest: request, completion: { (result) in
-//                    completion(result)
-//                })
-//            case .failure(let error):
-//                completion(.failure(error))
-//            }
-//        })
     }
 
     /// Handle multipart data encoding
