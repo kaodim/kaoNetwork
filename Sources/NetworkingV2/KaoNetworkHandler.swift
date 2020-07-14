@@ -36,7 +36,7 @@ public protocol KaoNetworkHandler {
 
 extension KaoNetworkHandler {
 
-    public static func handleErrorResponse<T>(response: DataResponse<T>, needAuth: Bool = false, completion: @escaping (_ result: KaoNetworkResult<D,E>) -> Void) {
+    public static func handleErrorResponse<T>(response: AFDataResponse<T>, needAuth: Bool = false, completion: @escaping (_ result: KaoNetworkResult<D,E>) -> Void) {
 
         if let statusCode = response.response?.statusCode, let statusCodeError = NetworkErrorStatusCode(rawValue: statusCode) {
             switch statusCodeError {
@@ -53,7 +53,7 @@ extension KaoNetworkHandler {
         tryToReadBackendErrorMessage(response: response, completion: completion)
     }
 
-    public static func tryToReadBackendErrorMessage<T>(response: DataResponse<T>, completion: @escaping (_ result: KaoNetworkResult<D, E>) -> Void) {
+    public static func tryToReadBackendErrorMessage<T>(response: AFDataResponse<T>, completion: @escaping (_ result: KaoNetworkResult<D, E>) -> Void) {
         if let data = response.data {
             do {
                 let errorObj = try E.decode(from: data)
@@ -82,9 +82,9 @@ extension KaoNetworkHandler {
             encodingType = JSONEncoding.default
         }
 
-        printRequest(headers: headers ?? [:], parameters: finalParameters)
+        //printRequest(headers: headers ?? [:], parameters: finalParameters)
 
-        Alamofire.request(url, method: method, parameters: finalParameters, encoding: encodingType, headers: headers).validate().responseData { (response) in
+        AF.request(url, method: method, parameters: finalParameters, encoding: encodingType, headers: headers).validate().responseData { (response) in
 
             self.printResponse(url: response.request?.url, data: response.data)
 
@@ -122,19 +122,37 @@ extension KaoNetworkHandler {
 
         printRequest(headers: header, parameters: [:])
 
-        Alamofire.upload(multipartFormData: { (multipartData) in
-            self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
-        }, to: url, method: method, headers: header, encodingCompletion: { (encodingResult) in
-            switch encodingResult {
-            case .success(let request, _, _):
-                request.uploadProgress(closure: progressHandler)
-                self.uploadFileData(dataRequest: request, completion: { (result) in
-                    completion(result)
-                })
-            case .failure(let error):
-                completion(.failure(error.localizedDescription))
-            }
-        })
+
+        AF.upload(multipartFormData: { (multipartData) in
+                  self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
+                  }, to: url,method: .post,headers: header).responseData(completionHandler: { (response) in
+
+                      switch response.result {
+                                case .success(let data):
+                                    if let data = data as? D{
+                                        completion(.success(data))
+                                    }
+                                case .failure(let error):
+                                    completion(.failure(error.localizedDescription))
+
+                                }
+
+
+                  })
+
+//        AF.upload(multipartFormData: { (multipartData) in
+//            self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
+//        }, to: url, method: method, headers: header, encodingCompletion: { (encodingResult) in
+//            switch encodingResult {
+//            case .success(let request, _, _):
+//                request.uploadProgress(closure: progressHandler)
+//                self.uploadFileData(dataRequest: request, completion: { (result) in
+//                    completion(result)
+//                })
+//            case .failure(let error):
+//                completion(.failure(error.localizedDescription))
+//            }
+//        })
     }
 
     public static func multipartDataHandler(formData: MultipartFormData, data: Data, fileName: String) {

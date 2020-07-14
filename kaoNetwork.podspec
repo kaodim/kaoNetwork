@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'kaoNetwork'
-  s.version          = '0.2.4'
+  s.version          = '0.3.0'
   s.summary          = 'kaodim network library'
  
   s.description      = <<-DESC
@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
      ]
    }
 
-  s.dependency 'KaoDesign', '~> 0.3.0'
-  s.dependency 'Alamofire', '4.8.1'
+  s.dependency 'KaoDesign', '~> 0.4.0'
+  s.dependency 'Alamofire', '5.2.1'
 
   s.pod_target_xcconfig = {
-     "SWIFT_VERSION" => "4.0",
+     "SWIFT_VERSION" => "5.0",
   }
 
   s.swift_version = '4.0'
