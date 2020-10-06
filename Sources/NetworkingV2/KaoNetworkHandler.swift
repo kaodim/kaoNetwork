@@ -120,9 +120,6 @@ extension KaoNetworkHandler {
 
     public static func requestMultiPartData(_ url: URLConvertible, method: HTTPMethod = .post, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: KaoUploadNetworkResult<D>) -> Void) {
 
-        printRequest(headers: header, parameters: [:])
-
-
         AF.upload(multipartFormData: { (multipartData) in
                   self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
                   }, to: url,method: .post,headers: header).responseData(completionHandler: { (response) in
@@ -139,20 +136,6 @@ extension KaoNetworkHandler {
 
 
                   })
-
-//        AF.upload(multipartFormData: { (multipartData) in
-//            self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
-//        }, to: url, method: method, headers: header, encodingCompletion: { (encodingResult) in
-//            switch encodingResult {
-//            case .success(let request, _, _):
-//                request.uploadProgress(closure: progressHandler)
-//                self.uploadFileData(dataRequest: request, completion: { (result) in
-//                    completion(result)
-//                })
-//            case .failure(let error):
-//                completion(.failure(error.localizedDescription))
-//            }
-//        })
     }
 
     public static func multipartDataHandler(formData: MultipartFormData, data: Data, fileName: String) {
