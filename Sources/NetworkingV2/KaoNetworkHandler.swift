@@ -12,7 +12,7 @@ import KaoDesign
 
 var defaultParameters: [String: Any] = {
     var parameters: [String: Any] = [:]
-    parameters["preferred_timezone"] = TimeZone.current.secondsFromGMT()/3600 as Any
+    parameters["preferred_timezone"] = TimeZone.current.secondsFromGMT() / 3600 as Any
     parameters["platform"] = "ios"
     parameters["device_id"] = UIDevice.current.identifierForVendor?.uuidString.replacingOccurrences(of: "-", with: "") ?? ""
     parameters["os"] = UIDevice.current.systemVersion
@@ -36,7 +36,7 @@ public protocol KaoNetworkHandler {
 
 extension KaoNetworkHandler {
 
-    public static func handleErrorResponse<T>(response: AFDataResponse<T>, needAuth: Bool = false, completion: @escaping (_ result: KaoNetworkResult<D,E>) -> Void) {
+    public static func handleErrorResponse<T>(response: AFDataResponse<T>, needAuth: Bool = false, completion: @escaping (_ result: KaoNetworkResult<D, E>) -> Void) {
 
         if let statusCode = response.response?.statusCode, let statusCodeError = NetworkErrorStatusCode(rawValue: statusCode) {
             switch statusCodeError {
@@ -121,21 +121,20 @@ extension KaoNetworkHandler {
     public static func requestMultiPartData(_ url: URLConvertible, method: HTTPMethod = .post, header: HTTPHeaders, attachmentData: Data, fileName: String, progressHandler: @escaping (_ progress: Progress) -> Void, completion: @escaping (_ result: KaoUploadNetworkResult<D>) -> Void) {
 
         AF.upload(multipartFormData: { (multipartData) in
-                  self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
-                  }, to: url,method: .post,headers: header).responseData(completionHandler: { (response) in
-
-                      switch response.result {
-                                case .success(let data):
-                                    if let data = data as? D{
-                                        completion(.success(data))
-                                    }
-                                case .failure(let error):
-                                    completion(.failure(error.localizedDescription))
-
-                                }
-
-
-                  })
+            self.multipartDataHandler(formData: multipartData, data: attachmentData, fileName: fileName)
+        }, to: url, method: .post, headers: header).responseData(completionHandler: { (response) in
+            switch response.result {
+            case .success(let data):
+                do {
+                    let decodeObj = try D.decode(from: data)
+                    completion(.success(decodeObj))
+                } catch let error {
+                    completion(.successButDecodeFail(error.localizedDescription))
+                }
+            case .failure(let error):
+                completion(.failure(error.localizedDescription))
+            }
+        })
     }
 
     public static func multipartDataHandler(formData: MultipartFormData, data: Data, fileName: String) {
