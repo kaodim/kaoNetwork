@@ -78,7 +78,7 @@ extension KaoNetworkHandler {
         }
 
         var encodingType: ParameterEncoding = URLEncoding.default
-        if method == .post || method == .patch || method == .delete {
+        if method == .post || method == .patch || method == .delete  || method == .put {
             encodingType = JSONEncoding.default
         }
 
