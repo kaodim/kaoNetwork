@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'kaoNetwork'
-  s.version          = '0.3.2'
+  s.version          = '0.3.3'
   s.summary          = 'kaodim network library'
  
   s.description      = <<-DESC
