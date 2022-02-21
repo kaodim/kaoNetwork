@@ -12,7 +12,7 @@ import KaoDesign
 
 var defaultParameters: [String: Any] = {
     var parameters: [String: Any] = [:]
-    parameters["preferred_timezone"] = TimeZone.current.secondsFromGMT() / 3600 as Any
+    parameters["preferred_timezone"] = Double(TimeZone.current.secondsFromGMT()) / 3600.0 as Any
     parameters["platform"] = "ios"
     parameters["device_id"] = UIDevice.current.identifierForVendor?.uuidString.replacingOccurrences(of: "-", with: "") ?? ""
     parameters["os"] = UIDevice.current.systemVersion
